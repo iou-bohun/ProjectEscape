@@ -124,4 +124,16 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
+    public void OnRunInput(InputAction.CallbackContext context)
+    {
+        if(context.phase == InputActionPhase.Performed)
+        {
+            moveSpeed = 8;
+        }
+        else if (context.phase == InputActionPhase.Canceled)
+        {
+            moveSpeed = 4;
+        }
+    }
 }
