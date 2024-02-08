@@ -40,16 +40,49 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
+        Move();
     }
 
     private void LateUpdate()
     {
-        
+        if(canLook)
+        {
+            CameraLook();
+        }
+    }
+
+    private void Move()
+    {
+        Vector3 dir = transform.forward * curMovementInput.y + transform.right * curMovementInput.x;
+        dir *= moveSpeed;
+        dir.y = _rigidbody.velocity.y;
+
+        _rigidbody.velocity = dir;
     }
     void CameraLook()
     {
         camCurXRot += mouseDelta.y * lookSensitivity;
+        camCurXRot = Mathf.Clamp(camCurXRot,minXLook,maxXLook);
+        cameraContainer.localEulerAngles = new Vector3(-camCurXRot,0,0);
 
+        transform.eulerAngles += new Vector3(0, mouseDelta.x * lookSensitivity, 0);
+
+    }
+
+    public void OnLookInput(InputAction.CallbackContext context)
+    {
+        mouseDelta = context.ReadValue<Vector2>();
+    }
+
+    public void OnMoveInput(InputAction.CallbackContext context)
+    {
+        if(context.phase == InputActionPhase.Performed)
+        {
+            curMovementInput = context.ReadValue<Vector2>();
+        }
+        else if (context.phase == InputActionPhase.Canceled)
+        {
+            curMovementInput = Vector2.zero;
+        }
     }
 }
