@@ -16,6 +16,5 @@ public class ItemObjects : MonoBehaviour, IInteractable
     {
         //Inventory.Instance.AddItem(item);
         Destroy(gameObject);
-        Debug.Log("상호작용");
     }
 }
