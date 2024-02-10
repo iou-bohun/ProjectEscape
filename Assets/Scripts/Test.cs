@@ -10,8 +10,10 @@ public class Test : MonoBehaviour
     {
         if (itmeLayer.value == (itmeLayer.value | (1<< collision.gameObject.layer)))
         {
-            inven.GetItem(collision.gameObject.GetComponent<Item>());
-            Destroy(collision.gameObject);
+            if (inven.GetItem(collision.gameObject.GetComponent<Item>()))
+            {
+                collision.gameObject.SetActive(false);
+            }
         }
     }
 }

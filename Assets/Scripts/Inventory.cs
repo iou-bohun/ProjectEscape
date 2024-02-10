@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
     {
         items = new Item[InventorySize];
     }
-    public void GetItem(Item AnItem)
+    public bool GetItem(Item AnItem)
     {
         for (int i = 0; i < items.Length; i++)
         {
@@ -22,10 +22,10 @@ public class Inventory : MonoBehaviour
             {
                 items[i] = AnItem;
                 UpdateInvenUi(i,AnItem);
-                return;
+                return true ;
             }
         }
-        Debug.Log("°¡µæ Âü");
+        return false;
     }
     public void DropItem(int index)
     {
