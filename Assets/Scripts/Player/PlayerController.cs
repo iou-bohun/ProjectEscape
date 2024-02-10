@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        IsGrounded();
     }
 
     private void LateUpdate()
@@ -107,7 +108,7 @@ public class PlayerController : MonoBehaviour
         for(int i = 0; i< rays.Length; i++)
         {
             if (Physics.Raycast(rays[i],0.1f, groundLayerMask))
-            { 
+            {
                 return true; 
             }
         }
@@ -121,8 +122,6 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawRay(transform.position + (-transform.forward * 0.2f), Vector3.down);
         Gizmos.DrawRay(transform.position + (transform.right * 0.2f), Vector3.down);
         Gizmos.DrawRay(transform.position + (-transform.right * 0.2f), Vector3.down);
-
-
     }
 
     public void OnRunInput(InputAction.CallbackContext context)
