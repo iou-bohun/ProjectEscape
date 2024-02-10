@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public float maxXLook;
     private float camCurXRot;
     public float lookSensitivity;
+    [SerializeField] private Transform originCameraPosition;
+    [SerializeField] private Transform sitCameraPosition;
 
     private Vector2 mouseDelta;
 
@@ -43,6 +45,7 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         IsGrounded();
+        Debug.Log(IsGrounded());
     }
 
     private void LateUpdate()
@@ -135,4 +138,18 @@ public class PlayerController : MonoBehaviour
             moveSpeed = 4;
         }
     }
+
+    public void OnSitInput(InputAction.CallbackContext context)
+    {
+        if(context.phase == InputActionPhase.Performed)
+        {
+            cameraContainer.position = sitCameraPosition.position;
+        }
+        else if(context.phase == InputActionPhase.Canceled)
+        {
+            cameraContainer.position = originCameraPosition.position;
+        }
+    }
 }
+
+
