@@ -45,7 +45,6 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         IsGrounded();
-        Debug.Log(IsGrounded());
     }
 
     private void LateUpdate()
