@@ -39,9 +39,13 @@ public class Inventory : MonoBehaviour
     }
     public void DropItem(int index)
     {
+        if (items[index] == null)
+        {
+            return;
+        }
         Instantiate(items[index].itemPrafab, dropPos.position, Quaternion.identity);
-        items[index] = null;
         UpdateInvenUi(index);
+        items[index] = null;
     }
     public void UpdateInvenUi(int index,Item AnItem)
     {
@@ -55,9 +59,9 @@ public class Inventory : MonoBehaviour
     }
     public void UpdateInvenUi(int index)
     {
-        if (inventoryUi.transform.GetChild(index - 1).transform.childCount == 1)
+        if (inventoryUi.transform.GetChild(index).transform.childCount == 1)
         {
-            Destroy(inventoryUi.transform.GetChild(index).GetChild(0));
+            Destroy(inventoryUi.transform.GetChild(index).GetChild(0).gameObject);
         }
     }
 }
