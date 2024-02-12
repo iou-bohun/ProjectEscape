@@ -7,12 +7,22 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    Byte InventorySize = 4;
+    public static Inventory i;
+    [SerializeField] Transform dropPos;
     [SerializeField] GameObject inventoryUi;
     Item[] items;
+    int InventorySize = 4;
     private void Awake()
     {
-        items = new Item[InventorySize];
+        if (i == null)
+        {
+            i = this;
+            items = new Item[InventorySize];
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
     public bool GetItem(Item AnItem)
     {
@@ -22,15 +32,16 @@ public class Inventory : MonoBehaviour
             {
                 items[i] = AnItem;
                 UpdateInvenUi(i,AnItem);
-                return true ;
+                return true;
             }
         }
         return false;
     }
     public void DropItem(int index)
     {
-        UpdateInvenUi(index);
+        Instantiate(items[index].itemPrafab, dropPos.position, Quaternion.identity);
         items[index] = null;
+        UpdateInvenUi(index);
     }
     public void UpdateInvenUi(int index,Item AnItem)
     {
