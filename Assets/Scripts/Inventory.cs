@@ -12,6 +12,8 @@ public class Inventory : MonoBehaviour
     [SerializeField] GameObject inventoryUi;
     Item[] items;
     int InventorySize = 4;
+    [SerializeField] Transform handParent;
+    [SerializeField] GameObject HandItem;
     private void Awake()
     {
         if (i == null)
@@ -31,7 +33,7 @@ public class Inventory : MonoBehaviour
             if (items[i] == null)
             {
                 items[i] = AnItem;
-                UpdateInvenUi(i,AnItem);
+                UpdateInvenUi(i, AnItem);
                 return true;
             }
         }
@@ -43,11 +45,16 @@ public class Inventory : MonoBehaviour
         {
             return;
         }
-        Instantiate(items[index].itemPrafab, dropPos.position, Quaternion.identity);
+        Instantiate(items[index].itemPrefab, dropPos.position, Quaternion.identity);
         UpdateInvenUi(index);
+        if (HandItem != null)
+        {
+            Destroy(HandItem.gameObject);
+            HandItem = null;
+        }
         items[index] = null;
     }
-    public void UpdateInvenUi(int index,Item AnItem)
+    void UpdateInvenUi(int index, Item AnItem)
     {
         if (AnItem != null)
         {
@@ -57,11 +64,38 @@ public class Inventory : MonoBehaviour
             slotImage.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
         }
     }
-    public void UpdateInvenUi(int index)
+    void UpdateInvenUi(int index)
     {
         if (inventoryUi.transform.GetChild(index).transform.childCount == 1)
         {
             Destroy(inventoryUi.transform.GetChild(index).GetChild(0).gameObject);
+        }
+    }
+    public void CatchItem(int index)
+    {
+        if (items[index] == null)
+        {
+            if (HandItem != null)
+            {
+                Destroy(HandItem.gameObject);
+            }
+            HandItem = null;
+        }
+        else if (HandItem == null && items[index] != null)
+        {
+            HandItem = Instantiate(items[index].handPrefab, handParent);
+            HandItem.name = items[index].handPrefab.name;
+        }
+        else if (HandItem.name == items[index].handPrefab.name)
+        {
+            Destroy(HandItem.gameObject);
+            HandItem = null;
+        }
+        else if (HandItem != null && items[index] != null)
+        {
+            Destroy(HandItem.gameObject);
+            HandItem = Instantiate(items[index].handPrefab, handParent);
+            HandItem.name = items[index].handPrefab.name;
         }
     }
 }

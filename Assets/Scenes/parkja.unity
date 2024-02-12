@@ -498,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropPos: {fileID: 1352105776}
   inventoryUi: {fileID: 686039621}
+  handParent: {fileID: 1310688805}
 --- !u!1001 &93770186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4146,7 +4147,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 119
+    m_Bits: 247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5409,7 +5410,7 @@ GameObject:
   - component: {fileID: 1310688805}
   - component: {fileID: 1310688806}
   m_Layer: 6
-  m_Name: ItemCamera
+  m_Name: HandCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5469,7 +5470,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 256
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

@@ -15,4 +15,5 @@ MonoBehaviour:
   itemName: "\uCC45"
   itemDescription: "\uCC45\uC774\uB2E4"
   itemImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  itemPrafab: {fileID: 1233844121918106996, guid: 62f1d6f282deb3446ae5035f4bfac305, type: 3}
+  itemPrefab: {fileID: 1233844121918106996, guid: 62f1d6f282deb3446ae5035f4bfac305, type: 3}
+  handPrefab: {fileID: 334132256878185149, guid: 60052908b3d966f4ab7c69bf44ec71dc, type: 3}

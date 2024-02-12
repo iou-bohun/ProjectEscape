@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class InventoryInput : MonoBehaviour
 {
-    int currentItem = 0;
+    int currentIndex = -1;
     public void ItemChoiceInput(InputAction.CallbackContext context)
     {
         //인벤값은 1~4 하지만 인덱스로 적용할시 0~3이기에 값을받고 -1해줄 필요성이 있음
@@ -17,10 +17,10 @@ public class InventoryInput : MonoBehaviour
     }
     public void DropItemInput(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Started && currentItem != -1)
+        if (context.phase == InputActionPhase.Started && currentIndex != -1)
         {
-            Inventory.i.DropItem(currentItem);
-            currentItem = -1;
+            Inventory.i.DropItem(currentIndex);
+            currentIndex = -1;
         }
     }
 }
