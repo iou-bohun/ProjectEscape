@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2fec5451c1668b478883b44bdd72223, type: 3}
   m_Name: Book
   m_EditorClassIdentifier: 
-  itemName: 
-  itemDescription: 
-  itemImage: {fileID: 0}
-  itemPrafab: {fileID: 0}
+  itemName: "\uCC45"
+  itemDescription: "\uCC45\uC774\uB2E4"
+  itemImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  itemPrafab: {fileID: 1233844121918106996, guid: 62f1d6f282deb3446ae5035f4bfac305, type: 3}
