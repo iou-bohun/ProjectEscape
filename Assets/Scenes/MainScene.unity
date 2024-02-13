@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 84078216}
   - component: {fileID: 84078218}
   - component: {fileID: 84078217}
+  - component: {fileID: 84078219}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -568,6 +569,7 @@ MonoBehaviour:
   inventoryUi: {fileID: 644589185}
   handParent: {fileID: 886348641}
   HandItem: {fileID: 0}
+  DropPos: {fileID: 0}
 --- !u!114 &84078219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,11 +579,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 84078207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dea9f01c3e37ed4fa7e6cd8066a4eef, type: 3}
+  m_Script: {fileID: 11500000, guid: ad5b4b93aa9029d4eb97439f26ebb4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplantText: {fileID: 0}
-  distance: 4
+  walkMetalV1:
+  - {fileID: 8300000, guid: 5e265270fb85126479eef52d8fce3b08, type: 3}
+  - {fileID: 8300000, guid: 3701a5fdf99882f40bc00eb9053eec92, type: 3}
+  - {fileID: 8300000, guid: 2f949b40b7283404099a802630fb2077, type: 3}
+  - {fileID: 8300000, guid: dfff2b3c7dfb43c419592789f0a6ab81, type: 3}
+  - {fileID: 8300000, guid: 812100e3982e56842adb6ba5be867b7a, type: 3}
+  - {fileID: 8300000, guid: 83c58d64f2e240c41b1f2c2885b253a6, type: 3}
+  - {fileID: 8300000, guid: 3610d597db7918e44906d575bd074616, type: 3}
+  - {fileID: 8300000, guid: 149e8ca9df68d744e9722158daa78ab1, type: 3}
+  - {fileID: 8300000, guid: d25a8335420d09f43bedf446e2deffa0, type: 3}
+  - {fileID: 8300000, guid: cb111f071b2e63844afba5ac99aceb2b, type: 3}
+  - {fileID: 8300000, guid: 2c32dcddf9cd3a944a54728c2c878557, type: 3}
+  - {fileID: 8300000, guid: 2705e9a452d315940a37bf3403ce5927, type: 3}
+  - {fileID: 8300000, guid: e80de9a8752d20e4d97ab928d318adb3, type: 3}
+  - {fileID: 8300000, guid: 4290a2df9f7c8ee4fbe7fee539c5bf30, type: 3}
+  - {fileID: 8300000, guid: 63218441cc62b42499a5df11d6393821, type: 3}
 --- !u!1 &128316112
 GameObject:
   m_ObjectHideFlags: 0
