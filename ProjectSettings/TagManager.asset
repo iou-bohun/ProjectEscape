@@ -8,6 +8,7 @@ TagManager:
   - LivingRoom
   - BathRoom
   - Corridor
+  - WalkSFX
   layers:
   - Default
   - TransparentFX

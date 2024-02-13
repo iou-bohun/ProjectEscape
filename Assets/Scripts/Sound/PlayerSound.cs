@@ -20,7 +20,7 @@ public class PlayerSound : MonoBehaviour
     public float SFXWalk()
     {
         int rand = Random.Range(0, walkMetalV1.Length); // ¼Ò½º ·£´ý »Ì±â
-        SoundManager.instance.SFXPlay("WalkSFX" + (rand + 1), walkMetalV1[rand]);
+        SoundManager.instance.SFXPlay("WalkSFX", walkMetalV1[rand]);
         return walkMetalV1[rand].length;
     }
 
