@@ -56,13 +56,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3433374748859648377, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -900466123745240313, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -754440953105936872, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fc572b7f1f43b3a42810a51f8c8ee969, type: 2}
+    - target: {fileID: 699109212540323279, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
       propertyPath: m_Name
       value: RedEnvelope
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847534520110390273, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856657030762208942, guid: 8c4deac706397b3408e34c1ba301c139, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
