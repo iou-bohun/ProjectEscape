@@ -22,15 +22,22 @@ public class PlayerSound : MonoBehaviour
     {
         while (true)
         {
-            if (isRun == false) // 걷고 있다면
+            if (isGrounded) // 바닥에 붙어있고
             {
-                float wait = PickRandomSFX("WalkSFX", walkMetalV1);
-                yield return new WaitForSeconds(wait);
+                if (isRun == false) // 걷고 있다면
+                {
+                    float wait = PickRandomSFX("WalkSFX", walkMetalV1);
+                    yield return new WaitForSeconds(wait);
+                }
+                else // 뛰고 있다면
+                {
+                    float wait = PickRandomSFX("RunSFX", runMetalV1);
+                    yield return new WaitForSeconds(wait);
+                }
             }
-            else // 뛰고 있다면
+            else
             {
-                float wait = PickRandomSFX("RunSFX", runMetalV1);
-                yield return new WaitForSeconds(wait);
+                yield return null; 
             }
         }
     }
