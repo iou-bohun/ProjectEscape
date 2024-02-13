@@ -134,10 +134,12 @@ public class PlayerController : MonoBehaviour
         if(context.phase == InputActionPhase.Performed)
         {
             moveSpeed = 8;
+            _playerSound.isRun = true;
         }
         else if (context.phase == InputActionPhase.Canceled)
         {
             moveSpeed = 4;
+            _playerSound.isRun = false;
         }
     }
 

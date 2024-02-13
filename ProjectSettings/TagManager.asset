@@ -9,6 +9,7 @@ TagManager:
   - BathRoom
   - Corridor
   - WalkSFX
+  - RunSFX
   layers:
   - Default
   - TransparentFX
