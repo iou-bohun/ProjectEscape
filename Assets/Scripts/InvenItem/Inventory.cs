@@ -66,6 +66,7 @@ public class Inventory : MonoBehaviour
             slotImage.transform.SetParent(inventoryUi.transform.GetChild(index).transform);
             slotImage.AddComponent<Image>().sprite = AnItem.icon;
             slotImage.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
+            slotImage.GetComponent<RectTransform>().localScale = Vector3.one;
         }
     }
     void UpdateInvenUi(int index)
