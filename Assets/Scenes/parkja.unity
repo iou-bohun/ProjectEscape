@@ -376,22 +376,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 84078216}
         m_TargetAssemblyTypeName: InventoryInput, Assembly-CSharp
-        m_MethodName: ItemChoiceInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 7f960b45-ec5f-4350-b315-a6641df15545
-    m_ActionName: Player/ItemChoice[/Keyboard/1,/Keyboard/2,/Keyboard/3,/Keyboard/4]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 84078216}
-        m_TargetAssemblyTypeName: InventoryInput, Assembly-CSharp
         m_MethodName: DropItemInput
         m_Mode: 0
         m_Arguments:
@@ -404,6 +388,30 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0aeacb8a-ee6a-44a7-9705-0984f1135f34
     m_ActionName: Player/DropItem[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e40a98ad-0ca0-4d7c-b564-42aa276daa61
+    m_ActionName: Player/Item1[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e238a9e9-7fd1-409c-b205-2ae763b45540
+    m_ActionName: Player/Item2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b70d1476-c2ce-4b50-b804-c99820eaddad
+    m_ActionName: Player/Item3[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 733f72cc-bb2b-4a21-8bfc-46229e5a996c
+    m_ActionName: Player/Item4[/Keyboard/4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 61807170-814b-4f87-b6ec-4d0b77561c13
+    m_ActionName: Player/Run[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a0e18734-9e2e-48ab-9a50-69a07321e34d
+    m_ActionName: Player/Sit[/Keyboard/leftCtrl]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -430,6 +438,8 @@ MonoBehaviour:
   minXLook: -85
   maxXLook: 85
   lookSensitivity: 0.2
+  originCameraPosition: {fileID: 0}
+  sitCameraPosition: {fileID: 0}
   canLook: 1
 --- !u!54 &84078214
 Rigidbody:
@@ -499,6 +509,7 @@ MonoBehaviour:
   dropPos: {fileID: 1352105776}
   inventoryUi: {fileID: 686039621}
   handParent: {fileID: 1310688805}
+  HandItem: {fileID: 0}
 --- !u!1001 &93770186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4147,7 +4158,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 759
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -8384,6 +8395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book
       objectReference: {fileID: 0}
+    - target: {fileID: 1233844121918106996, guid: 62f1d6f282deb3446ae5035f4bfac305, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4704879978728496423, guid: 62f1d6f282deb3446ae5035f4bfac305, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8427,6 +8442,10 @@ PrefabInstance:
     - target: {fileID: 4704879978728496423, guid: 62f1d6f282deb3446ae5035f4bfac305, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871206705591783716, guid: 62f1d6f282deb3446ae5035f4bfac305, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

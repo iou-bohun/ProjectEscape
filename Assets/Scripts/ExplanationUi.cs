@@ -31,7 +31,7 @@ public class ExplanationUi : MonoBehaviour
         else
         {
             LookItem = null;
-            ExplantText.gameObject.SetActive(false);
+            // ExplantText.gameObject.SetActive(false);
         }
     }
     public void InteractInput(InputAction.CallbackContext context)
