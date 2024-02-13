@@ -9,6 +9,9 @@ TagManager:
   - BathRoom
   - Corridor
   - WalkSFX
+  - RunSFX
+  - JumpStartSFX
+  - JumpLandSFX
   layers:
   - Default
   - TransparentFX
