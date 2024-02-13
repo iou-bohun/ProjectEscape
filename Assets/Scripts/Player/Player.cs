@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
             case "LivingRoom":
                 break;
             case "Corridor":
+                EventManager.I.CallCorridorEvent();
                 break;
             case "BathRoom":
                 break;
