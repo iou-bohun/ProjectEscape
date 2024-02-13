@@ -19,9 +19,15 @@ public class EventManager : MonoBehaviour
         }
     }
     public Action bedRoomEvent;
+    public Action corridorEvent;
 
     public void CallIBedRoomEvent()
     {
        bedRoomEvent?.Invoke();
+    }
+
+    public void CallCorridorEvent()
+    {
+        corridorEvent?.Invoke();
     }
 }
