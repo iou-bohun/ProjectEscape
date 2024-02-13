@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public bool canLook = true;
 
     private Rigidbody _rigidbody;
-    private PlayerSound _playerSound; // ÇÃ·¹ÀÌ¾î »ç¿îµå °ü·Ã ÄÄÆ÷³ÍÆ®ÀÔ´Ï´Ù.
+    private PlayerSound _playerSound; // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½Ô´Ï´ï¿½.
 
     public static PlayerController instance;
     private void Awake()
