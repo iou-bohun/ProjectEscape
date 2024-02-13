@@ -17,4 +17,5 @@ public class ItemData : ScriptableObject
     public ItemType type;
     public Sprite icon;
     public GameObject dropPrefab;
+    public GameObject handPrefab;
 }
