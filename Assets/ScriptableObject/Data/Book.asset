@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
-  m_Name: TestItem
+  m_Name: Book
   m_EditorClassIdentifier: 
   disPlayName: TestITem
   description: Item For Test
   type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
+  icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  dropPrefab: {fileID: 8565159607296146082, guid: 84777566497f57f4e8c9d7d6dd59323a, type: 3}
+  handPrefab: {fileID: 5455978760986130416, guid: 8f66ddd95a988ab4b87d8128e3577a95, type: 3}
