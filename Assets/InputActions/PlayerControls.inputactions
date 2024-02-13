@@ -9,7 +9,7 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "ee317749-691d-4ecd-b435-4bd4579f0c12",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Integer",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -42,18 +42,45 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Run",
+                    "name": "DropItem",
                     "type": "Button",
-                    "id": "a70ecf5b-782e-4a2c-8ebf-85537fa7be1a",
+                    "id": "0aeacb8a-ee6a-44a7-9705-0984f1135f34",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Sit",
+                    "name": "Item1",
                     "type": "Button",
-                    "id": "92039c64-a8b7-4ca1-9249-97f3abe9f9df",
+                    "id": "e40a98ad-0ca0-4d7c-b564-42aa276daa61",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Item2",
+                    "type": "Button",
+                    "id": "e238a9e9-7fd1-409c-b205-2ae763b45540",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Item3",
+                    "type": "Button",
+                    "id": "b70d1476-c2ce-4b50-b804-c99820eaddad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Item4",
+                    "type": "Button",
+                    "id": "733f72cc-bb2b-4a21-8bfc-46229e5a996c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -151,23 +178,56 @@
                 },
                 {
                     "name": "",
-                    "id": "1d58a7d8-273d-492e-ae75-1ba7c774b4a5",
-                    "path": "<Keyboard>/leftShift",
+                    "id": "5a040f39-3b9e-4864-b6d3-bfc77a3509d5",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Run",
+                    "action": "DropItem",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "325d5252-060d-431c-978b-2cd6b72da2ca",
-                    "path": "<Keyboard>/ctrl",
+                    "id": "dc99ec25-e63b-44f5-b80b-6672177d194b",
+                    "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Sit",
+                    "action": "Item1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e6175a90-e088-49af-ab4f-23d84c5a31f1",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Item2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbcc5d6f-f18e-4a05-b156-77fdc179af9e",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Item3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "79d1d13f-c1bb-4c66-8f9f-eb456ea0556f",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Item4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
