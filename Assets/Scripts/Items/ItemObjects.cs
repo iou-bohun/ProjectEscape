@@ -14,7 +14,9 @@ public class ItemObjects : MonoBehaviour, IInteractable
     //플레이어 상호작용키 (E) 
     public void OnInteract()
     {
-        Inventory.i.GetItem(item);
-        Destroy(gameObject);
+        if (Inventory.i.GetItem(item))
+        {
+            Destroy(gameObject);
+        }
     }
 }
