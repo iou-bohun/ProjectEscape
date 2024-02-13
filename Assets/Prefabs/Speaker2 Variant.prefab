@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Speaker2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1090368676605318, guid: 3a11ff94ec52f174e9c70b6169e87734, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4987744611313440, guid: 3a11ff94ec52f174e9c70b6169e87734, type: 3}
       propertyPath: m_RootOrder
       value: 11
