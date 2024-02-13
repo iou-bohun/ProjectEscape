@@ -6,45 +6,30 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     // SoundManager에선 3D가 적용되지 않는 소리(BGM, 일부SFX)만 관리합니다.
+    public static SoundManager instance;
 
-    AudioSource[] audioSources = new AudioSource[(int)Sound.MaxCount];
-    Dictionary<string, AudioClip> audioClips = new Dictionary<string, AudioClip>();
-
-    public void Init()
+    private void Awake()
     {
-        GameObject root = GameObject.Find("@Sound");
-        if (root == null)
+        if (instance == null)
         {
-            root = new GameObject { name = "@Sound" };
-            Object.DontDestroyOnLoad(root);
-
-            string[] soundNames = System.Enum.GetNames(typeof(Sound));
-            for (int i = 0; i < soundNames.Length; i++)
-            {
-                GameObject go = new GameObject { name = soundNames[i] };
-                audioSources[i] = go.AddComponent<AudioSource>();
-                go.transform.parent = root.transform;
-            }
-
-            audioSources[(int)Sound.Bgm].loop = true;
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
-    public void Clear()
+    public void SFXPlay(string sfxName, AudioClip clip)
     {
-        foreach (AudioSource audioSource in audioSources)
-        {
-            audioSource.clip = null;
-            audioSource.Stop();
-        }
+        GameObject go = new GameObject(sfxName + "Sound");
+        AudioSource audioSource = go.AddComponent<AudioSource>();
+        audioSource.clip = clip;
+        audioSource.Play();
 
-        audioClips.Clear();
+        Destroy(go, clip.length);
     }
-}
 
-public enum Sound
-{
-    Bgm,
-    Sfx,
-    MaxCount
+
 }

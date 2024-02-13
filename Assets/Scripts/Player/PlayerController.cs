@@ -27,13 +27,14 @@ public class PlayerController : MonoBehaviour
     public bool canLook = true;
 
     private Rigidbody _rigidbody;
+    private PlayerSound _playerSound; // 플레이어 사운드 관련 컴포넌트입니다.
 
     public static PlayerController instance;
     private void Awake()
     {
         instance = this;
         _rigidbody = GetComponent<Rigidbody>();
-
+        _playerSound = GetComponent<PlayerSound>();
     }
 
     void Start()
@@ -83,10 +84,12 @@ public class PlayerController : MonoBehaviour
         if (context.phase == InputActionPhase.Performed)
         {
             curMovementInput = context.ReadValue<Vector2>();
+            _playerSound.OnWalk();
         }
         else if (context.phase == InputActionPhase.Canceled)
         {
             curMovementInput = Vector2.zero;
+            _playerSound.OffWalk();
         }
     }
 
