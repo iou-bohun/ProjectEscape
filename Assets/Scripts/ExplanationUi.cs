@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 
 public class ExplanationUi : MonoBehaviour
 {
-    [SerializeField] Text ExplantText;
+    [SerializeField] TextMeshProUGUI ExplantText;
     [SerializeField] float distance;
     Camera _camera;
     ItemObject LookItem;
