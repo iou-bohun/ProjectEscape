@@ -75,13 +75,11 @@ public class Inventory : MonoBehaviour
     {
         if (items[index] == null)
         {
-            Debug.Log("1");
             if (HandItem != null)
             {
                 Destroy(HandItem.gameObject);
             }
             HandItem = null;
-            Debug.Log("2");
         }
         else if (HandItem == null && items[index] != null)
         {
