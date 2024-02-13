@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WindowEvent : MonoBehaviour
 {
-    [SerializeField] GameObject player;
     private Animator animator;
 
     private void Awake()
@@ -19,7 +18,7 @@ public class WindowEvent : MonoBehaviour
 
     public void ShakeWindow()
     {
-        animator.SetBool("ShakeWindow", true);
+        animator.SetBool("Shake", true);
     }
 
 }

@@ -22,13 +22,6 @@ public class EventManager : MonoBehaviour
 
     public void CallIBedRoomEvent()
     {
-        if (bedRoomEvent == null)
-        {
-            Debug.Log("Null");
-        }
-        else
-        {
-            bedRoomEvent();
-        }
+       bedRoomEvent?.Invoke();
     }
 }
