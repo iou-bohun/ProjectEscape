@@ -14,12 +14,15 @@ public class Inventory : MonoBehaviour
     int InventorySize = 4;
     [SerializeField] Transform handParent;
     [SerializeField] GameObject HandItem;
+    [SerializeField] Transform DropPos;
+    Camera _camera;
     private void Awake()
     {
         if (i == null)
         {
             i = this;
             items = new ItemData[InventorySize];
+            _camera = Camera.main;
         }
         else
         {
@@ -45,7 +48,8 @@ public class Inventory : MonoBehaviour
         {
             return;
         }
-        Instantiate(items[index].dropPrefab, dropPos.position, Quaternion.identity);
+        GameObject temp = Instantiate(items[index].dropPrefab, dropPos.position, Quaternion.identity);
+        //temp.GetComponent<Rigidbody>().velocity = Vector3.forward * 10;
         UpdateInvenUi(index);
         if (HandItem != null)
         {

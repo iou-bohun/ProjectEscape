@@ -21,33 +21,65 @@ public class InventoryInput : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Started)
         {
-            currentIndex = 0;
+            if (currentIndex != 0)
+            {
+                currentIndex = 0;
+                Hand();
+            }
+            else
+            {
+                Hand();
+                currentIndex = -1;
+            }
         }
-        Hand();
     }
     public void Item2Input(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
         {
-            currentIndex = 1;
+            if (currentIndex != 1)
+            {
+                currentIndex = 1;
+                Hand();
+            }
+            else
+            {
+                Hand();
+                currentIndex = -1;
+            }
         }
-        Hand();
     }
     public void Item3Input(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
         {
-            currentIndex = 2;
+            if (currentIndex != 2)
+            {
+                currentIndex = 2;
+                Hand();
+            }
+            else
+            {
+                Hand();
+                currentIndex = -1;
+            }
         }
-        Hand();
     }
     public void Item4Input(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
         {
-            currentIndex = 3;
+            if (currentIndex != 3)
+            {
+                currentIndex = 3;
+                Hand();
+            }
+            else
+            {
+                Hand();
+                currentIndex = -1;
+            }
         }
-        Hand();
     }
     void Hand()
     {
