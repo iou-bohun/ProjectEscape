@@ -12,16 +12,14 @@ public class WindowEvent : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-
-    private void Update()
+    private void Start()
     {
-        if(Vector3.Distance(transform.position, player.transform.position) < 10)
-        {
-            animator.SetBool("IsShaking", true);
-        }
-        else
-        {
-            animator.SetBool("IsShaking", false);
-        }
+        EventManager.I.bedRoomEvent += ShakeWindow;
     }
+
+    public void ShakeWindow()
+    {
+        animator.SetBool("ShakeWindow", true);
+    }
+
 }

@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         instance = this;
         _rigidbody = GetComponent<Rigidbody>();
-
+        
     }
 
     void Start()
