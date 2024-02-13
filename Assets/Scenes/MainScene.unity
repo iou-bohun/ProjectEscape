@@ -625,6 +625,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7e629da20f6fdee418e5e60ba9efc23c, type: 3}
   - {fileID: 8300000, guid: a04e8112fb4cca944baabc0048ff839d, type: 3}
   isRun: 0
+  isGrounded: 0
 --- !u!1 &128316112
 GameObject:
   m_ObjectHideFlags: 0
