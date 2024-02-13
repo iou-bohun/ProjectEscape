@@ -98,7 +98,10 @@ public class PlayerController : MonoBehaviour
         if (context.phase == InputActionPhase.Started)
         {
             if (IsGrounded())
+            {
                 _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
+                _playerSound.OnJump();
+            }
         }
     }
     private bool IsGrounded()
@@ -114,9 +117,11 @@ public class PlayerController : MonoBehaviour
         {
             if (Physics.Raycast(rays[i],0.1f, groundLayerMask))
             {
+                _playerSound.isGrounded = true;
                 return true; 
             }
         }
+        _playerSound.isGrounded = false;
         return false;
     }
 
