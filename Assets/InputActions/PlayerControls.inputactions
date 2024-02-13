@@ -42,18 +42,45 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ItemChoice",
-                    "type": "Value",
-                    "id": "7f960b45-ec5f-4350-b315-a6641df15545",
-                    "expectedControlType": "Key",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "DropItem",
                     "type": "Button",
                     "id": "0aeacb8a-ee6a-44a7-9705-0984f1135f34",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Item1",
+                    "type": "Button",
+                    "id": "e40a98ad-0ca0-4d7c-b564-42aa276daa61",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Item2",
+                    "type": "Button",
+                    "id": "e238a9e9-7fd1-409c-b205-2ae763b45540",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Item3",
+                    "type": "Button",
+                    "id": "b70d1476-c2ce-4b50-b804-c99820eaddad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Item4",
+                    "type": "Button",
+                    "id": "733f72cc-bb2b-4a21-8bfc-46229e5a996c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -162,45 +189,45 @@
                 },
                 {
                     "name": "",
-                    "id": "3e28dd0a-50eb-4c86-8afa-dc4bf1f32ad9",
+                    "id": "dc99ec25-e63b-44f5-b80b-6672177d194b",
                     "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ItemChoice",
+                    "action": "Item1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "97466934-2177-4e26-995b-809a33d9e67f",
+                    "id": "e6175a90-e088-49af-ab4f-23d84c5a31f1",
                     "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ItemChoice",
+                    "action": "Item2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "586fab8d-d0cf-471f-a84a-39ea18db21cb",
+                    "id": "fbcc5d6f-f18e-4a05-b156-77fdc179af9e",
                     "path": "<Keyboard>/3",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ItemChoice",
+                    "action": "Item3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "149bce7b-c0e7-472f-9642-e33360891bf5",
+                    "id": "79d1d13f-c1bb-4c66-8f9f-eb456ea0556f",
                     "path": "<Keyboard>/4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ItemChoice",
+                    "action": "Item4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
