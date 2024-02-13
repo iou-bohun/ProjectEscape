@@ -18,13 +18,27 @@ public class SoundManager : MonoBehaviour
             root = new GameObject { name = "@Sound" };
             Object.DontDestroyOnLoad(root);
 
-            // string[] soundNames = Syst
+            string[] soundNames = System.Enum.GetNames(typeof(Sound));
+            for (int i = 0; i < soundNames.Length; i++)
+            {
+                GameObject go = new GameObject { name = soundNames[i] };
+                audioSources[i] = go.AddComponent<AudioSource>();
+                go.transform.parent = root.transform;
+            }
+
+            audioSources[(int)Sound.Bgm].loop = true;
         }
     }
 
     public void Clear()
     {
-        // 여기서 재생되던 오브젝트를 Clear합니다.
+        foreach (AudioSource audioSource in audioSources)
+        {
+            audioSource.clip = null;
+            audioSource.Stop();
+        }
+
+        audioClips.Clear();
     }
 }
 

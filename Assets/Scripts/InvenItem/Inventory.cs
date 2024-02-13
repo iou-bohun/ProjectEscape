@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public static Inventory i;
     [SerializeField] Transform dropPos;
     [SerializeField] GameObject inventoryUi;
-    Item[] items;
+    ItemData[] items;
     int InventorySize = 4;
     [SerializeField] Transform handParent;
     [SerializeField] GameObject HandItem;
@@ -19,14 +19,14 @@ public class Inventory : MonoBehaviour
         if (i == null)
         {
             i = this;
-            items = new Item[InventorySize];
+            items = new ItemData[InventorySize];
         }
         else
         {
             Destroy(this);
         }
     }
-    public bool GetItem(Item AnItem)
+    public bool GetItem(ItemData AnItem)
     {
         for (int i = 0; i < items.Length; i++)
         {
@@ -45,7 +45,7 @@ public class Inventory : MonoBehaviour
         {
             return;
         }
-        Instantiate(items[index].itemPrefab, dropPos.position, Quaternion.identity);
+        Instantiate(items[index].dropPrefab, dropPos.position, Quaternion.identity);
         UpdateInvenUi(index);
         if (HandItem != null)
         {
@@ -54,13 +54,13 @@ public class Inventory : MonoBehaviour
         }
         items[index] = null;
     }
-    void UpdateInvenUi(int index, Item AnItem)
+    void UpdateInvenUi(int index, ItemData AnItem)
     {
         if (AnItem != null)
         {
             GameObject slotImage = new GameObject();
             slotImage.transform.SetParent(inventoryUi.transform.GetChild(index).transform);
-            slotImage.AddComponent<Image>().sprite = AnItem.itemImage;
+            slotImage.AddComponent<Image>().sprite = AnItem.icon;
             slotImage.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
         }
     }
