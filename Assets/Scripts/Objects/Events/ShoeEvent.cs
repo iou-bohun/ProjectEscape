@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ShoeEvent : MonoBehaviour
 {
-    [SerializeField] private Transform originPosition;
     [SerializeField] private Transform eventPosition;
 
     private bool isMoved = false;
@@ -16,6 +15,11 @@ public class ShoeEvent : MonoBehaviour
 
     private void MoveObject()
     {
-        Debug.Log("신발 이동");
+        
+        if (!isMoved)
+        {
+            isMoved = true;
+            transform.position = eventPosition.transform.position;
+        }
     }
 }
