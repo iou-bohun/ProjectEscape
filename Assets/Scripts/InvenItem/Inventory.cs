@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -15,6 +17,11 @@ public class Inventory : MonoBehaviour
     [SerializeField] Transform handParent;
     [SerializeField] GameObject HandItem;
     [SerializeField] Transform DropPos;
+
+    [Header("Examine")]
+    [SerializeField] GameObject desctiptionUI;
+    [SerializeField] TextMeshProUGUI desctiptionText;
+    [SerializeField] Image handItemImage;
     Camera _camera;
     private void Awake()
     {
@@ -101,6 +108,33 @@ public class Inventory : MonoBehaviour
             Destroy(HandItem.gameObject);
             HandItem = Instantiate(items[index].handPrefab, handParent);
             HandItem.name = items[index].handPrefab.name;
+        }
+    }
+
+    public void ShowExmineUI()
+    {
+        desctiptionUI.gameObject.SetActive(true);
+        desctiptionText.text = null;
+        handItemImage.sprite = null;
+    }
+    public void HideExaminUI()
+    {
+        desctiptionUI.gameObject.SetActive(false);
+    }
+    public void SetExamineItem(int index) 
+    {
+       if(index == -1)
+        {
+            return;
+        }
+        if (items[index] == null)
+        {
+            return;
+        }
+        else
+        {
+            desctiptionText.text = items[index].description;
+            handItemImage.sprite = items[index].icon;
         }
     }
 }

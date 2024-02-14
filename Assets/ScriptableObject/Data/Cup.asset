@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
-  m_Name: RedEnvelope
+  m_Name: Cup
   m_EditorClassIdentifier: 
-  disPlayName: RedEnvelope
-  description: 
+  disPlayName: "\uCEF5"
+  description: "\uBD80\uC5CC\uC5D0 \uC788\uB358 \uCEF5\uC774\uB2E4"
   type: 0
   icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  dropPrefab: {fileID: 3887925963380329584, guid: ec5788882dfbe934d8bf5fd2e122b989, type: 3}
-  handPrefab: {fileID: 3887925963380329584, guid: 5a39afce782ff774aaeca24e01e725a3, type: 3}
+  dropPrefab: {fileID: 1630150342311449091, guid: 0febcc7d479204146befbd922537fed6, type: 3}
+  handPrefab: {fileID: 1630150342311449091, guid: e80d8a9e314ca7b41b37ffd2b96d6b05, type: 3}
