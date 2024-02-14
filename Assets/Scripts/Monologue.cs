@@ -11,9 +11,17 @@ public class Monologue : MonoBehaviour
     {
         i = this;
     }
-    public void CallMonologue(string mono, float time)
+    public void ET(Talk[] talk)
     {
-        StartCoroutine(PopUpMonologue(mono, new WaitForSeconds(time)));
+        StartCoroutine(CallMonologue(talk));
+    }
+    IEnumerator CallMonologue(Talk[] talk)
+    {
+        for (int i = 0; i < talk.Length; i++)
+        {
+            StartCoroutine(PopUpMonologue(talk[i].mono, new WaitForSeconds(talk[i].stayTime)));
+            yield return new WaitForSeconds(talk[i].waitTime);
+        }
     }
     IEnumerator PopUpMonologue(string monologue,WaitForSeconds time)
     {
