@@ -32,11 +32,13 @@ public class ItemObjects : MonoBehaviour, IInteractable
         return string.Format("Pickup {0}", item.disPlayName);
     }
 
-    //ÇÃ·¹ÀÌ¾î »óÈ£ÀÛ¿ëÅ° (E) 
+    //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½È£ï¿½Û¿ï¿½Å° (E) 
     public void OnInteract()
     {
-        Inventory.i.GetItem(item);
-        GameManager.Instance.OnLoopEvent -= LoopItem;
-        Destroy(gameObject);
+        if (Inventory.i.GetItem(item))
+        {
+            GameManager.Instance.OnLoopEvent -= LoopItem;
+            Destroy(gameObject);
+        }
     }
 }
