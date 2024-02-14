@@ -1190,6 +1190,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7041944011145586497, guid: 04fb2b1d535107b4e83e5ba7b40083d4, type: 3}
   m_PrefabInstance: {fileID: 504229220}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &514846535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514846537}
+  - component: {fileID: 514846536}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &514846536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514846535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91373d384d29fe94fb74e5428db1e519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &514846537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514846535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.927319, y: 10.578865, z: 5.5544405}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2014235646}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &518002634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1467,26 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
+    - target: {fileID: 5803694307818281246, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: doorOpenedSound.Path
+      value: event:/DoorOpened
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803694307818281246, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: doorOpenedSound.Guid.Data1
+      value: 907089142
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803694307818281246, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: doorOpenedSound.Guid.Data2
+      value: 1322598421
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803694307818281246, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: doorOpenedSound.Guid.Data3
+      value: -893673595
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803694307818281246, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: doorOpenedSound.Guid.Data4
+      value: -1801295552
+      objectReference: {fileID: 0}
     - target: {fileID: 6109867029936467094, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3432,6 +3497,92 @@ Transform:
   m_Father: {fileID: 84078211}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2014235645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2014235646}
+  - component: {fileID: 2014235647}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2014235646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014235645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 514846537}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2014235647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014235645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02bac1f32500ffd4da36821b69c13d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <footstepsWalkRock>k__BackingField:
+    Guid:
+      Data1: 2022746443
+      Data2: 1108251380
+      Data3: 1053576109
+      Data4: -1603398404
+    Path: event:/SFX/Player/FootstepsWalkRock
+  <footstepsRunRock>k__BackingField:
+    Guid:
+      Data1: -366019374
+      Data2: 1157201400
+      Data3: 2126933423
+      Data4: -242417489
+    Path: event:/SFX/Player/FootstepsRunRock
+  <footstepsJumpRock>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <footstepsLandRock>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <doorOpened>k__BackingField:
+    Guid:
+      Data1: 907089142
+      Data2: 1322598421
+      Data3: -893673595
+      Data4: -1801295552
+    Path: event:/SFX/Door/DoorOpened
+  <doorClosed>k__BackingField:
+    Guid:
+      Data1: 1340258714
+      Data2: 1308035453
+      Data3: 656644483
+      Data4: 1272603255
+    Path: event:/SFX/Door/DoorClosed
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0
