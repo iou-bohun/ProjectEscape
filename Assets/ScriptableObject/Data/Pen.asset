@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
   m_Name: Pen
   m_EditorClassIdentifier: 
-  disPlayName: 
+  disPlayName: pen
   description: 
   type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
-  handPrefab: {fileID: 0}
+  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  dropPrefab: {fileID: 3019204093293564581, guid: 303c793160c045d4ea67186df1c311f5, type: 3}
+  handPrefab: {fileID: 183294508282664967, guid: d28ef569cf2cc954a94cdaa6868ea161, type: 3}
