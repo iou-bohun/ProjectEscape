@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class InventoryInput : MonoBehaviour
 {
-    int currentIndex = -1;
+    public int currentIndex = -1;
 
     public void DropItemInput(InputAction.CallbackContext context)
     {
@@ -86,4 +87,17 @@ public class InventoryInput : MonoBehaviour
         Inventory.i.CatchItem(currentIndex);
     }
     #endregion
+
+    public void ExamineInput(InputAction.CallbackContext context)
+    {
+        if(context.phase == InputActionPhase.Started)
+        {
+            Inventory.i.ShowExmineUI();
+            Inventory.i.SetExamineItem(currentIndex);
+        }
+        else if(context.phase == InputActionPhase.Canceled)
+        {
+            Inventory.i.HideExaminUI();
+        }
+    }
 }
