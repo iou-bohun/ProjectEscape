@@ -23,16 +23,17 @@ public class CallMono : MonoBehaviour
     {
         if (type == Type.PickUp)
         {
-            Monologue.i.ET(monos);
+            Monologue.i?.ET(monos);
         }
     }
     private void OnTriggerEnter(Collider other)
     {
         if (type == Type.Enter)
         {
-            if (LayerMask.NameToLayer("Player") == (LayerMask.NameToLayer("Player") | (1 << other.gameObject.layer)))
+            if (LayerMask.GetMask("Player") == (LayerMask.GetMask("Player") | (1 << other.gameObject.layer)))
             {
                 Monologue.i.ET(monos);
+                Destroy(gameObject);
             }
 
         }

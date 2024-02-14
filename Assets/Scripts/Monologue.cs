@@ -13,6 +13,10 @@ public class Monologue : MonoBehaviour
     }
     public void ET(Talk[] talk)
     {
+        if (i == null)
+        {
+            return;
+        }
         StartCoroutine(CallMonologue(talk));
     }
     IEnumerator CallMonologue(Talk[] talk)
