@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
+  m_Name: SaltPaper
+  m_EditorClassIdentifier: 
+  disPlayName: "\uC885\uC774\uB85C \uC2FC \uC18C\uAE08"
+  description: "\uC815\uB9D0 \uD6A8\uACFC\uAC00 \uC788\uC744\uAE4C?"
+  type: 0
+  icon: {fileID: 21300000, guid: 32460ac3a4956164fbd5a67e9588a874, type: 3}
+  dropPrefab: {fileID: 5212162314470493674, guid: a08f98b6e641cc24ea72a553cf5322b6, type: 3}
+  handPrefab: {fileID: 5212162314470493674, guid: cb7b9d285cb34404aa035abd27199fea, type: 3}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
+  m_Name: FlashLight
+  m_EditorClassIdentifier: 
+  disPlayName: "\uC190\uC804\uB4F1"
+  description: "\uBC30\uD130\uB9AC\uAC00 \uC5BC\uB9C8 \uB0A8\uC9C0 \uC54A\uC558\uB2E4..."
+  type: 0
+  icon: {fileID: 21300000, guid: f1a6a24c1dfc219468c0d662d96ff197, type: 3}
+  dropPrefab: {fileID: 1002705123656268, guid: d86ca2f4159e6a942abd8dfc52b38395, type: 3}
+  handPrefab: {fileID: 1002705123656268, guid: 95590aded65313c4ea70b4aa9c7069c4, type: 3}
