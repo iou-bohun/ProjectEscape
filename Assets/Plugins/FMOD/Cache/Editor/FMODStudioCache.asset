@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5841911134182231082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/FootstepsLandRock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/FootstepsLandRock
+  Guid:
+    Data1: 1798862298
+    Data2: 1091701523
+    Data3: -1029444931
+    Data4: 604995403
+  Banks:
+  - {fileID: 5413620510179083598}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3730449556136908926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,7 +69,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638435540944494753
+  lastModified: 638435548400561101
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -68,12 +95,14 @@ MonoBehaviour:
   - {fileID: 8917928750814824219}
   - {fileID: 5611241501765630989}
   - {fileID: 4089917536400138660}
+  - {fileID: 5282644917988418615}
+  - {fileID: -5841911134182231082}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3730449556136908926}
   StringsBanks:
   - {fileID: 3233777207860034143}
-  cacheTime: 638435540945459041
+  cacheTime: 638435548401646799
   cacheVersion: 131616
 --- !u!114 &3233777207860034143
 MonoBehaviour:
@@ -90,10 +119,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638435540944534637
+  lastModified: 638435548400600993
   FileSizes:
   - Name: Desktop
-    Value: 980
+    Value: 1058
   Exists: 1
 --- !u!114 &4089917536400138660
 MonoBehaviour:
@@ -122,6 +151,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 350
+--- !u!114 &5282644917988418615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/FootstepsJumpRock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/FootstepsJumpRock
+  Guid:
+    Data1: -1896545362
+    Data2: 1087456708
+    Data3: -817744741
+    Data4: -744113056
+  Banks:
+  - {fileID: 5413620510179083598}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5413620510179083598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,10 +193,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638435540945459041
+  lastModified: 638435548401646799
   FileSizes:
   - Name: Desktop
-    Value: 136480
+    Value: 189664
   Exists: 1
 --- !u!114 &5611241501765630989
 MonoBehaviour:

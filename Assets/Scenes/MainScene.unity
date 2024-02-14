@@ -3557,18 +3557,18 @@ MonoBehaviour:
     Path: event:/SFX/Player/FootstepsRunRock
   <footstepsJumpRock>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1896545362
+      Data2: 1087456708
+      Data3: -817744741
+      Data4: -744113056
+    Path: event:/SFX/Player/FootstepsJumpRock
   <footstepsLandRock>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1798862298
+      Data2: 1091701523
+      Data3: -1029444931
+      Data4: 604995403
+    Path: event:/SFX/Player/FootstepsLandRock
   <doorOpened>k__BackingField:
     Guid:
       Data1: 907089142

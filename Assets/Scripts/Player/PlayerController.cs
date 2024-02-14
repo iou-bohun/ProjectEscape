@@ -4,6 +4,7 @@ using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using FMOD.Studio;
+using System.Runtime.CompilerServices;
 
 public class PlayerController : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour
     private EventInstance footstepsWalkRock;
     private EventInstance footstepsRunRock;
     private bool isRunning = false;
-
+    private bool isGroundedOnce = false;
 
 
 
@@ -110,6 +111,7 @@ public class PlayerController : MonoBehaviour
             if (IsGrounded())
             {
                 _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.footstepsJumpRock, this.transform.position);
             }
         }
     }
@@ -169,6 +171,12 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateSound()
     {
+        PlayerLandingSound();
+        PlayerMovingSound();
+    }
+
+    private void PlayerMovingSound()
+    {
         float x = _rigidbody.velocity.x;
         float z = _rigidbody.velocity.z;
         bool isStopped = (x == 0 || z == 0) ? true : false;
@@ -202,6 +210,21 @@ public class PlayerController : MonoBehaviour
             footstepsRunRock.stop(STOP_MODE.ALLOWFADEOUT);
         }
     }
+
+    private void PlayerLandingSound()
+    {
+        if (IsGrounded() && !isGroundedOnce)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.footstepsLandRock, this.transform.position);
+            isGroundedOnce = true;
+        }
+        else if (!IsGrounded() && isGroundedOnce)
+        {
+            isGroundedOnce = false;
+        }
+    }
 }
+
+
 
 
