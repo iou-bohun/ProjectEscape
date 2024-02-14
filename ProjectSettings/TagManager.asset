@@ -12,6 +12,7 @@ TagManager:
   - RunSFX
   - JumpStartSFX
   - JumpLandSFX
+  - OriginPosition
   layers:
   - Default
   - TransparentFX
