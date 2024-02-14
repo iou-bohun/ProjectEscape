@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,21 +10,18 @@ public class LightObject : MonoBehaviour
     private Light _light;
     public GameObject _glove;
     private Renderer _glovematerial;
-    bool isTurnOnLight;
+    private bool isTurnOnLight;
+    WaitForSeconds sensorTime;
 
-    // Start is called before the first frame update
-    void Start()
+    protected virtual void Awake()
     {
         _light = GetComponentInChildren<Light>();
         _glovematerial = _glove.GetComponent<Renderer>();
         isTurnOnLight = true;
+        sensorTime = new WaitForSeconds(3f);
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnOffLight()
     {
@@ -39,6 +38,38 @@ public class LightObject : MonoBehaviour
                 _light.enabled = true;
                 isTurnOnLight = true;
                 _glovematerial.material.EnableKeyword("_EMISSION");
+            }
+        }
+    }
+    public void OnLight()
+    {
+        if (_light != null)
+        {
+            if (!isTurnOnLight)
+            {
+                _light.enabled = true;
+                isTurnOnLight = true;
+                _glovematerial.material.EnableKeyword("_EMISSION");
+            }
+        }
+    }
+
+    public void OffLight()
+    {
+        StartCoroutine(OffTimer());
+        
+    }
+
+    IEnumerator OffTimer()
+    {
+        yield return sensorTime;
+        if (_light != null)
+        {
+            if (isTurnOnLight)
+            {
+                _light.enabled = false;
+                isTurnOnLight = false;
+                _glovematerial.material.DisableKeyword("_EMISSION");
             }
         }
     }
