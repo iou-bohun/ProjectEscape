@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73d02d268b4a48846980835688f27ea0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.908184
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73d02d268b4a48846980835688f27ea0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.022
+      value: -0.176
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73d02d268b4a48846980835688f27ea0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.7324982
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 73d02d268b4a48846980835688f27ea0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b2cedb4fc20e0b441b4446d832eec5fa, type: 2}
     - target: {fileID: 919132149155446097, guid: 73d02d268b4a48846980835688f27ea0, type: 3}
       propertyPath: m_Name
-      value: amulet
+      value: Hand-amulet
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 73d02d268b4a48846980835688f27ea0, type: 3}
       propertyPath: m_Layer

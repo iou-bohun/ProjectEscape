@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
+  m_Name: Envelope
+  m_EditorClassIdentifier: 
+  disPlayName: Envelope
+  description: 
+  type: 0
+  icon: {fileID: 0}
+  dropPrefab: {fileID: 3887925963380329584, guid: 00bb9a547aef1bb488a28693779749e2, type: 3}
+  handPrefab: {fileID: 3887925963380329584, guid: beaeee1808910b64b9811f30d811eb31, type: 3}
