@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
   m_Name: Towel
   m_EditorClassIdentifier: 
-  disPlayName: 
-  description: 
+  disPlayName: "\uC218\uAC74"
+  description: "\uAE68\uB057\uD55C \uC218\uAC74\uC774\uB2E4."
   type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
-  handPrefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 946c2c0e3712271429a3c2ddcd3e3f6e, type: 3}
+  dropPrefab: {fileID: 1126618062239900, guid: c8e601c8442bfd94db0da5b827dce55f, type: 3}
+  handPrefab: {fileID: 1126618062239900, guid: 925a6c82c86da6840985a335a595bd06, type: 3}

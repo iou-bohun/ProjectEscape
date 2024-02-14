@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
   m_Name: vase
   m_EditorClassIdentifier: 
-  disPlayName: 
-  description: 
+  disPlayName: "\uAF43\uBCD1"
+  description: "\uC7A5\uC2DD\uC6A9\uC774\uB2E4."
   type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
-  handPrefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 80ed7500b8052e746a05ce829b46101d, type: 3}
+  dropPrefab: {fileID: 1793962074114846, guid: 2ab45d25502563147b939a89ee7d2100, type: 3}
+  handPrefab: {fileID: 1793962074114846, guid: a7da428f15dc389488719b40b20ac327, type: 3}
