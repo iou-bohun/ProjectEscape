@@ -3331,7 +3331,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3954166741047917518}
-  - component: {fileID: 7842102071194824926}
   m_Layer: 7
   m_Name: Shield Metall Steel
   m_TagString: Untagged
@@ -3394,29 +3393,8 @@ Transform:
   - {fileID: 6216767018487287951}
   - {fileID: 3297462055378146261}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 88.999, y: -86.671005, z: -174.91501}
---- !u!95 &7842102071194824926
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7829318846681949168}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: e35379fad6334164186a552d0738df36, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8068134845026912707
 GameObject:
   m_ObjectHideFlags: 0
@@ -3511,6 +3489,9 @@ GameObject:
   - component: {fileID: 1167373350409076892}
   - component: {fileID: 3571286138102989081}
   - component: {fileID: 4650505847527993277}
+  - component: {fileID: 7324716854357799929}
+  - component: {fileID: 4931509436478021676}
+  - component: {fileID: 2157969209749955630}
   m_Layer: 7
   m_Name: Cup
   m_TagString: Untagged
@@ -3585,6 +3566,63 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7324716854357799929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332792569335476000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f1e84ab42efef4faf99a0b000a624c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openandclose: {fileID: 4931509436478021676}
+  open: 0
+  Player: {fileID: 0}
+--- !u!95 &4931509436478021676
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332792569335476000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e50b1e8a89617de49851c50e01b28e81, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &2157969209749955630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332792569335476000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3737625, y: 0.86576223, z: 0.047257666}
+  m_Center: {x: 0.00000037436757, y: 0.4340196, z: -0.022473859}
 --- !u!1 &8467610812269902148
 GameObject:
   m_ObjectHideFlags: 0
