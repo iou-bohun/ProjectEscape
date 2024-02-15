@@ -12,7 +12,6 @@ public class LightObject : MonoBehaviour
     public Light _reflexlight;
     private Renderer _glovematerial;
     private bool isTurnOnLight;
-    private bool isBlackOut;
     private float targetIntensity;
     WaitForSeconds sensorTime;
     WaitForSeconds flickerTime;
@@ -51,7 +50,6 @@ public class LightObject : MonoBehaviour
     }
     public void OnLight()
     {
-        isBlackOut = LightManager.instance.isBlackOutEvent;
         if (_light != null)
         {
             _light.intensity = 1;
@@ -80,7 +78,6 @@ public class LightObject : MonoBehaviour
     }
     public void BlackOutCorridor()
     {
-        isBlackOut = LightManager.instance.isBlackOutEvent;
         StartCoroutine(BlackOut());
     }
     public void OffCorridor()
@@ -106,12 +103,12 @@ public class LightObject : MonoBehaviour
     {
         while (true)
         {
-            if (isBlackOut && _light != null) 
+            if (LightManager.instance.isBlackOutEvent && _light != null) 
             {
                 if (_light.intensity > 0)
                 {
                     _light.intensity = UnityEngine.Random.Range(0f, targetIntensity);
-                    targetIntensity -= UnityEngine.Random.Range(-0.007f, 0.01f);
+                    targetIntensity -= UnityEngine.Random.Range(-0.005f, 0.01f);
                     yield return flickerTime;
                 }
                 else

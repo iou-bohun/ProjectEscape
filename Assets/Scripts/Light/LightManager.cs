@@ -57,7 +57,7 @@ public class LightManager : MonoBehaviour
     }
     public void CallBlackOutEvent()
     {
-        if (isBlackOutEvent)
+        if (!isBlackOutEvent)
             OnBlackOutEvent?.Invoke();
     }
 
