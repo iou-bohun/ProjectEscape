@@ -67,7 +67,7 @@ Transform:
   - {fileID: 7873375188225359434}
   - {fileID: 4549493286115984858}
   - {fileID: 6110235677337724801}
-  - {fileID: 6688712459595206706}
+  - {fileID: 8955908193321769518}
   - {fileID: 8310893410389282646}
   m_Father: {fileID: 7848050134911269831}
   m_RootOrder: -1
@@ -194,7 +194,7 @@ ReflectionProbe:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IntensityMultiplier: 2
+  m_IntensityMultiplier: 0.15
   m_BlendDistance: 1
   m_HDR: 1
   m_BoxProjection: 0
@@ -382,17 +382,17 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 30.998823, y: 8.390142, z: 25.667686}
-  m_BoxOffset: {x: 11.665061, y: -0.8049288, z: -6.758646}
-  m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 100
+  m_BoxSize: {x: 30.998823, y: 9.452177, z: 41.46489}
+  m_BoxOffset: {x: 11.665061, y: -0.27391148, z: 1.1399574}
+  m_NearClip: 1
+  m_FarClip: 100
+  m_ShadowDistance: 200
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.8235582, g: 0.8445535, b: 0.8773585, a: 0}
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IntensityMultiplier: 2
+  m_IntensityMultiplier: 0.15
   m_BlendDistance: 1
   m_HDR: 1
   m_BoxProjection: 0
@@ -911,7 +911,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17479ab54b79f384aad6e6dd9731b87c, type: 3}
---- !u!4 &6688712459595206706 stripped
+--- !u!4 &8955908193321769518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2349422728258423327, guid: 17479ab54b79f384aad6e6dd9731b87c, type: 3}
   m_PrefabInstance: {fileID: 6688712459595206705}
@@ -985,12 +985,20 @@ PrefabInstance:
       value: Lamp2
       objectReference: {fileID: 0}
     - target: {fileID: 7328849769273437004, guid: ef18f8ef490ae1245824b220e0887ab1, type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328849769273437004, guid: ef18f8ef490ae1245824b220e0887ab1, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7328849769273437004, guid: ef18f8ef490ae1245824b220e0887ab1, type: 3}
       propertyPath: m_DrawHalo
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328849769273437004, guid: ef18f8ef490ae1245824b220e0887ab1, type: 3}
+      propertyPath: m_SpotAngle
+      value: 173.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1068,8 +1076,16 @@ PrefabInstance:
       value: Lamp1
       objectReference: {fileID: 0}
     - target: {fileID: 7328849769273437004, guid: ef18f8ef490ae1245824b220e0887ab1, type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328849769273437004, guid: ef18f8ef490ae1245824b220e0887ab1, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328849769273437004, guid: ef18f8ef490ae1245824b220e0887ab1, type: 3}
+      propertyPath: m_SpotAngle
+      value: 173.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
