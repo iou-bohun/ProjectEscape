@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if(completePaper != null&& completePaper.activeInHierarchy)
+        {
+            return;
+        }
+        else
         LoopPlayer();
     }
 
@@ -37,8 +42,6 @@ public class GameManager : MonoBehaviour
         {
             if (player.transform.position.x >= 15.5f && player.transform.position.y >= 4.2f)
             {
-                if (completePaper.activeInHierarchy)
-                    return;
                 player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
                 CallLoopEvent();
 
