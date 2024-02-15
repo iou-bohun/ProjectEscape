@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 using FMOD.Studio;
 
+
+[RequireComponent(typeof(StudioEventEmitter))]
 public class WindowEvent : MonoBehaviour
 {
     private Animator animator;
 
     // Audio
-    private EventInstance windowRattle;
-    private bool isRattle;
-    private bool isRattleOnce;
+    private StudioEventEmitter emitter;
 
     private void Awake()
     {
@@ -20,42 +21,34 @@ public class WindowEvent : MonoBehaviour
     private void Start()
     {
         EventManager.I.bedRoomEvent += ShakeWindow;
-        windowRattle = AudioManager.instance.CreateInstace(FMODEvents.instance.windowRattle);
-        isRattle = false;
-        isRattleOnce = false;
-    }
-
-    private void Update()
-    {
-        UpdateSound();
+        EventManager.I.livingRoomEvent += CloseWindow;
+        emitter = AudioManager.instance.InitializeEventEmitter(FMODEvents.instance.windowRattle, this.gameObject);
     }
 
     public void ShakeWindow()
     {
-        animator.SetBool("Shake", true);
-        isRattle = true;
-        StartCoroutine(EndEvent());
-    }
-
-    private void UpdateSound()
-    {
-        if (isRattle && !isRattleOnce)
+        if (!emitter.IsActive)
         {
-            windowRattle.setParameterByName("WindowRattleEnd", 0f);
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.windowRattle, this.transform.position);
-            isRattleOnce = true;
-        }
-        else if (!isRattle && isRattleOnce)
-        {
-            windowRattle.setParameterByName("WindowRattleEnd", 1.0f);
+            animator.SetBool("Shake", true);
+            emitter.SetParameter("WindowRattleEnd", 0.1f);
+            emitter.Play();
         }
     }
 
-    //End Shaking
-    IEnumerator EndEvent()
+    public void CloseWindow()
     {
-        yield return new WaitForSeconds(10f);
+        if(emitter.IsActive)
+        {
+            StartCoroutine(CloseSequence());
+        }
+    }
+
+    IEnumerator CloseSequence()
+    {
+        yield return new WaitForSeconds(5f);
+        emitter.SetParameter("WindowRattleEnd", 1.0f);
+        yield return new WaitForSeconds(3f);
         animator.SetBool("Shake", false);
+        emitter.Stop();
     }
-
 }
