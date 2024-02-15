@@ -15,7 +15,7 @@ namespace SojaExiles
         void Start()
 		{
 			open = false;
-            Player = GameManager.Instance.player.transform;
+            Player = GameManager.Instance.player.GetComponent<Transform>();
         }
 
 		void OnMouseOver()
