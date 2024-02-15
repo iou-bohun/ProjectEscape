@@ -109,9 +109,11 @@ public class GameManager : MonoBehaviour
     public void Clear()
     {
         stage++;
+        PlayerPrefs.SetInt("stage",stage);
     }
     public void UnClear()
     {
         stage--;
+        PlayerPrefs.SetInt("stage", stage);
     }
 }
