@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
     {
         DiePanel.SetActive(true);
         yield return waitSceneTime;
+        DiePanel.SetActive(false);
         SceneManager.LoadScene(SceneManager.loadedSceneCount);
     }
     public void Clear()
