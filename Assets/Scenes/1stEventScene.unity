@@ -2469,7 +2469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ff2e71067c7a742866e997c93ce809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handFlash: 0
 --- !u!4 &930562687
 Transform:
   m_ObjectHideFlags: 0
@@ -2515,11 +2514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 84078207}
-  DiePanel: {fileID: 0}
   completePaper: {fileID: 0}
-  isCanGoRoofTop: 0
-  isClearStage: 0
-  stage: 1
 --- !u!4 &931614612
 Transform:
   m_ObjectHideFlags: 0
@@ -4273,7 +4268,7 @@ MonoBehaviour:
       Data2: 1261386035
       Data3: -332541807
       Data4: 407936896
-    Path: event:/SFX/ItemSounds/Paper/PaperMovement
+    Path: event:/SFX/Paper/PaperMovement
   <cabinetOpened>k__BackingField:
     Guid:
       Data1: -576751600
@@ -4302,27 +4297,6 @@ MonoBehaviour:
       Data3: -986328147
       Data4: 20924053
     Path: event:/SFX/Cabinet/SmallCabinetClosed
-  <buzz1>k__BackingField:
-    Guid:
-      Data1: -1744982108
-      Data2: 1121968356
-      Data3: 1688027295
-      Data4: 1559954256
-    Path: event:/SFX/Electric Buzz/Buzz1
-  <glassBreaking>k__BackingField:
-    Guid:
-      Data1: 725047383
-      Data2: 1122156522
-      Data3: 1938496444
-      Data4: 1815705964
-    Path: event:/SFX/Glass/GlassBreaking
-  <firstLooped>k__BackingField:
-    Guid:
-      Data1: 864546987
-      Data2: 1319031821
-      Data3: 439246490
-      Data4: -1490828510
-    Path: event:/Ambient/Mysterious/FirstLooped
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0

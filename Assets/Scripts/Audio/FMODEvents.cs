@@ -41,16 +41,6 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference smallCabinetOpened { get; private set; }
     [field: SerializeField] public EventReference smallCabinetClosed { get; private set; }
 
-    [field: Header("Electric Buzz")]
-    [field: SerializeField] public EventReference buzz1 { get; private set; }
-
-    [field: Header("Other SFXs")]
-    [field: SerializeField] public EventReference glassBreaking { get; private set; }
-
-
-    [field: Header("Ambients")]
-    [field: SerializeField] public EventReference firstLooped { get; private set; }
-
 
     public static FMODEvents instance {  get; private set; }
 
@@ -58,7 +48,7 @@ public class FMODEvents : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("Sceneï¿½ï¿½ ï¿½ï¿½ï¿½îµµ ï¿½Ï³ï¿½ï¿½ï¿½ FMODEventsï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
+            Debug.LogError("Scene¿¡ Àû¾îµµ ÇÏ³ªÀÇ FMODEvents°¡ Á¸ÀçÇÏ´Â Áö È®ÀÎÇÏ¼¼¿ä.");
         }
         instance = this;
     }
