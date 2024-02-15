@@ -1724,6 +1724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomReDesign
       objectReference: {fileID: 0}
+    - target: {fileID: 2873743388245770177, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2993158130253781806, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: Player
       value: 
@@ -1750,7 +1754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6109867029936467094, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 6109867029936467094, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: m_LocalRotation.w

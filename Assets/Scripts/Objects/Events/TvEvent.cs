@@ -5,7 +5,7 @@ using UnityEngine.Video;
 
 public class TvEvent : MonoBehaviour
 {
-    [SerializeField] private VideoPlayer _videoPlayer;
+    private VideoPlayer _videoPlayer;
 
     private void Start()
     {
@@ -13,6 +13,7 @@ public class TvEvent : MonoBehaviour
         EventManager.I.livingRoomEvent += PlayVideo;
     }
 
+    //On TV
     private void PlayVideo()
     {
         _videoPlayer.enabled = true;
@@ -20,6 +21,7 @@ public class TvEvent : MonoBehaviour
         StartCoroutine(OffVideo()); 
     }
 
+    //OffTV
     IEnumerator OffVideo()
     {
         yield return new WaitForSeconds(10f);
