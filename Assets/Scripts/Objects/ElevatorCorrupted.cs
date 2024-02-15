@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElevatorButton : MonoBehaviour
+public class ElevatorCorrupted : MonoBehaviour
 {
     public Transform Player;
 
@@ -30,6 +30,6 @@ public class ElevatorButton : MonoBehaviour
     {
         print("Elevator Called");
         yield return new WaitForSeconds(.5f);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.elevatorVoice, this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.corruptedVoice, this.transform.position);
     }
 }

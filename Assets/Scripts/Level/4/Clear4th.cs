@@ -19,7 +19,7 @@ public class Clear4th : MonoBehaviour
                 clearCount++;   
             }
         }
-        if (clearCount >= 1 && !isChecked)
+        if (clearCount >= 3&& !isChecked)
         {
             GameManager.Instance.Clear();
             isChecked = true;
