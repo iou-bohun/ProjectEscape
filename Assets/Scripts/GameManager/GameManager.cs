@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
         
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
+        SceneManager.sceneLoaded += PlayClearSFX;
         isOnce = true;
     }
 
@@ -118,5 +119,10 @@ public class GameManager : MonoBehaviour
     {
         stage--;
         PlayerPrefs.SetInt("stage", stage);
+    }
+
+    private void PlayClearSFX(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.stageClearAlarm, player.transform.position);
     }
 }
