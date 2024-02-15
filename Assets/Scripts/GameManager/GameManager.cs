@@ -24,10 +24,10 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null)
         Instance = this;
-        player = GameObject.Find("Player");
     }
     private void Start()
     {
+        player = GameObject.Find("Player");
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
         isOnce = true;
@@ -57,7 +57,6 @@ public class GameManager : MonoBehaviour
                 }
                 else if(stage + "stEventScene" != SceneManager.GetActiveScene().name)
                 {
-                    player.GetComponent<Inventory>().Clear();
                     SceneManager.LoadScene(stage + "stEventScene");
                 }
 
@@ -72,7 +71,6 @@ public class GameManager : MonoBehaviour
                 }
                 else if (stage + "stEventScene" != SceneManager.GetActiveScene().name)
                 {
-                    player.GetComponent<Inventory>().Clear();
                     SceneManager.LoadScene(stage + "stEventScene");
                 }
             }
