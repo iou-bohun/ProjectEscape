@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 public class InventoryInput : MonoBehaviour
 {
-    int currentIndex = -1;
+    public int currentIndex = -1;
 
     public void DropItemInput(InputAction.CallbackContext context)
     {

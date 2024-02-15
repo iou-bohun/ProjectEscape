@@ -65,6 +65,20 @@ public class Inventory : MonoBehaviour
         }
         items[index] = null;
     }
+    public void DeleteItem(int index)
+    {
+        if (items[index] == null)
+        {
+            return;
+        }
+        UpdateInvenUi(index);
+        if (HandItem != null)
+        {
+            Destroy(HandItem.gameObject);
+            HandItem = null;
+        }
+        items[index] = null;
+    }
     public void UpdateInvenUi(int index, ItemData AnItem)
     {
         if (AnItem != null)
