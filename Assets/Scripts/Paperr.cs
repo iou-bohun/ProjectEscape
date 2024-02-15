@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Paperr : MonoBehaviour
 {
-
     Button[] buttons;
     bool a = false;
     private void OnEnable()
@@ -34,7 +33,9 @@ public class Paperr : MonoBehaviour
             PlayerController.instance.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Inventory.i.DestroyItem("주민 설문조사");
-            Destroy(gameObject);//새 아이템 추가
+            Inventory.i.GetItem(Resources.Load<ItemData>("envelopF"));
+            Inventory.i.CatchItem(Inventory.i.CheckInven("주민 설문조사[작성]"));
+            Destroy(gameObject);
         }
     }
 }
