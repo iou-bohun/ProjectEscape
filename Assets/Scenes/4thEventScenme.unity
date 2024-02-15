@@ -657,7 +657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6c2f90194deef43af18f785045ce36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: -1
 --- !u!114 &84078218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2151,6 +2150,34 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Window/WindowRattle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1691413341
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1321290722
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1762725441
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 624825283
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2158,6 +2185,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1201027134124344896, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       insertIndex: -1
       addedObject: {fileID: 378242780}
+    - targetCorrespondingSourceObject: {fileID: 7328899504965315946, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 483fc8b8b823f704e815511f92874264, type: 3}
 --- !u!1001 &624232239
 PrefabInstance:

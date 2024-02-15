@@ -29,6 +29,7 @@ namespace SojaExiles
 						{
 							if (Input.GetMouseButtonDown(0))
 							{
+								AudioManager.instance.PlayOneShot(FMODEvents.instance.cabinetOpened, this.transform.position);
 								StartCoroutine(opening());
 							}
 						}
@@ -38,7 +39,8 @@ namespace SojaExiles
 							{
 								if (Input.GetMouseButtonDown(0))
 								{
-									StartCoroutine(closing());
+                                    AudioManager.instance.PlayOneShot(FMODEvents.instance.cabinetClosed, this.transform.position);
+                                    StartCoroutine(closing());
 								}
 							}
 

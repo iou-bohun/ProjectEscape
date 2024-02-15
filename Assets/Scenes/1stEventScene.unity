@@ -1634,6 +1634,34 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
+    - target: {fileID: 2661125531484184561, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/TV/TVStatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661125531484184561, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661125531484184561, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661125531484184561, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -941775497
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661125531484184561, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1331626688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661125531484184561, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -308610649
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661125531484184561, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1378225092
+      objectReference: {fileID: 0}
     - target: {fileID: 2670954381519268354, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: m_Name
       value: RoomReDesign
@@ -1718,6 +1746,46 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: Params.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Window/WindowRattle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1691413341
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1321290722
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1762725441
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 624825283
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: Params.Array.data[0].Name
+      value: WindowRattleEnd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4180,18 +4248,39 @@ MonoBehaviour:
     Path: event:/SFX/Window/WindowRattle
   <TVStatic>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -941775497
+      Data2: 1331626688
+      Data3: -308610649
+      Data4: 1378225092
+    Path: event:/SFX/TV/TVStatic
   <lightSwitchOnOff>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1296891384
+      Data2: 1110903650
+      Data3: 287555466
+      Data4: -20867054
+    Path: event:/SFX/Switch/SwitchOnOff
+  <paperMovement>k__BackingField:
+    Guid:
+      Data1: 1541296129
+      Data2: 1261386035
+      Data3: -332541807
+      Data4: 407936896
+    Path: event:/SFX/Paper/PaperMovement
+  <cabinetOpened>k__BackingField:
+    Guid:
+      Data1: -576751600
+      Data2: 1088279059
+      Data3: 613232259
+      Data4: -498183711
+    Path: event:/SFX/Cabinet/CabinetOpened
+  <cabinetClosed>k__BackingField:
+    Guid:
+      Data1: 717246302
+      Data2: 1317761094
+      Data3: -1877945436
+      Data4: 886741274
+    Path: event:/SFX/Cabinet/CabinetClosed
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0

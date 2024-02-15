@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: paper4
   m_EditorClassIdentifier: 
   disPlayName: "\uCC22\uC5B4\uC9C4 \uBB38\uC11C4"
-  description: "\uACF5\uC9C0\uBB38\uC758 \uC870\uAC01\uC774\uB2E4."
+  description: "\uACF5\uC9C0\uBB38\uC758 \uC870\uAC01\uC774\uB2E4.\uAC8C\uC2DC\uD310\uC5D0\uC11C
+    \uBCF5\uC6D0\uD558\uC790."
   type: 0
   icon: {fileID: 21300000, guid: c2513dafbf76e7842a25dbd54bfe5d52, type: 3}
   dropPrefab: {fileID: 866637296899382829, guid: 7ee9c72bc93aaf1409c6bd344d7f1747, type: 3}

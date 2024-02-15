@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2477eed3-79d7-404e-a6bd-b1f00035d803}">
+		<property name="assetPath">
+			<value>SFX/Paper/PaperMovement_S08OF.315.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3919999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a5f1e11-1b03-46a8-bd4f-f03aaf22be76}</destination>
+		</relationship>
+	</object>
+</objects>

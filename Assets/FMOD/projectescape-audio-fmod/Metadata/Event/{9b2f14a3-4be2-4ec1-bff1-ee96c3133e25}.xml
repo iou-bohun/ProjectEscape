@@ -303,7 +303,10 @@
 			<value>1</value>
 		</property>
 		<property name="soundSize">
-			<value>1</value>
+			<value>2</value>
+		</property>
+		<property name="minimumExtent">
+			<value>40</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{4d766f40-1a59-4575-b492-b7810318b943}">
