@@ -6,6 +6,7 @@ public class Clear4th : MonoBehaviour
 {
     [SerializeField] IsOrigiPosition[] origins;
     private int clearCount =0;
+    private bool isChecked = false;
 
    
 
@@ -18,9 +19,10 @@ public class Clear4th : MonoBehaviour
                 clearCount++;   
             }
         }
-        if (clearCount >= 1)
+        if (clearCount >= 1 && !isChecked)
         {
             GameManager.Instance.Clear();
+            isChecked = true;
         }
     }
 

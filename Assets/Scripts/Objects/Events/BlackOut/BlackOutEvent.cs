@@ -17,6 +17,10 @@ public class BlackOutEvent : MonoBehaviour
         sceneTime = 0;
     }
 
+    private void Start()
+    {
+        player = GameManager.Instance.player.GetComponent<Transform>();
+    }
     private void LateUpdate()
     {
         if (isSceneStart && !LightManager.instance.isBlackOutClear)

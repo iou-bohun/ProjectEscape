@@ -42,6 +42,7 @@ public class Inventory : MonoBehaviour
             if (items[i] == null)
             {
                 items[i] = AnItem;
+                PlayItemSFX(AnItem);
                 UpdateInvenUi(i, AnItem);
                 return true;
             }
@@ -56,6 +57,7 @@ public class Inventory : MonoBehaviour
         }
         GameObject temp = Instantiate(items[index].dropPrefab, dropPos.position, Quaternion.identity);
         //temp.GetComponent<Rigidbody>().velocity = Vector3.forward * 10;
+        PlayItemSFX(items[index]);
         UpdateInvenUi(index);
         if (HandItem != null)
         {
@@ -197,5 +199,28 @@ public class Inventory : MonoBehaviour
         {
             DeleteItem(i);
         }
+    }
+
+    private void PlayItemSFX(ItemData item)
+    {
+        switch ((int)item.soundType)
+        {
+            case (int)SoundType.Default:
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.otherMovement, GameManager.Instance.player.transform.position);
+                break;
+            case (int)SoundType.Paper:
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.paperMovement, GameManager.Instance.player.transform.position);
+                break;
+            case (int)SoundType.Metal:
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.metalMovement, GameManager.Instance.player.transform.position);
+                break;
+        }
+    }
+
+    public enum SoundType
+    {
+        Default,
+        Paper,
+        Metal
     }
 }
