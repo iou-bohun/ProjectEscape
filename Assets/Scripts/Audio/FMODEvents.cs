@@ -31,8 +31,10 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference lightSwitchOnOff { get; private set; }
 
 
-    [field: Header("Paper Movement SFX")]
+    [field: Header("Items SFX")]
+    [field: SerializeField] public EventReference otherMovement { get; private set; }
     [field: SerializeField] public EventReference paperMovement { get; private set; }
+    [field: SerializeField] public EventReference metalMovement { get; private set; }
 
 
     [field: Header("Cabinet SFX")]

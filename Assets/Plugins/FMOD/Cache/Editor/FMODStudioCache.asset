@@ -54,7 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10000
   Length: 0
---- !u!114 &-8312459263714420491
+--- !u!114 &-8866547932474158201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,9 +64,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Paper/PaperMovement
+  m_Name: event:/SFX/ItemSounds/Others/OtherMovement
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Paper/PaperMovement
+  Path: event:/SFX/ItemSounds/Others/OtherMovement
+  Guid:
+    Data1: 1303967079
+    Data2: 1200237891
+    Data3: -304820336
+    Data4: -2105757976
+  Banks:
+  - {fileID: 7766052005764249306}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8213485796895101113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ItemSounds/Paper/PaperMovement
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ItemSounds/Paper/PaperMovement
   Guid:
     Data1: 1541296129
     Data2: 1261386035
@@ -177,10 +204,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638436180746316525
+  lastModified: 638436227054168147
   FileSizes:
   - Name: Desktop
-    Value: 1712
+    Value: 1826
   Exists: 1
 --- !u!114 &-3294594831843936781
 MonoBehaviour:
@@ -197,7 +224,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638436180746276620
+  lastModified: 638436227054128249
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -301,7 +328,6 @@ MonoBehaviour:
   - {fileID: -3294594831843936781}
   - {fileID: 7766052005764249306}
   EditorEvents:
-  - {fileID: -8312459263714420491}
   - {fileID: -8086790325336242801}
   - {fileID: -7283573493792024691}
   - {fileID: 7590693652665881185}
@@ -318,12 +344,15 @@ MonoBehaviour:
   - {fileID: -9086003223416577184}
   - {fileID: -8970718322178821349}
   - {fileID: -2539007454536892536}
+  - {fileID: -8213485796895101113}
+  - {fileID: 1146084447562136065}
+  - {fileID: -8866547932474158201}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3294594831843936781}
   StringsBanks:
   - {fileID: -3727852560866603028}
-  cacheTime: 638436183361790372
+  cacheTime: 638436227055655725
   cacheVersion: 131616
 --- !u!114 &1078230337491474378
 MonoBehaviour:
@@ -347,6 +376,33 @@ MonoBehaviour:
   - {fileID: 7766052005764249306}
   IsStream: 0
   Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1146084447562136065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ItemSounds/Metal/MetalMovement
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ItemSounds/Metal/MetalMovement
+  Guid:
+    Data1: 1942608822
+    Data2: 1180375951
+    Data3: -438674267
+    Data4: 1568527986
+  Banks:
+  - {fileID: 7766052005764249306}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -578,10 +634,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638436183361790372
+  lastModified: 638436227055655725
   FileSizes:
   - Name: Desktop
-    Value: 1523072
+    Value: 1557088
   Exists: 1
 --- !u!114 &8508116025281967201
 MonoBehaviour:

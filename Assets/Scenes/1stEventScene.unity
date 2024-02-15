@@ -4296,13 +4296,27 @@ MonoBehaviour:
       Data3: 287555466
       Data4: -20867054
     Path: event:/SFX/Switch/SwitchOnOff
+  <otherMovement>k__BackingField:
+    Guid:
+      Data1: 1303967079
+      Data2: 1200237891
+      Data3: -304820336
+      Data4: -2105757976
+    Path: event:/SFX/ItemSounds/Others/OtherMovement
   <paperMovement>k__BackingField:
     Guid:
       Data1: 1541296129
       Data2: 1261386035
       Data3: -332541807
       Data4: 407936896
-    Path: event:/SFX/Paper/PaperMovement
+    Path: event:/SFX/ItemSounds/Paper/PaperMovement
+  <metalMovement>k__BackingField:
+    Guid:
+      Data1: 1942608822
+      Data2: 1180375951
+      Data3: -438674267
+      Data4: 1568527986
+    Path: event:/SFX/ItemSounds/Metal/MetalMovement
   <cabinetOpened>k__BackingField:
     Guid:
       Data1: -576751600
