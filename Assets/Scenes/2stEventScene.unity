@@ -954,6 +954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 141288807}
+  - component: {fileID: 141288808}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -978,6 +979,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &141288808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141288806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c4d41af1ebfdd49bf2935c2286618e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &161480534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +1042,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 161480537}
   open: 0
-  Player: {fileID: 0}
 --- !u!95 &161480537
 Animator:
   serializedVersion: 5
@@ -3910,6 +3922,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91373d384d29fe94fb74e5428db1e519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterVolume: 1
+  musicVolume: 1
+  ambienceVolume: 1
+  SFXVolume: 1
 --- !u!4 &514846537
 Transform:
   m_ObjectHideFlags: 0
@@ -7006,6 +7022,7 @@ MonoBehaviour:
   player: {fileID: 1603649084}
   DiePanel: {fileID: 0}
   completePaper: {fileID: 0}
+  stage: 0
   isCanGoRoofTop: 0
   isClearStage: 0
 --- !u!4 &931614612
@@ -10694,6 +10711,7 @@ GameObject:
   - component: {fileID: 1603649087}
   - component: {fileID: 1603649086}
   - component: {fileID: 1603649085}
+  - component: {fileID: 1603649094}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -10969,6 +10987,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: f2f5abbc-9054-4d86-a77c-028e6198eabe
     m_ActionName: Player/Examine[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bd5719f8-789e-4555-a2f0-7f74a41da318
+    m_ActionName: Player/Tab[/Keyboard/tab]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -11066,6 +11088,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 221.316, z: 0}
+--- !u!114 &1603649094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603649084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c4d41af1ebfdd49bf2935c2286618e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1636032851
 GameObject:
   m_ObjectHideFlags: 0
@@ -11075,6 +11109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636032852}
+  - component: {fileID: 1636032853}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -11101,6 +11136,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636032853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636032851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c4d41af1ebfdd49bf2935c2286618e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1641601961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12883,6 +12930,13 @@ MonoBehaviour:
       Data3: 287555466
       Data4: -20867054
     Path: event:/SFX/Switch/SwitchOnOff
+  <lampOnOff>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <otherMovement>k__BackingField:
     Guid:
       Data1: 1303967079
@@ -12932,6 +12986,20 @@ MonoBehaviour:
       Data3: -986328147
       Data4: 20924053
     Path: event:/SFX/Cabinet/SmallCabinetClosed
+  <elevatorButton>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <elevatorVoice>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <buzz1>k__BackingField:
     Guid:
       Data1: -1744982108
@@ -12953,6 +13021,13 @@ MonoBehaviour:
       Data3: -1013025882
       Data4: 1873788377
     Path: event:/SFX/Switch/PenClick
+  <stageClearAlarm>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <firstLooped>k__BackingField:
     Guid:
       Data1: 864546987
@@ -32689,7 +32764,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 2377488921636801256}
   open: 0
-  Player: {fileID: 0}
 --- !u!1 &2379422622951322382
 GameObject:
   m_ObjectHideFlags: 0
@@ -37604,7 +37678,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 2993158130732667178}
   open: 0
-  Player: {fileID: 0}
 --- !u!1 &2994596804284228825
 GameObject:
   m_ObjectHideFlags: 0
@@ -60335,7 +60408,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 5576895485501550557}
   open: 0
-  Player: {fileID: 0}
 --- !u!65 &5576895485501550563
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61998,7 +62070,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 5803694308427748122}
   open: 0
-  Player: {fileID: 0}
 --- !u!4 &5806103316148781923
 Transform:
   m_ObjectHideFlags: 0
@@ -68010,7 +68081,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 6733785232035830368}
   open: 0
-  Player: {fileID: 0}
 --- !u!65 &6733785232035830370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81337,7 +81407,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 5311471251075873781}
   open: 0
-  Player: {fileID: 0}
 --- !u!23 &7528576107020411587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81881,7 +81950,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openandclose: {fileID: 7606203234845623312}
   open: 0
-  Player: {fileID: 0}
 --- !u!1 &7608716133726583899
 GameObject:
   m_ObjectHideFlags: 0

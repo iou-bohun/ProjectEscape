@@ -14,7 +14,7 @@ namespace SojaExiles
 
         void Start()
 		{
-            Player = GameManager.Instance.transform;
+            Player = GameManager.Instance.player.GetComponent<Transform>();
             open = false;
 		}
 
