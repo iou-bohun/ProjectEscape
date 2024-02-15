@@ -39,7 +39,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        LoopPlayer();
+        if ("6stEventScene" == SceneManager.GetActiveScene().name) { }
+        else LoopPlayer();
     }
 
     private void LoopPlayer()
