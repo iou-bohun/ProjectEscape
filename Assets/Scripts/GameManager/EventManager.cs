@@ -42,6 +42,7 @@ public class EventManager : MonoBehaviour
 
     public void CallBathRoomEvent()
     {
+        Debug.Log("Bathroom");
         bathRoomEvent?.Invoke();
     }
     public void CallplayerDieEvent()
