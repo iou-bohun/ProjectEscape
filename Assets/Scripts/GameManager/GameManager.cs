@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public bool isClearStage = false;
 
     private bool isOnce;
-
+    [SerializeField] int stage = 1;
     private void Awake()
     {
         if (Instance == null)
@@ -44,20 +44,35 @@ public class GameManager : MonoBehaviour
         {
             if (player.transform.position.x >= 15.5f && player.transform.position.y >= 4.2f)
             {
-                if(isCanGoRoofTop)
+
+                if (isCanGoRoofTop)
                 {
                     return;
                 }
-                player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
-                IsFirstLoop();
-                CallLoopEvent();
+                if (stage + "stEventScene" == SceneManager.GetActiveScene().name)
+                {
+                    player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
+                    IsFirstLoop();
+                    CallLoopEvent();
+                }
+                else if(stage + "stEventScene" != SceneManager.GetActiveScene().name)
+                {
+                    SceneManager.LoadScene(stage + "stEventScene");
+                }
 
             }
             else if (player.transform.position.x <= 15.4f && player.transform.position.y <= -3.65f) 
             {
-                player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z);
-                IsFirstLoop();
-                CallLoopEvent();
+                if (stage + "stEventScene" == SceneManager.GetActiveScene().name)
+                {
+                    player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z);
+                    IsFirstLoop();
+                    CallLoopEvent();
+                }
+                else if (stage + "stEventScene" != SceneManager.GetActiveScene().name)
+                {
+                    SceneManager.LoadScene(stage + "stEventScene");
+                }
             }
         }
 
@@ -86,5 +101,13 @@ public class GameManager : MonoBehaviour
         DiePanel.SetActive(true);
         yield return waitSceneTime;
         SceneManager.LoadScene(SceneManager.loadedSceneCount);
+    }
+    public void Clear()
+    {
+        stage++;
+    }
+    public void UnClear()
+    {
+        stage--;
     }
 }
