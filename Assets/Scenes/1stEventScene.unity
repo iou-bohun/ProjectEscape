@@ -4352,6 +4352,13 @@ MonoBehaviour:
       Data3: 1688027295
       Data4: 1559954256
     Path: event:/SFX/Electric Buzz/Buzz1
+  <firstLooped>k__BackingField:
+    Guid:
+      Data1: 864546987
+      Data2: 1319031821
+      Data3: 439246490
+      Data4: -1490828510
+    Path: event:/Ambient/Mysterious/FirstLooped
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0

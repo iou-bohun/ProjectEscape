@@ -47,6 +47,10 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference buzz1 { get; private set; }
 
 
+    [field: Header("Ambients")]
+    [field: SerializeField] public EventReference firstLooped { get; private set; }
+
+
     public static FMODEvents instance {  get; private set; }
 
     private void Awake()
