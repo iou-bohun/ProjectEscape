@@ -444,7 +444,19 @@ MonoBehaviour:
     m_ActionId: a0e18734-9e2e-48ab-9a50-69a07321e34d
     m_ActionName: Player/Sit[/Keyboard/leftCtrl]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 84078217}
+        m_TargetAssemblyTypeName: InventoryInput, Assembly-CSharp
+        m_MethodName: ExamineInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f2f5abbc-9054-4d86-a77c-028e6198eabe
     m_ActionName: Player/Examine[/Mouse/rightButton]
   - m_PersistentCalls:
@@ -5664,11 +5676,11 @@ MonoBehaviour:
     Path: event:/SFX/Elevator/ElevatorVoice
   <corruptedVoice>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1012508311
+      Data2: 1270099535
+      Data3: 1686602128
+      Data4: 764870325
+    Path: event:/SFX/Elevator/CorruptedVoice
   <buzz1>k__BackingField:
     Guid:
       Data1: -1744982108
