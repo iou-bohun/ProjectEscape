@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
                 }
                 else if(stage + "stEventScene" != SceneManager.GetActiveScene().name)
                 {
+                    Inventory.i.Clear();
                     SceneManager.LoadScene(stage + "stEventScene");
                 }
 
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
                 }
                 else if (stage + "stEventScene" != SceneManager.GetActiveScene().name)
                 {
+                    Inventory.i.Clear();
                     SceneManager.LoadScene(stage + "stEventScene");
                 }
             }
