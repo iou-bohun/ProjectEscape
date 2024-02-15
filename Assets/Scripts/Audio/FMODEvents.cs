@@ -47,6 +47,7 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Elevator SFX")]
     [field: SerializeField] public EventReference elevatorButton { get; private set; }
     [field: SerializeField] public EventReference elevatorVoice { get; private set; }
+    [field: SerializeField] public EventReference corruptedVoice { get; private set; }
 
     [field: Header("Electric Buzz")]
     [field: SerializeField] public EventReference buzz1 { get; private set; }
