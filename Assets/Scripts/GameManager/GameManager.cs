@@ -105,14 +105,17 @@ public class GameManager : MonoBehaviour
         DiePanel.SetActive(true);
         yield return waitSceneTime;
         DiePanel.SetActive(false);
-        SceneManager.LoadScene(SceneManager.loadedSceneCount);
+        Inventory.i.Clear();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Clear()
     {
         stage++;
+        PlayerPrefs.SetInt("stage",stage);
     }
     public void UnClear()
     {
         stage--;
+        PlayerPrefs.SetInt("stage", stage);
     }
 }
