@@ -58,6 +58,7 @@ public class LightObject : MonoBehaviour
                 _light.enabled = true;
                 isTurnOnLight = true;
                 _glovematerial.material.EnableKeyword("_EMISSION");
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.lampOnOff, this.transform.position);
             }
         }
     }
