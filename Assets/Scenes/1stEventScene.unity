@@ -4266,13 +4266,27 @@ MonoBehaviour:
       Data3: 287555466
       Data4: -20867054
     Path: event:/SFX/Switch/SwitchOnOff
+  <otherMovement>k__BackingField:
+    Guid:
+      Data1: 1303967079
+      Data2: 1200237891
+      Data3: -304820336
+      Data4: -2105757976
+    Path: event:/SFX/ItemSounds/Others/OtherMovement
   <paperMovement>k__BackingField:
     Guid:
       Data1: 1541296129
       Data2: 1261386035
       Data3: -332541807
       Data4: 407936896
-    Path: event:/SFX/Paper/PaperMovement
+    Path: event:/SFX/ItemSounds/Paper/PaperMovement
+  <metalMovement>k__BackingField:
+    Guid:
+      Data1: 1942608822
+      Data2: 1180375951
+      Data3: -438674267
+      Data4: 1568527986
+    Path: event:/SFX/ItemSounds/Metal/MetalMovement
   <cabinetOpened>k__BackingField:
     Guid:
       Data1: -576751600
@@ -4301,6 +4315,34 @@ MonoBehaviour:
       Data3: -986328147
       Data4: 20924053
     Path: event:/SFX/Cabinet/SmallCabinetClosed
+  <buzz1>k__BackingField:
+    Guid:
+      Data1: -1744982108
+      Data2: 1121968356
+      Data3: 1688027295
+      Data4: 1559954256
+    Path: event:/SFX/Electric Buzz/Buzz1
+  <glassBreaking>k__BackingField:
+    Guid:
+      Data1: 725047383
+      Data2: 1122156522
+      Data3: 1938496444
+      Data4: 1815705964
+    Path: event:/SFX/Glass/GlassBreaking
+  <switchClick>k__BackingField:
+    Guid:
+      Data1: -1759083956
+      Data2: 1206259492
+      Data3: -1013025882
+      Data4: 1873788377
+    Path: event:/SFX/Switch/PenClick
+  <firstLooped>k__BackingField:
+    Guid:
+      Data1: 864546987
+      Data2: 1319031821
+      Data3: 439246490
+      Data4: -1490828510
+    Path: event:/Ambient/Mysterious/FirstLooped
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0
