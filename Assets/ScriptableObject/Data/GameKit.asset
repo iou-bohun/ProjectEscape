@@ -15,6 +15,7 @@ MonoBehaviour:
   disPlayName: GameKit
   description: GameKit
   type: 0
-  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  soundType: 0
+  icon: {fileID: 21300000, guid: 2649d65cdf6b5c64f9c77c9ca472f3da, type: 3}
   dropPrefab: {fileID: 2259916942869965622, guid: 57ac1bb4ebb6e89418549a41142440aa, type: 3}
   handPrefab: {fileID: 2259916942869965622, guid: 7e94896a8dc2ac24ab7ebc1860aa24ba, type: 3}
