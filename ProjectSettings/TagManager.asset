@@ -12,6 +12,15 @@ TagManager:
   - RunSFX
   - JumpStartSFX
   - JumpLandSFX
+  - OriginPosition
+  - paper1
+  - paper2
+  - paper3
+  - paper4
+  - wallet
+  - idCard
+  - driveId
+  - amulet
   layers:
   - Default
   - TransparentFX

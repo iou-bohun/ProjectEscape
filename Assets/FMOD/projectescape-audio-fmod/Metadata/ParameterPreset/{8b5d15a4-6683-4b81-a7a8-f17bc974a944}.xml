@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8b5d15a4-6683-4b81-a7a8-f17bc974a944}">
+		<property name="name">
+			<value>TVEnd</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3f42f3d1-c0f2-4621-9313-fbbe206e8c64}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{746184da-176f-4a65-9b2d-135df2242479}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{746184da-176f-4a65-9b2d-135df2242479}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

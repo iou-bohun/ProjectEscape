@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
+  m_Name: paper4
+  m_EditorClassIdentifier: 
+  disPlayName: "\uCC22\uC5B4\uC9C4 \uBB38\uC11C4"
+  description: "\uACF5\uC9C0\uBB38\uC758 \uC870\uAC01\uC774\uB2E4.\uAC8C\uC2DC\uD310\uC5D0\uC11C
+    \uBCF5\uC6D0\uD558\uC790."
+  type: 0
+  soundType: 1
+  icon: {fileID: 21300000, guid: c2513dafbf76e7842a25dbd54bfe5d52, type: 3}
+  dropPrefab: {fileID: 866637296899382829, guid: 7ee9c72bc93aaf1409c6bd344d7f1747, type: 3}
+  handPrefab: {fileID: 866637296899382829, guid: c70cc0d9f6635e942a6e93a7e6b6a3d6, type: 3}

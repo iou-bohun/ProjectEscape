@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
+  m_Name: Cup
+  m_EditorClassIdentifier: 
+  disPlayName: "\uCEF5"
+  description: "\uBD80\uC5CC\uC5D0 \uC788\uB358 \uCEF5\uC774\uB2E4"
+  type: 0
+  icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  dropPrefab: {fileID: 1630150342311449091, guid: 0febcc7d479204146befbd922537fed6, type: 3}
+  handPrefab: {fileID: 1630150342311449091, guid: e80d8a9e314ca7b41b37ffd2b96d6b05, type: 3}

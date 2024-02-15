@@ -6,6 +6,7 @@ using UnityEngine;
 public class ItemObjects : MonoBehaviour, IInteractable
 {
     public ItemData item;
+    public bool isOriginalPosition;
 
     private void Start()
     {
@@ -39,6 +40,21 @@ public class ItemObjects : MonoBehaviour, IInteractable
         {
             GameManager.Instance.OnLoopEvent -= LoopItem;
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag =="OriginPosition")
+        {
+            isOriginalPosition = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag == "OriginPosition")
+        {
+            isOriginalPosition = false;
         }
     }
 }

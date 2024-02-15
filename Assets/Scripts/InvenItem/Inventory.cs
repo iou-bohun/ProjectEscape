@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -10,11 +12,16 @@ public class Inventory : MonoBehaviour
     public static Inventory i;
     [SerializeField] Transform dropPos;
     [SerializeField] GameObject inventoryUi;
-    ItemData[] items;
+    public ItemData[] items;
     int InventorySize = 4;
     [SerializeField] Transform handParent;
-    [SerializeField] GameObject HandItem;
+    public GameObject HandItem;
     [SerializeField] Transform DropPos;
+
+    [Header("Examine")]
+    [SerializeField] GameObject desctiptionUI;
+    [SerializeField] TextMeshProUGUI desctiptionText;
+    [SerializeField] Image handItemImage;
     Camera _camera;
     private void Awake()
     {
@@ -58,7 +65,21 @@ public class Inventory : MonoBehaviour
         }
         items[index] = null;
     }
-    void UpdateInvenUi(int index, ItemData AnItem)
+    public void DeleteItem(int index)
+    {
+        if (items[index] == null)
+        {
+            return;
+        }
+        UpdateInvenUi(index);
+        if (HandItem != null)
+        {
+            Destroy(HandItem.gameObject);
+            HandItem = null;
+        }
+        items[index] = null;
+    }
+    public void UpdateInvenUi(int index, ItemData AnItem)
     {
         if (AnItem != null)
         {
@@ -69,7 +90,7 @@ public class Inventory : MonoBehaviour
             slotImage.GetComponent<RectTransform>().localScale = Vector3.one;
         }
     }
-    void UpdateInvenUi(int index)
+    public void UpdateInvenUi(int index)
     {
         if (inventoryUi.transform.GetChild(index).transform.childCount == 1)
         {
@@ -101,6 +122,74 @@ public class Inventory : MonoBehaviour
             Destroy(HandItem.gameObject);
             HandItem = Instantiate(items[index].handPrefab, handParent);
             HandItem.name = items[index].handPrefab.name;
+        }
+        //정전이벤트에서 들고 있는 아이템이 플레쉬인지 확인
+        if (HandItem == null) EventManager.I.handFlash = false;
+        else if (HandItem.name == "Hand_flashLight")
+        { 
+            EventManager.I.handFlash = true;
+            Debug.Log("플레쉬장착");
+        }
+        else EventManager.I.handFlash = false;
+
+    }
+
+    public void ShowExmineUI()
+    {
+        desctiptionUI.gameObject.SetActive(true);
+        desctiptionText.text = null;
+        handItemImage.sprite = null;
+    }
+    public void HideExaminUI()
+    {
+        desctiptionUI.gameObject.SetActive(false);
+    }
+    public void SetExamineItem(int index) 
+    {
+       if(index == -1)
+        {
+            return;
+        }
+        if (items[index] == null)
+        {
+            return;
+        }
+        else
+        {
+            desctiptionText.text = items[index].description;
+            handItemImage.sprite = items[index].icon;
+        }
+    }
+    public int CheckInven(string name)
+    {
+        for (int i = 0; i < InventorySize; i++)
+        {
+            if (items[i] == null)
+            {
+                continue;
+            }
+            if (items[i].disPlayName == name)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+    public void DestroyItem(string name)
+    {
+        for (int i = 0; i < InventorySize; i++)
+        {
+            if (items[i] == null)
+            {
+                continue;
+            }
+            if (items[i].disPlayName == name)
+            {
+                items[i] = null;
+                CatchItem(i);
+                UpdateInvenUi(i);
+                return;
+            }
         }
     }
 }

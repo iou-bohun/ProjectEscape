@@ -19,7 +19,17 @@ public class EventManager : MonoBehaviour
         }
     }
     public Action bedRoomEvent;
+    public Action livingRoomEvent;
+    public Action bathRoomEvent;
     public Action corridorEvent;
+    public Action playerDieEvent;
+    public bool handFlash;
+    private bool isOnce;
+
+    private void Update()
+    {
+        FlashLightSFX();
+    }
 
     public void CallIBedRoomEvent()
     {
@@ -29,5 +39,33 @@ public class EventManager : MonoBehaviour
     public void CallCorridorEvent()
     {
         corridorEvent?.Invoke();
+    }
+
+    public void CallLivingRoomEvent()
+    {
+        livingRoomEvent?.Invoke();
+    }
+
+    public void CallBathRoomEvent()
+    {
+        bathRoomEvent?.Invoke();
+    }
+    public void CallplayerDieEvent()
+    {
+        playerDieEvent?.Invoke();
+    }
+
+    private void FlashLightSFX()
+    {
+        if (handFlash && !isOnce)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.switchClick, GameManager.Instance.player.transform.position);
+            isOnce = true;
+        }
+        else if(!handFlash && isOnce)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.switchClick, GameManager.Instance.player.transform.position);
+            isOnce = false;
+        }
     }
 }
