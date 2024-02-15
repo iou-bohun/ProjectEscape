@@ -14,7 +14,9 @@ public class GameManager : MonoBehaviour
     WaitForSeconds waitSceneTime;
     public GameObject completePaper;
 
-    private bool isLoopFirst;
+    [Header("boolCheck")]
+    public bool isCanGoRoofTop = false;
+    public bool isClearStage = false;
 
     private void Awake()
     {
@@ -25,7 +27,6 @@ public class GameManager : MonoBehaviour
     {
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
-        isLoopFirst = true;
     }
 
 
@@ -40,19 +41,17 @@ public class GameManager : MonoBehaviour
         {
             if (player.transform.position.x >= 15.5f && player.transform.position.y >= 4.2f)
             {
-                if (completePaper != null && completePaper.activeInHierarchy)
+                if(isCanGoRoofTop)
                 {
                     return;
                 }
                 player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
-                IsFirstLooping();
                 CallLoopEvent();
 
             }
             else if (player.transform.position.x <= 15.4f && player.transform.position.y <= -3.65f) 
             {
-                player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z);
-                IsFirstLooping();
+                player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z); 
                 CallLoopEvent();
             }
         }
@@ -66,15 +65,6 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         StartCoroutine(PlayerDie());       
-    }
-
-    private void IsFirstLooping()
-    {
-        if (isLoopFirst)
-        {
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.firstLooped, player.transform.position);
-            isLoopFirst = false;
-        }
     }
 
     IEnumerator PlayerDie()

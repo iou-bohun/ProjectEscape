@@ -556,7 +556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6c2f90194deef43af18f785045ce36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: -1
 --- !u!114 &84078218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2961,7 +2960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ff2e71067c7a742866e997c93ce809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handFlash: 0
 --- !u!4 &930562687
 Transform:
   m_ObjectHideFlags: 0
@@ -3008,7 +3006,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 84078207}
   DiePanel: {fileID: 1620116895}
-  completePaper: {fileID: 0}
 --- !u!4 &931614612
 Transform:
   m_ObjectHideFlags: 0
@@ -4745,48 +4742,6 @@ MonoBehaviour:
       Data4: 0
     Path: 
   <lightSwitchOnOff>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <paperMovement>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <cabinetOpened>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <cabinetClosed>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <smallCabinetOpened>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <smallCabinetClosed>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <buzz1>k__BackingField:
     Guid:
       Data1: 0
       Data2: 0

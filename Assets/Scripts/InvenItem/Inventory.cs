@@ -23,7 +23,6 @@ public class Inventory : MonoBehaviour
     [SerializeField] TextMeshProUGUI desctiptionText;
     [SerializeField] Image handItemImage;
     Camera _camera;
-
     private void Awake()
     {
         if (i == null)
@@ -37,9 +36,6 @@ public class Inventory : MonoBehaviour
             Destroy(this);
         }
     }
-
-
-
     public bool GetItem(ItemData AnItem)
     {
         for (int i = 0; i < items.Length; i++)
@@ -48,7 +44,6 @@ public class Inventory : MonoBehaviour
             {
                 items[i] = AnItem;
                 UpdateInvenUi(i, AnItem);
-                PlayItemSound(AnItem);
                 return true;
             }
         }
@@ -63,7 +58,6 @@ public class Inventory : MonoBehaviour
         GameObject temp = Instantiate(items[index].dropPrefab, dropPos.position, Quaternion.identity);
         //temp.GetComponent<Rigidbody>().velocity = Vector3.forward * 10;
         UpdateInvenUi(index);
-        PlayItemSound(items[index]);
         if (HandItem != null)
         {
             Destroy(HandItem.gameObject);
@@ -198,27 +192,4 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-
-    private void PlayItemSound(ItemData item)
-    {
-        switch ((int)item.soundType)
-        {
-            default:
-                AudioManager.instance.PlayOneShot(FMODEvents.instance.otherMovement, this.transform.position);
-                break;
-            case (int)SoundType.Paper:
-                AudioManager.instance.PlayOneShot(FMODEvents.instance.paperMovement, this.transform.position);
-                break;
-            case (int)SoundType.Metal:
-                AudioManager.instance.PlayOneShot(FMODEvents.instance.metalMovement, this.transform.position);
-                break;
-        }
-    }
-}
-
-public enum SoundType
-{
-    Default = 0,
-    Paper = 1,
-    Metal = 2
 }

@@ -1631,38 +1631,6 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: EventReference.Path
-      value: event:/SFX/Electric Buzz/Buzz1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: OverrideAttenuation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: OverrideMaxDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: OverrideMinDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: EventReference.Guid.Data1
-      value: -1744982108
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: EventReference.Guid.Data2
-      value: 1121968356
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: EventReference.Guid.Data3
-      value: 1688027295
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: EventReference.Guid.Data4
-      value: 1559954256
-      objectReference: {fileID: 0}
     - target: {fileID: 2377488921025790188, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: Player
       value: 
@@ -1771,18 +1739,6 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
-    - target: {fileID: 6772301078857585626, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6772301078857585626, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6772301078857585626, guid: 483fc8b8b823f704e815511f92874264, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7522392099788511264, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: Player
       value: 
@@ -2368,67 +2324,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821582060}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &859355626
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1136576976345876, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_Name
-      value: Painting_Event
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -24.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -12.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456012908178498, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0eddc9467bc19484ebe337de26c5c7f4, type: 3}
 --- !u!1 &886348640
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,7 +2469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ff2e71067c7a742866e997c93ce809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handFlash: 0
 --- !u!4 &930562687
 Transform:
   m_ObjectHideFlags: 0
@@ -2620,7 +2514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 84078207}
-  DiePanel: {fileID: 0}
   completePaper: {fileID: 0}
 --- !u!4 &931614612
 Transform:
@@ -4369,27 +4262,13 @@ MonoBehaviour:
       Data3: 287555466
       Data4: -20867054
     Path: event:/SFX/Switch/SwitchOnOff
-  <otherMovement>k__BackingField:
-    Guid:
-      Data1: 1303967079
-      Data2: 1200237891
-      Data3: -304820336
-      Data4: -2105757976
-    Path: event:/SFX/ItemSounds/Others/OtherMovement
   <paperMovement>k__BackingField:
     Guid:
       Data1: 1541296129
       Data2: 1261386035
       Data3: -332541807
       Data4: 407936896
-    Path: event:/SFX/ItemSounds/Paper/PaperMovement
-  <metalMovement>k__BackingField:
-    Guid:
-      Data1: 1942608822
-      Data2: 1180375951
-      Data3: -438674267
-      Data4: 1568527986
-    Path: event:/SFX/ItemSounds/Metal/MetalMovement
+    Path: event:/SFX/Paper/PaperMovement
   <cabinetOpened>k__BackingField:
     Guid:
       Data1: -576751600
@@ -4418,27 +4297,6 @@ MonoBehaviour:
       Data3: -986328147
       Data4: 20924053
     Path: event:/SFX/Cabinet/SmallCabinetClosed
-  <buzz1>k__BackingField:
-    Guid:
-      Data1: -1744982108
-      Data2: 1121968356
-      Data3: 1688027295
-      Data4: 1559954256
-    Path: event:/SFX/Electric Buzz/Buzz1
-  <glassBreaking>k__BackingField:
-    Guid:
-      Data1: 725047383
-      Data2: 1122156522
-      Data3: 1938496444
-      Data4: 1815705964
-    Path: event:/SFX/Glass/GlassBreaking
-  <firstLooped>k__BackingField:
-    Guid:
-      Data1: 864546987
-      Data2: 1319031821
-      Data3: 439246490
-      Data4: -1490828510
-    Path: event:/Ambient/Mysterious/FirstLooped
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0

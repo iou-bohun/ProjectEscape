@@ -31,10 +31,8 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference lightSwitchOnOff { get; private set; }
 
 
-    [field: Header("Items SFX")]
-    [field: SerializeField] public EventReference otherMovement { get; private set; }
+    [field: Header("Paper Movement SFX")]
     [field: SerializeField] public EventReference paperMovement { get; private set; }
-    [field: SerializeField] public EventReference metalMovement { get; private set; }
 
 
     [field: Header("Cabinet SFX")]
@@ -42,16 +40,6 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference cabinetClosed { get; private set; }
     [field: SerializeField] public EventReference smallCabinetOpened { get; private set; }
     [field: SerializeField] public EventReference smallCabinetClosed { get; private set; }
-
-    [field: Header("Electric Buzz")]
-    [field: SerializeField] public EventReference buzz1 { get; private set; }
-
-    [field: Header("Other SFXs")]
-    [field: SerializeField] public EventReference glassBreaking { get; private set; }
-
-
-    [field: Header("Ambients")]
-    [field: SerializeField] public EventReference firstLooped { get; private set; }
 
 
     public static FMODEvents instance {  get; private set; }

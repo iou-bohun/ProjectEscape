@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "BedRoom":
+                Debug.Log("트리거 작동");
                 EventManager.I.CallIBedRoomEvent();
                 break;
             case "LivingRoom":

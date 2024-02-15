@@ -16,7 +16,6 @@ MonoBehaviour:
   description: "\uC9C0\uAC11\uC5D0 \uB123\uAE30 \uC801\uB2F9\uD55C \uC0AC\uC774\uC988\uB85C
     \uC811\uD600\uC788\uB2E4."
   type: 0
-  soundType: 1
   icon: {fileID: 21300000, guid: 18a7353b2cb67fb40b8c9c47abb3870b, type: 3}
   dropPrefab: {fileID: 1434705669631791913, guid: 3d37a9cf6418766429ebcb4002546300, type: 3}
   handPrefab: {fileID: 1434705669631791913, guid: fcd421ce3d391664c812a0838369f594, type: 3}

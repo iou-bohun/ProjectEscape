@@ -16,5 +16,5 @@ MonoBehaviour:
   description: "\uD3C9\uBC94\uD55C \uC6B4\uC804\uBA74\uD5C8\uC99D."
   type: 0
   icon: {fileID: 21300000, guid: edb7ec07cbfe94344a4c6af65b8217f0, type: 3}
-  dropPrefab: {fileID: 6603498435084422940, guid: 2cca737628109464190b56480aba6b16, type: 3}
-  handPrefab: {fileID: 6603498435084422940, guid: 46aec141dee7ca241a5e357d15a966ec, type: 3}
+  dropPrefab: {fileID: 3458432526538355469, guid: 7368b38ef1def03418fe9e6965682ff8, type: 3}
+  handPrefab: {fileID: 3458432526538355469, guid: 640c0832df25741489edd25c13228d79, type: 3}
