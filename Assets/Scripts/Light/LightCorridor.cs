@@ -13,7 +13,8 @@ public class LightCorridor : LightObject
     void Start()
     {
         LightManager.instance.OnCorridorLight += OnLight;
-        LightManager.instance.OnCorridorOffTimer += OffLight;
+        LightManager.instance.OnCorridorOffTimer += OffCorridor;
         LightManager.instance.OnBlackOutEvent += BlackOutCorridor;
+        OffCorridor();
     }
 }
