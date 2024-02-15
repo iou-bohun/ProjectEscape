@@ -2469,6 +2469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ff2e71067c7a742866e997c93ce809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handFlash: 0
 --- !u!4 &930562687
 Transform:
   m_ObjectHideFlags: 0
@@ -2514,7 +2515,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 84078207}
+  DiePanel: {fileID: 0}
   completePaper: {fileID: 0}
+  isCanGoRoofTop: 0
+  isClearStage: 0
+  stage: 1
 --- !u!4 &931614612
 Transform:
   m_ObjectHideFlags: 0
@@ -4268,7 +4273,7 @@ MonoBehaviour:
       Data2: 1261386035
       Data3: -332541807
       Data4: 407936896
-    Path: event:/SFX/Paper/PaperMovement
+    Path: event:/SFX/ItemSounds/Paper/PaperMovement
   <cabinetOpened>k__BackingField:
     Guid:
       Data1: -576751600
