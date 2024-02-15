@@ -10,7 +10,7 @@ namespace SojaExiles
 
 		public Animator openandclose;
 		public bool open;
-		public Transform Player;
+		private Transform Player;
 
         void Start()
 		{

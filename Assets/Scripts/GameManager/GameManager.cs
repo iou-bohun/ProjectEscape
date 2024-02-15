@@ -23,12 +23,13 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        player = GameObject.Find("Player");
         if (Instance == null)
         Instance = this;
     }
     private void Start()
     {
-        player = GameObject.Find("Player");
+        
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
         isOnce = true;

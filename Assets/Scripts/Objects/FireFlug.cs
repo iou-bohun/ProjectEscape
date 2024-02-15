@@ -14,11 +14,12 @@ namespace SojaExiles
 
         private void Awake()
         {
-			Player = GameManager.Instance.transform;
+			
         }
         void Start()
 		{
-			open = false;
+            Player = GameManager.Instance.player.GetComponent<Transform>();
+            open = false;
 		}
 
 		void OnMouseOver()
@@ -33,6 +34,7 @@ namespace SojaExiles
 						{
 							if (Input.GetMouseButtonDown(0))
 							{
+								Debug.Log("Click");
 								AudioManager.instance.PlayOneShot(FMODEvents.instance.cabinetOpened, this.transform.position);
 								StartCoroutine(opening());
 							}
