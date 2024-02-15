@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
         {
             if (player.transform.position.x >= 15.5f && player.transform.position.y >= 4.2f)
             {
-
                 if (isCanGoRoofTop)
                 {
                     return;
