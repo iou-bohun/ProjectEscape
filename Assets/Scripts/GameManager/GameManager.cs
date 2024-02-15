@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        player = GameObject.Find("player");
+        player = GameObject.Find("Player");
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
         isOnce = true;
