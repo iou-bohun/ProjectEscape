@@ -6,6 +6,11 @@ public class ElevatorCorrupted : MonoBehaviour
 {
     public Transform Player;
 
+    private void Start()
+    {
+        Player = GameManager.Instance.player.GetComponent<Transform>();
+    }
+
     void OnMouseOver()
     {
         {

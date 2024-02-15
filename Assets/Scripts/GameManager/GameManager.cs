@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.stageClearAlarm, player.transform.position);
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
         SceneManager.sceneLoaded += PlayClearSFX;
