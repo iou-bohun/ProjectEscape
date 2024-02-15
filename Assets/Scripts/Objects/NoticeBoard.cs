@@ -10,11 +10,12 @@ public class NoticeBoard : MonoBehaviour
     [SerializeField] private ItemData[] _paperData;
 
     public GameObject[] onBoardPaper;
-    public GameObject player;
+    private GameObject player;
     private InventoryInput invenInput;
 
     private void Awake()
     {
+        player = GameManager.Instance.player.GetComponent<GameObject>();
         invenInput = player.GetComponent<InventoryInput>();
     }
     private void Start()
