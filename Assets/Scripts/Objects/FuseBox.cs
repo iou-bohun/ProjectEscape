@@ -10,19 +10,20 @@ namespace SojaExiles
 
 		public Animator openandclose;
 		public bool open;
-		public Transform Player;
+		public Transform player;
 
 		void Start()
 		{
-			open = false;
+            player= GameManager.Instance.player.GetComponent<Transform>();
+            open = false;
 		}
 
 		void OnMouseOver()
 		{
 			{
-				if (Player)
+				if (player)
 				{
-					float dist = Vector3.Distance(Player.position, transform.position);
+					float dist = Vector3.Distance(player.position, transform.position);
 					if (dist < 5)
 					{
 						if (open == false)
