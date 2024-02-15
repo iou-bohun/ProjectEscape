@@ -1453,7 +1453,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2014235646}
+  - {fileID: 1086796044}
   m_Father: {fileID: 1636032852}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3093,6 +3093,183 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6486398636776442577, guid: c6f969d9d06a60b4e964442685cd19ac, type: 3}
   m_PrefabInstance: {fileID: 1072075593}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1086796043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086796044}
+  - component: {fileID: 1086796045}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1086796044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086796043}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 514846537}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1086796045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086796043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02bac1f32500ffd4da36821b69c13d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <footstepsWalkRock>k__BackingField:
+    Guid:
+      Data1: 2022746443
+      Data2: 1108251380
+      Data3: 1053576109
+      Data4: -1603398404
+    Path: event:/SFX/Player/FootstepsWalkRock
+  <footstepsRunRock>k__BackingField:
+    Guid:
+      Data1: -366019374
+      Data2: 1157201400
+      Data3: 2126933423
+      Data4: -242417489
+    Path: event:/SFX/Player/FootstepsRunRock
+  <footstepsJumpRock>k__BackingField:
+    Guid:
+      Data1: -1896545362
+      Data2: 1087456708
+      Data3: -817744741
+      Data4: -744113056
+    Path: event:/SFX/Player/FootstepsJumpRock
+  <footstepsLandRock>k__BackingField:
+    Guid:
+      Data1: 1798862298
+      Data2: 1091701523
+      Data3: -1029444931
+      Data4: 604995403
+    Path: event:/SFX/Player/FootstepsLandRock
+  <doorOpened>k__BackingField:
+    Guid:
+      Data1: 907089142
+      Data2: 1322598421
+      Data3: -893673595
+      Data4: -1801295552
+    Path: event:/SFX/Door/DoorOpened
+  <doorClosed>k__BackingField:
+    Guid:
+      Data1: 1340258714
+      Data2: 1308035453
+      Data3: 656644483
+      Data4: 1272603255
+    Path: event:/SFX/Door/DoorClosed
+  <windowOpened>k__BackingField:
+    Guid:
+      Data1: -1069943217
+      Data2: 1257827903
+      Data3: 759331217
+      Data4: -471396049
+    Path: event:/SFX/Window/WindowOpened
+  <windowClosed>k__BackingField:
+    Guid:
+      Data1: 2031097893
+      Data2: 1212374316
+      Data3: -1555917424
+      Data4: -23273637
+    Path: event:/SFX/Window/WindowClosed
+  <windowRattle>k__BackingField:
+    Guid:
+      Data1: -1691413341
+      Data2: 1321290722
+      Data3: -1762725441
+      Data4: 624825283
+    Path: event:/SFX/Window/WindowRattle
+  <TVStatic>k__BackingField:
+    Guid:
+      Data1: -941775497
+      Data2: 1331626688
+      Data3: -308610649
+      Data4: 1378225092
+    Path: event:/SFX/TV/TVStatic
+  <lightSwitchOnOff>k__BackingField:
+    Guid:
+      Data1: -1296891384
+      Data2: 1110903650
+      Data3: 287555466
+      Data4: -20867054
+    Path: event:/SFX/Switch/SwitchOnOff
+  <otherMovement>k__BackingField:
+    Guid:
+      Data1: 1303967079
+      Data2: 1200237891
+      Data3: -304820336
+      Data4: -2105757976
+    Path: event:/SFX/ItemSounds/Others/OtherMovement
+  <paperMovement>k__BackingField:
+    Guid:
+      Data1: 1541296129
+      Data2: 1261386035
+      Data3: -332541807
+      Data4: 407936896
+    Path: event:/SFX/ItemSounds/Paper/PaperMovement
+  <metalMovement>k__BackingField:
+    Guid:
+      Data1: 1942608822
+      Data2: 1180375951
+      Data3: -438674267
+      Data4: 1568527986
+    Path: event:/SFX/ItemSounds/Metal/MetalMovement
+  <cabinetOpened>k__BackingField:
+    Guid:
+      Data1: -576751600
+      Data2: 1088279059
+      Data3: 613232259
+      Data4: -498183711
+    Path: event:/SFX/Cabinet/CabinetOpened
+  <cabinetClosed>k__BackingField:
+    Guid:
+      Data1: 717246302
+      Data2: 1317761094
+      Data3: -1877945436
+      Data4: 886741274
+    Path: event:/SFX/Cabinet/CabinetClosed
+  <smallCabinetOpened>k__BackingField:
+    Guid:
+      Data1: -655459235
+      Data2: 1241159790
+      Data3: 958960780
+      Data4: 324059348
+    Path: event:/SFX/Cabinet/SmallCabinetOpened
+  <smallCabinetClosed>k__BackingField:
+    Guid:
+      Data1: -110191173
+      Data2: 1149749072
+      Data3: -986328147
+      Data4: 20924053
+    Path: event:/SFX/Cabinet/SmallCabinetClosed
+  <buzz1>k__BackingField:
+    Guid:
+      Data1: -1744982108
+      Data2: 1121968356
+      Data3: 1688027295
+      Data4: 1559954256
+    Path: event:/SFX/Electric Buzz/Buzz1
 --- !u!1 &1096996559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1201027134124344896, guid: 483fc8b8b823f704e815511f92874264, type: 3}
@@ -4284,169 +4461,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &2014235645
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2014235646}
-  - component: {fileID: 2014235647}
-  m_Layer: 0
-  m_Name: FMODEvents
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2014235646
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014235645}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 514846537}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2014235647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014235645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02bac1f32500ffd4da36821b69c13d07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <footstepsWalkRock>k__BackingField:
-    Guid:
-      Data1: 2022746443
-      Data2: 1108251380
-      Data3: 1053576109
-      Data4: -1603398404
-    Path: event:/SFX/Player/FootstepsWalkRock
-  <footstepsRunRock>k__BackingField:
-    Guid:
-      Data1: -366019374
-      Data2: 1157201400
-      Data3: 2126933423
-      Data4: -242417489
-    Path: event:/SFX/Player/FootstepsRunRock
-  <footstepsJumpRock>k__BackingField:
-    Guid:
-      Data1: -1896545362
-      Data2: 1087456708
-      Data3: -817744741
-      Data4: -744113056
-    Path: event:/SFX/Player/FootstepsJumpRock
-  <footstepsLandRock>k__BackingField:
-    Guid:
-      Data1: 1798862298
-      Data2: 1091701523
-      Data3: -1029444931
-      Data4: 604995403
-    Path: event:/SFX/Player/FootstepsLandRock
-  <doorOpened>k__BackingField:
-    Guid:
-      Data1: 907089142
-      Data2: 1322598421
-      Data3: -893673595
-      Data4: -1801295552
-    Path: event:/SFX/Door/DoorOpened
-  <doorClosed>k__BackingField:
-    Guid:
-      Data1: 1340258714
-      Data2: 1308035453
-      Data3: 656644483
-      Data4: 1272603255
-    Path: event:/SFX/Door/DoorClosed
-  <windowOpened>k__BackingField:
-    Guid:
-      Data1: -1069943217
-      Data2: 1257827903
-      Data3: 759331217
-      Data4: -471396049
-    Path: event:/SFX/Window/WindowOpened
-  <windowClosed>k__BackingField:
-    Guid:
-      Data1: 2031097893
-      Data2: 1212374316
-      Data3: -1555917424
-      Data4: -23273637
-    Path: event:/SFX/Window/WindowClosed
-  <windowRattle>k__BackingField:
-    Guid:
-      Data1: -1691413341
-      Data2: 1321290722
-      Data3: -1762725441
-      Data4: 624825283
-    Path: event:/SFX/Window/WindowRattle
-  <TVStatic>k__BackingField:
-    Guid:
-      Data1: -941775497
-      Data2: 1331626688
-      Data3: -308610649
-      Data4: 1378225092
-    Path: event:/SFX/TV/TVStatic
-  <lightSwitchOnOff>k__BackingField:
-    Guid:
-      Data1: -1296891384
-      Data2: 1110903650
-      Data3: 287555466
-      Data4: -20867054
-    Path: event:/SFX/Switch/SwitchOnOff
-  <paperMovement>k__BackingField:
-    Guid:
-      Data1: 1541296129
-      Data2: 1261386035
-      Data3: -332541807
-      Data4: 407936896
-    Path: event:/SFX/Paper/PaperMovement
-  <cabinetOpened>k__BackingField:
-    Guid:
-      Data1: -576751600
-      Data2: 1088279059
-      Data3: 613232259
-      Data4: -498183711
-    Path: event:/SFX/Cabinet/CabinetOpened
-  <cabinetClosed>k__BackingField:
-    Guid:
-      Data1: 717246302
-      Data2: 1317761094
-      Data3: -1877945436
-      Data4: 886741274
-    Path: event:/SFX/Cabinet/CabinetClosed
-  <smallCabinetOpened>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <smallCabinetClosed>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <buzz1>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0
