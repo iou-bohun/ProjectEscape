@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SojaExiles
 
@@ -30,6 +31,7 @@ namespace SojaExiles
 						{
 							if (Input.GetMouseButtonDown(0))
 							{
+								if(SceneManager.GetActiveScene().name == "6stEventScene") GameManager.Instance.cancelLoof=true;
 								StartCoroutine(opening());
 							}
 						}

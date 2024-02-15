@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [Header("boolCheck")]
     public bool isCanGoRoofTop = false;
     public bool isClearStage = false;
+    public bool cancelLoof = false;
 
     private bool isOnce;
 
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if ("6stEventScene" == SceneManager.GetActiveScene().name) { }
+        if (cancelLoof)  return; 
         else LoopPlayer();
     }
 
