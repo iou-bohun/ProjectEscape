@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7507332830900856310, guid: 79bde106ac31f214a804434863f5d835, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -2725432495110028863, guid: 79bde106ac31f214a804434863f5d835, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -71,6 +75,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79bde106ac31f214a804434863f5d835, type: 3}
       propertyPath: m_Name
       value: wallet Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79bde106ac31f214a804434863f5d835, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79bde106ac31f214a804434863f5d835, type: 3}
+      propertyPath: m_TagString
+      value: wallet
       objectReference: {fileID: 0}
     - target: {fileID: 6176132857414602383, guid: 79bde106ac31f214a804434863f5d835, type: 3}
       propertyPath: m_LocalPosition.y
@@ -156,3 +168,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: cfddd8234c82ddb48b56fcca28097913, type: 2}
+  isOriginalPosition: 0

@@ -5,15 +5,21 @@ using UnityEngine;
 public class NoticeBoard : MonoBehaviour
 {
     [SerializeField] private GameObject[] _paper;
+    [SerializeField] private GameObject _completePaper;
+    [SerializeField] private GameObject _fourPaper;
     [SerializeField] private ItemData[] _paperData;
 
     public GameObject[] onBoardPaper;
-    public Transform player;
+    public GameObject player;
+    private InventoryInput invenInput;
 
-
+    private void Awake()
+    {
+        invenInput = player.GetComponent<InventoryInput>();
+    }
     private void Start()
     {
-        for(int i = 0; i < onBoardPaper.Length; i++)
+        for (int i = 0; i < onBoardPaper.Length; i++)
         {
             onBoardPaper[i].SetActive(false);
         }
@@ -23,7 +29,6 @@ public class NoticeBoard : MonoBehaviour
 
         for (int i = 0; i < _paper.Length; i++)
         {
-            
             if (Inventory.i.HandItem.tag == _paper[i].tag)
             {
                 CollectPaper(i);
@@ -35,20 +40,11 @@ public class NoticeBoard : MonoBehaviour
 
     private void CollectPaper(int index)
     {
+        int currentIndex = invenInput.currentIndex;
+
         onBoardPaper[index].gameObject.SetActive(true);
-        Destroy(Inventory.i.HandItem.gameObject);
-        Inventory.i.HandItem = null;
-        for (int i = 0; i< _paperData.Length; i++)
-        {
-            if (Inventory.i.items[i] != null)
-            {
-                Inventory.i.items[i] = null;
-            }
-            Inventory.i.UpdateInvenUi(i);
-        }
-
-  
-
+        Inventory.i.DeleteItem(currentIndex);
+        CompletePaper();
     }
 
 
@@ -64,6 +60,15 @@ public class NoticeBoard : MonoBehaviour
                     CheckHandItem();
                 }
             }
+        }
+    }
+
+    private void CompletePaper()
+    {
+        if (onBoardPaper[0].activeInHierarchy && onBoardPaper[1].activeInHierarchy && onBoardPaper[2].activeInHierarchy && onBoardPaper[3].activeInHierarchy)
+        {
+            _fourPaper.SetActive(false);
+            _completePaper.SetActive(true);
         }
     }
 
