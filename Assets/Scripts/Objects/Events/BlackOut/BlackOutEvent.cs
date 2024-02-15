@@ -22,15 +22,16 @@ public class BlackOutEvent : MonoBehaviour
         if (isSceneStart && !LightManager.instance.isBlackOutClear)
         {
             sceneTime += Time.deltaTime;
-            if(sceneTime > 10&& sceneTime<11)
+            if(sceneTime > 30&& sceneTime<31)
             {
                 LightManager.instance.isBlackOutEvent = true;
                 LightManager.instance.CallBlackOutEvent();
             }
-            if (sceneTime > 50&&!LightManager.instance.isPlayerDie)
+            if (sceneTime > 60&&!LightManager.instance.isPlayerDie)
             {
                 Debug.Log("유다희");
                 LightManager.instance.isPlayerDie = true;
+                EventManager.I.CallplayerDieEvent();
             }
         }
     }
@@ -52,13 +53,19 @@ public class BlackOutEvent : MonoBehaviour
                                 LightManager.instance.CallBlackOutEvent();
                                 break;
                             case "SloveBlackOut":
-                                Debug.Log("SloveBlackOut");
-                                LightManager.instance.isBlackOutEvent = false;
-                                LightManager.instance.isBlackOutClear = true;
-                                LightManager.instance.CallLivingRoomLight();
-                                LightManager.instance.CallLivingRoomLight2();
-                                LightManager.instance.CallCorridorOffTimer();
-                                StartCoroutine(SloveBlackOut());
+                                if (LightManager.instance.isBlackOutEvent&&EventManager.I.handFlash)
+                                {
+                                    Debug.Log("SloveBlackOut");
+                                    LightManager.instance.isBlackOutEvent = false;
+                                    LightManager.instance.isBlackOutClear = true;
+                                    LightManager.instance.CallLivingRoomLight();
+                                    LightManager.instance.CallLivingRoomLight2();
+                                    LightManager.instance.CallCorridorOffTimer();
+                                    StartCoroutine(SloveBlackOut());
+                                    break;
+                                }
+                                else
+                                    Debug.Log("정전이 일어난 후 손전등들고 클릭가능");
                                 break;
                             default:
                                 Debug.Log("default");
@@ -78,4 +85,5 @@ public class BlackOutEvent : MonoBehaviour
         blackOut.Play("BlackOutAnimation");
         yield return new WaitForSeconds(.5f);
     }
+
 }
