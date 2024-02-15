@@ -479,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6c2f90194deef43af18f785045ce36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentIndex: -1
 --- !u!114 &84078218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,6 +2635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 84078207}
+  completePaper: {fileID: 0}
 --- !u!4 &931614612
 Transform:
   m_ObjectHideFlags: 0
@@ -4284,6 +4286,20 @@ MonoBehaviour:
       Data3: -1877945436
       Data4: 886741274
     Path: event:/SFX/Cabinet/CabinetClosed
+  <smallCabinetOpened>k__BackingField:
+    Guid:
+      Data1: -655459235
+      Data2: 1241159790
+      Data3: 958960780
+      Data4: 324059348
+    Path: event:/SFX/Cabinet/SmallCabinetOpened
+  <smallCabinetClosed>k__BackingField:
+    Guid:
+      Data1: -110191173
+      Data2: 1149749072
+      Data3: -986328147
+      Data4: 20924053
+    Path: event:/SFX/Cabinet/SmallCabinetClosed
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0
