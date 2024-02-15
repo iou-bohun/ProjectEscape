@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject DiePanel;
     WaitForSeconds waitSceneTime;
     public GameObject completePaper;
-    public int stage;
+    int stage;
 
     [Header("boolCheck")]
     public bool isCanGoRoofTop = false;
@@ -104,5 +104,13 @@ public class GameManager : MonoBehaviour
         DiePanel.SetActive(true);
         yield return waitSceneTime;
         SceneManager.LoadScene(SceneManager.loadedSceneCount);
+    }
+    public void Clear()
+    {
+        stage++;
+    }
+    public void UnClear()
+    {
+        stage--;
     }
 }
