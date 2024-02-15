@@ -266,7 +266,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638436513634152495
+  lastModified: 638436496891902420
   FileSizes:
   - Name: Desktop
     Value: 1678
@@ -419,7 +419,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638436513636346039
+  lastModified: 638436509813028880
   FileSizes:
   - Name: Desktop
     Value: 1741728
@@ -698,7 +698,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638436513634242247
+  lastModified: 638436509812862555
   FileSizes:
   - Name: Desktop
     Value: 2456
@@ -827,7 +827,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638436381626876233
+  lastModified: 638436496891902420
   FileSizes:
   - Name: Desktop
     Value: 408096
@@ -934,7 +934,7 @@ MonoBehaviour:
   - {fileID: -6397529200976280163}
   StringsBanks:
   - {fileID: -1219786190706538524}
-  cacheTime: 638436513636346039
+  cacheTime: 638436509813028880
   cacheVersion: 131616
 --- !u!114 &11827562823441857
 MonoBehaviour:
