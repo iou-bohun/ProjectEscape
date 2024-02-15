@@ -105,6 +105,7 @@ public class GameManager : MonoBehaviour
         DiePanel.SetActive(true);
         yield return waitSceneTime;
         DiePanel.SetActive(false);
+        LightManager.instance.isBlackOutEvent = false;
         Inventory.i.Clear();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
