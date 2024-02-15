@@ -15,8 +15,8 @@ public class TitleMunu : MonoBehaviour
 
     public void OnLoadBtn()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("stage" + "stEventScene"));
-        if (PlayerPrefs.GetInt("stage" + "stEventScene") != 1)
+        SceneManager.LoadScene(PlayerPrefs.GetInt("stage") + "stEventScene");
+        if (PlayerPrefs.GetInt("stage") != 1) ;
         {
             Instantiate(Resources.Load("Donts"));
         }
