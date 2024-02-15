@@ -24,8 +24,9 @@ public class BlackOutEvent : MonoBehaviour
             sceneTime += Time.deltaTime;
             if(sceneTime > 30&& sceneTime<31)
             {
-                LightManager.instance.isBlackOutEvent = true;
                 LightManager.instance.CallBlackOutEvent();
+                LightManager.instance.isBlackOutEvent = true;
+
             }
             if (sceneTime > 60&&!LightManager.instance.isPlayerDie)
             {
@@ -49,8 +50,9 @@ public class BlackOutEvent : MonoBehaviour
                         switch (gameObject.name)
                         {
                             case "BlackOut":
-                                LightManager.instance.isBlackOutEvent = true;
                                 LightManager.instance.CallBlackOutEvent();
+                                LightManager.instance.isBlackOutEvent = true;
+
                                 break;
                             case "SloveBlackOut":
                                 if (LightManager.instance.isBlackOutEvent&&EventManager.I.handFlash)
