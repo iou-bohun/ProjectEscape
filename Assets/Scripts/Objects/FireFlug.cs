@@ -1,23 +1,41 @@
-﻿using System.Collections;
+﻿using FMODUnity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace SojaExiles
 
 {
-	public class FireFlug : MonoBehaviour
+    [RequireComponent(typeof(StudioEventEmitter))]
+    public class FireFlug : MonoBehaviour
 	{
 
 		public Animator openandclose;
 		public bool open;
 		public Transform Player;
 
-		void Start()
+        // Audio
+        private StudioEventEmitter emitter;
+
+        void Start()
 		{
 			open = false;
+            emitter = AudioManager.instance.InitializeEventEmitter(FMODEvents.instance.buzz1, this.gameObject);
+			EventManager.I.corridorEvent += PlayBuzzSFX;
+			EventManager.I.livingRoomEvent += StopBuzzSFX;
+        }
+
+		private void PlayBuzzSFX()
+		{
+			emitter.Play();
 		}
 
-		void OnMouseOver()
+		private void StopBuzzSFX()
+        {
+            emitter.Stop();
+        }
+
+        void OnMouseOver()
 		{
 			{
 				if (Player)

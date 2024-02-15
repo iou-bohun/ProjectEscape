@@ -1631,6 +1631,38 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Electric Buzz/Buzz1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1744982108
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1121968356
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1688027295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298031099729890775, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1559954256
+      objectReference: {fileID: 0}
     - target: {fileID: 2377488921025790188, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       propertyPath: Player
       value: 
@@ -2469,6 +2501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ff2e71067c7a742866e997c93ce809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handFlash: 0
 --- !u!4 &930562687
 Transform:
   m_ObjectHideFlags: 0
@@ -2514,6 +2547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 84078207}
+  DiePanel: {fileID: 0}
   completePaper: {fileID: 0}
 --- !u!4 &931614612
 Transform:
@@ -4297,6 +4331,13 @@ MonoBehaviour:
       Data3: -986328147
       Data4: 20924053
     Path: event:/SFX/Cabinet/SmallCabinetClosed
+  <buzz1>k__BackingField:
+    Guid:
+      Data1: -1744982108
+      Data2: 1121968356
+      Data3: 1688027295
+      Data4: 1559954256
+    Path: event:/SFX/Electric Buzz/Buzz1
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -41,6 +41,9 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference smallCabinetOpened { get; private set; }
     [field: SerializeField] public EventReference smallCabinetClosed { get; private set; }
 
+    [field: Header("Electric Buzz")]
+    [field: SerializeField] public EventReference buzz1 { get; private set; }
+
 
     public static FMODEvents instance {  get; private set; }
 
