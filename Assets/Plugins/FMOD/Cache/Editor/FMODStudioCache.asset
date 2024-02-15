@@ -1244,7 +1244,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638436265774412208
+  lastModified: 638436278268327816
   FileSizes:
   - Name: Desktop
     Value: 1228
@@ -1380,6 +1380,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11846
+--- !u!114 &-358678359056643978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Switch/PenClick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Switch/PenClick
+  Guid:
+    Data1: -1759083956
+    Data2: 1206259492
+    Data3: -1013025882
+    Data4: 1873788377
+  Banks:
+  - {fileID: 6375046907457213665}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-150929366869324076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,13 +1500,14 @@ MonoBehaviour:
   - {fileID: -7081456994399219264}
   - {fileID: 2735027528501652282}
   - {fileID: 7577178308989800977}
+  - {fileID: -358678359056643978}
   EditorParameters:
   - {fileID: 7512116726040159889}
   MasterBanks:
   - {fileID: -1851704637713097677}
   StringsBanks:
   - {fileID: 2005188779379392979}
-  cacheTime: 638436265776205294
+  cacheTime: 638436278269940331
   cacheVersion: 131616
 --- !u!114 &22343254510854376
 MonoBehaviour:
@@ -1723,10 +1751,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638436265774452087
+  lastModified: 638436278268362855
   FileSizes:
   - Name: Desktop
-    Value: 2032
+    Value: 2084
   Exists: 1
 --- !u!114 &2026271955483287403
 MonoBehaviour:
@@ -2222,10 +2250,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638436265776205294
+  lastModified: 638436278269940331
   FileSizes:
   - Name: Desktop
-    Value: 1588928
+    Value: 1592544
   Exists: 1
 --- !u!114 &6409172662569899977
 MonoBehaviour:
