@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/FMOD/projectescape-audio-fmod/Assets/Ambient.meta
 guid: 189b1c2e52bf37f4c8e26de19076219e
 folderAsset: yes
+========
+guid: 61c59c6d411bf4d47848720bdabe08be
+>>>>>>>> Stashed changes:Assets/Scenes/ppa.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
