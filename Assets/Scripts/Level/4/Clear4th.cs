@@ -18,7 +18,7 @@ public class Clear4th : MonoBehaviour
                 clearCount++;   
             }
         }
-        if (clearCount >= 1)
+        if (clearCount >= 3)
         {
             GameManager.Instance.Clear();
         }
