@@ -11,7 +11,7 @@ public class Paper : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (Inventory.i.CheckInven("º¼Ææ"))
+                if (Inventory.i.CheckInven("º¼Ææ") >= 0)
                 {
                     PlayerController.instance.enabled = false;
                     Cursor.lockState = CursorLockMode.None;

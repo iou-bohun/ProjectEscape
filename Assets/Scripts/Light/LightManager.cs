@@ -15,6 +15,8 @@ public class LightManager : MonoBehaviour
     public event Action OnCorridorOffTimer;
     public event Action OnBlackOutEvent;
     public bool isBlackOutEvent;
+    public bool isBlackOutClear;
+    public bool isPlayerDie;
 
     private void Awake()
     {
