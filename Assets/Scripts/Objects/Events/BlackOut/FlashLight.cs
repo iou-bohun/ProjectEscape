@@ -32,7 +32,9 @@ public class FlashLight : MonoBehaviour
                 else
                 {
                     Debug.Log("베터리끝");
-                    PlayerDie();
+                    EventManager.I.CallplayerDieEvent();
+                    LightManager.instance.isPlayerDie = true;
+                    StopCoroutine(FlashBettery());
                     yield return null;
                 }
             }
@@ -43,10 +45,5 @@ public class FlashLight : MonoBehaviour
 
         }
 
-    }
-    private void PlayerDie()
-    {
-        LightManager.instance.isPlayerDie = true;
-        StopCoroutine(FlashBettery());
     }
 }
