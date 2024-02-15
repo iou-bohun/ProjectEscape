@@ -10,12 +10,15 @@ namespace SojaExiles
 
 		public Animator openandclose;
 		public bool open;
-		private Transform Player;
+		public Transform Player;
 
-		void Start()
+        private void Awake()
+        {
+            Player = GameManager.Instance.player.transform;
+        }
+        void Start()
 		{
-            Player = GameManager.Instance.player.GetComponent<Transform>();
-            open = false;
+			open = false;
 		}
 
 		void OnMouseOver()
