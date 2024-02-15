@@ -16,9 +16,10 @@ public class TitleMunu : MonoBehaviour
     public void OnLoadBtn()
     {
         SceneManager.LoadScene(PlayerPrefs.GetInt("stage") + "stEventScene");
-        if (PlayerPrefs.GetInt("stage") != 1) ;
+        if (PlayerPrefs.GetInt("stage") != 1)
         {
-            Instantiate(Resources.Load("Donts"));
+            GameObject g = Instantiate(Resources.Load("Donts")) as GameObject;
+            g.GetComponentInChildren<GameManager>().GetStage(PlayerPrefs.GetInt("stage"));
         }
         //switch (PlayerPrefs.GetInt("ClearData"))
         //{

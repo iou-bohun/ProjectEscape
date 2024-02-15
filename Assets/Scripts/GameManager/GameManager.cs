@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
         isOnce = true;
@@ -118,5 +117,9 @@ public class GameManager : MonoBehaviour
     {
         stage--;
         PlayerPrefs.SetInt("stage", stage);
+    }
+    public void GetStage(int a)
+    {
+        stage = a;
     }
 }

@@ -21,19 +21,25 @@ public class InteractionManager : MonoBehaviour
     private IInteractable curInteractable;
 
     public TextMeshProUGUI promptText;
-    private Camera _camera;
+    Camera _camera;
 
     private void Start()
     {
         _camera = Camera.main;
     }
-
+    void Cam()
+    {
+        _camera = Camera.main;
+    }
     private void Update()
     {
         if (Time.time - lastCheckTime > checkRate)
         {
             lastCheckTime = Time.time;
-
+            if (_camera == null)
+            {
+                Cam();
+            }
             Ray ray = _camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
             RaycastHit hit;
 
