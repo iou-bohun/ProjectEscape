@@ -24,6 +24,12 @@ public class EventManager : MonoBehaviour
     public Action corridorEvent;
     public Action playerDieEvent;
     public bool handFlash;
+    private bool isOnce;
+
+    private void Update()
+    {
+        FlashLightSFX();
+    }
 
     public void CallIBedRoomEvent()
     {
@@ -47,5 +53,19 @@ public class EventManager : MonoBehaviour
     public void CallplayerDieEvent()
     {
         playerDieEvent?.Invoke();
+    }
+
+    private void FlashLightSFX()
+    {
+        if (handFlash && !isOnce)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.switchClick, GameManager.Instance.player.transform.position);
+            isOnce = true;
+        }
+        else if(!handFlash && isOnce)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.switchClick, GameManager.Instance.player.transform.position);
+            isOnce = false;
+        }
     }
 }

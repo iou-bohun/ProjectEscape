@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public bool isCanGoRoofTop = false;
     public bool isClearStage = false;
 
+    private bool isOnce;
+
     private void Awake()
     {
         if (Instance == null)
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
     {
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
+        isOnce = true;
     }
 
 
@@ -46,12 +49,14 @@ public class GameManager : MonoBehaviour
                     return;
                 }
                 player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
+                IsFirstLoop();
                 CallLoopEvent();
 
             }
             else if (player.transform.position.x <= 15.4f && player.transform.position.y <= -3.65f) 
             {
-                player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z); 
+                player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z);
+                IsFirstLoop();
                 CallLoopEvent();
             }
         }
@@ -65,6 +70,15 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         StartCoroutine(PlayerDie());       
+    }
+
+    public void IsFirstLoop()
+    {
+        if (isOnce)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.firstLooped, player.transform.position);
+            isOnce = false;
+        }
     }
 
     IEnumerator PlayerDie()
