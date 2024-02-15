@@ -15,6 +15,7 @@ MonoBehaviour:
   disPlayName: "\uBD89\uC740 \uC124\uBB38\uC870\uC0AC"
   description: 
   type: 0
+  soundType: 1
   icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   dropPrefab: {fileID: 3887925963380329584, guid: ec5788882dfbe934d8bf5fd2e122b989, type: 3}
   handPrefab: {fileID: 3887925963380329584, guid: 5a39afce782ff774aaeca24e01e725a3, type: 3}
