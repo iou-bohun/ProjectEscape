@@ -6,6 +6,12 @@ public class LightSwitchController : MonoBehaviour
 {
     public Transform player;
 
+    private void Start()
+    {
+        player = GameManager.Instance.player.GetComponent<Transform>();
+    }
+
+
     void OnMouseOver()
     {
         {

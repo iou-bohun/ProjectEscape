@@ -67,6 +67,7 @@ public class BlackOutEvent : MonoBehaviour
                                     LightManager.instance.CallLivingRoomLight();
                                     LightManager.instance.CallLivingRoomLight2();
                                     LightManager.instance.CallCorridorOffTimer();
+                                    GameManager.Instance.Clear();
                                     StartCoroutine(SloveBlackOut());
                                     break;
                                 }

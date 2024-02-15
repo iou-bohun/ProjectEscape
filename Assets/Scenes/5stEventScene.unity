@@ -1175,6 +1175,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91373d384d29fe94fb74e5428db1e519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterVolume: 1
+  musicVolume: 1
+  ambienceVolume: 1
+  SFXVolume: 1
 --- !u!4 &514846537
 Transform:
   m_ObjectHideFlags: 0
@@ -1817,6 +1821,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7328899504965315946, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7066146973492285642, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 616417803}
   m_SourcePrefab: {fileID: 100100000, guid: 483fc8b8b823f704e815511f92874264, type: 3}
 --- !u!4 &616417798 stripped
 Transform:
@@ -1863,6 +1870,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3218462735674402171, guid: 483fc8b8b823f704e815511f92874264, type: 3}
   m_PrefabInstance: {fileID: 616417797}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &616417802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7066146973492285642, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+  m_PrefabInstance: {fileID: 616417797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &616417803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616417802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df99c7d724600646a7fe71240287322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
 --- !u!1001 &621325725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2947,6 +2972,7 @@ MonoBehaviour:
   player: {fileID: 0}
   DiePanel: {fileID: 0}
   completePaper: {fileID: 0}
+  stage: 1
   isCanGoRoofTop: 0
   isClearStage: 0
 --- !u!4 &931614612
@@ -4768,7 +4794,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77ded363a582b34b902b49679f2cfa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allItemChecked: 0
   collectableItem:
   - {fileID: 1434705669631791913, guid: fcd421ce3d391664c812a0838369f594, type: 3}
   - {fileID: 3458432526538355469, guid: 7e7ac5bd70251ec44bbad9d5b8065577, type: 3}
@@ -5769,6 +5794,13 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  <lampOnOff>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <otherMovement>k__BackingField:
     Guid:
       Data1: 0
@@ -5818,6 +5850,27 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  <elevatorButton>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <elevatorVoice>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <corruptedVoice>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <buzz1>k__BackingField:
     Guid:
       Data1: 0
@@ -5833,6 +5886,13 @@ MonoBehaviour:
       Data4: 0
     Path: 
   <switchClick>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <stageClearAlarm>k__BackingField:
     Guid:
       Data1: 0
       Data2: 0

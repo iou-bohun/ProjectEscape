@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject DiePanel;
     WaitForSeconds waitSceneTime;
     public GameObject completePaper;
-    int stage = 1;
+    public int stage = 1;
 
     [Header("boolCheck")]
     public bool isCanGoRoofTop = false;
@@ -29,8 +29,10 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.stageClearAlarm, player.transform.position);
         waitSceneTime = new WaitForSeconds(3);
         EventManager.I.playerDieEvent += GameOver;
+        SceneManager.sceneLoaded += PlayClearSFX;
         isOnce = true;
     }
 
@@ -121,5 +123,10 @@ public class GameManager : MonoBehaviour
     public void GetStage(int a)
     {
         stage = a;
+    }
+
+    private void PlayClearSFX(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.stageClearAlarm, player.transform.position);
     }
 }
