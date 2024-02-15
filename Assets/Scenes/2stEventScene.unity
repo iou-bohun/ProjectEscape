@@ -1027,7 +1027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8192f35a44301488ec0f072d9a16fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openandclose: {fileID: 5311471251075873781}
+  openandclose: {fileID: 161480537}
   open: 0
   Player: {fileID: 0}
 --- !u!95 &161480537
@@ -7003,7 +7003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a43eebafe9628145af82496a25fc3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1603649084}
   DiePanel: {fileID: 0}
   completePaper: {fileID: 0}
   isCanGoRoofTop: 0
