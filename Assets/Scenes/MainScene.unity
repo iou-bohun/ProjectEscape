@@ -389,6 +389,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a0e18734-9e2e-48ab-9a50-69a07321e34d
     m_ActionName: Player/Sit[/Keyboard/leftCtrl]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f2f5abbc-9054-4d86-a77c-028e6198eabe
+    m_ActionName: Player/Examine[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -475,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6c2f90194deef43af18f785045ce36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentIndex: -1
 --- !u!114 &84078218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,9 +494,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropPos: {fileID: 683482751}
   inventoryUi: {fileID: 644589185}
+  items: []
   handParent: {fileID: 886348641}
   HandItem: {fileID: 0}
   DropPos: {fileID: 0}
+  desctiptionUI: {fileID: 0}
+  desctiptionText: {fileID: 0}
+  handItemImage: {fileID: 0}
 --- !u!114 &84078219
 MonoBehaviour:
   m_ObjectHideFlags: 0
