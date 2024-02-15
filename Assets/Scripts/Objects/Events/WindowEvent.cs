@@ -64,7 +64,7 @@ public class WindowEvent : MonoBehaviour
     IEnumerator StopShakingEvent()
     {
         emitter.SetParameter("WindowRattleEnd", 1.0f);
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
         animator.SetBool("Shake", false);
         emitter.Stop();
     }
