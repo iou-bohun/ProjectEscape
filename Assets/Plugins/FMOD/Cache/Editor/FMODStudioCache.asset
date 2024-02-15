@@ -190,7 +190,7 @@ MonoBehaviour:
   - {fileID: 8251151445480128530}
   StringsBanks:
   - {fileID: -6720654788150376847}
-  cacheTime: 638436059349915434
+  cacheTime: 638436142965853189
   cacheVersion: 131616
 --- !u!114 &345616902716099709
 MonoBehaviour:
@@ -285,7 +285,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638436059349915434
+  lastModified: 638436142965853189
   FileSizes:
   - Name: Desktop
     Value: 1213792

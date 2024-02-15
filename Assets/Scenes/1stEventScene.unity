@@ -1836,6 +1836,42 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 84078211}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: Params.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Window/WindowRattle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1691413341
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1321290722
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1762725441
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 624825283
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866728320908369651, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      propertyPath: Params.Array.data[0].Name
+      value: WindowRattleEnd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

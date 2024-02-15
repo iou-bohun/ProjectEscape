@@ -12,8 +12,6 @@ public class WindowEvent : MonoBehaviour
 
     // Audio
     private StudioEventEmitter emitter;
-    private bool isRattle;
-    private bool isRattleOnce;
 
     private void Awake()
     {
@@ -23,51 +21,34 @@ public class WindowEvent : MonoBehaviour
     private void Start()
     {
         EventManager.I.bedRoomEvent += ShakeWindow;
+        EventManager.I.livingRoomEvent += CloseWindow;
         emitter = AudioManager.instance.InitializeEventEmitter(FMODEvents.instance.windowRattle, this.gameObject);
-        isRattle = false;
-        isRattleOnce = false;
-    }
-
-    private void Update()
-    {
-        UpdateSound();
     }
 
     public void ShakeWindow()
     {
-        isRattle = true;
-    }
-
-    private void UpdateSound()
-    {
-        if (isRattle && !isRattleOnce)
+        if (!emitter.IsActive)
         {
             animator.SetBool("Shake", true);
             emitter.SetParameter("WindowRattleEnd", 0.1f);
             emitter.Play();
-            StartCoroutine(StartTimer());
-            isRattleOnce = true;
-        }
-        else if (!isRattle && isRattleOnce)
-        {
-            StartCoroutine(StopShakingEvent());
-            isRattleOnce = false;
         }
     }
 
-    IEnumerator StartTimer()
+    public void CloseWindow()
+    {
+        if(emitter.IsActive)
+        {
+            StartCoroutine(CloseSequence());
+        }
+    }
+
+    IEnumerator CloseSequence()
     {
         yield return new WaitForSeconds(5f);
-        isRattle = false;
-    }
-
-    IEnumerator StopShakingEvent()
-    {
         emitter.SetParameter("WindowRattleEnd", 1.0f);
         yield return new WaitForSeconds(3f);
         animator.SetBool("Shake", false);
         emitter.Stop();
     }
-
-    
 }
