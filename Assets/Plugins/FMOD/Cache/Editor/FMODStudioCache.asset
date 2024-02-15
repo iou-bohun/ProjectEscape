@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638436040621154135
+  lastModified: 638435967864170629
   FileSizes:
   - Name: Desktop
-    Value: 1197504
+    Value: 508320
   Exists: 1
 --- !u!114 &-6866801841116095148
 MonoBehaviour:
@@ -153,7 +153,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 10000
+  MaxDistance: 20
   Length: 0
 --- !u!114 &-3730449556136908926
 MonoBehaviour:
@@ -217,10 +217,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638436040604397643
+  lastModified: 638435967864151516
   FileSizes:
   - Name: Desktop
-    Value: 1342
+    Value: 1252
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -248,38 +248,13 @@ MonoBehaviour:
   - {fileID: -6866801841116095148}
   - {fileID: 5380529802374096541}
   - {fileID: 7163532631792519942}
-  - {fileID: 6427896398560048255}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4371676816917725817}
   StringsBanks:
   - {fileID: -145696796068133940}
-  cacheTime: 638436040621154135
+  cacheTime: 638435967864170629
   cacheVersion: 131616
---- !u!114 &81548536795593126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TVStatic/TVEnd
-  m_EditorClassIdentifier: 
-  Name: TVEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2661268993
-    data2: 91035772
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &503612952181918487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,7 +280,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 10000
+  MaxDistance: 20
   Length: 0
 --- !u!114 &1152412663888068967
 MonoBehaviour:
@@ -393,7 +368,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638436040604357753
+  lastModified: 638435967701751202
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -553,34 +528,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
---- !u!114 &6427896398560048255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/TV/TVStatic
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/TV/TVStatic
-  Guid:
-    Data1: -941775497
-    Data2: 1331626688
-    Data3: -308610649
-    Data4: 1378225092
-  Banks:
-  - {fileID: -6943949023977780420}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 81548536795593126}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11846
 --- !u!114 &7163532631792519942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,8 +554,8 @@ MonoBehaviour:
   Parameters:
   - {fileID: 1152412663888068967}
   MinDistance: 1
-  MaxDistance: 30
-  Length: 18400
+  MaxDistance: 10
+  Length: 20000
 --- !u!114 &8917928750814824219
 MonoBehaviour:
   m_ObjectHideFlags: 0
