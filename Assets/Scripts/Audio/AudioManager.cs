@@ -26,6 +26,11 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound, worldpos);
     }
 
+    public void SetEventParameters(string parameterName, float value)
+    {
+
+    }
+
     public EventInstance CreateInstace(EventReference eventReference)
     {
         EventInstance eventInstace = RuntimeManager.CreateInstance(eventReference);

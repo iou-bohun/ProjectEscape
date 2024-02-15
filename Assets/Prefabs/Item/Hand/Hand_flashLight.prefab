@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23035564008676742}
   - component: {fileID: 95363276851437522}
   - component: {fileID: 6257300763616965922}
+  - component: {fileID: 5951696327296524468}
   m_Layer: 8
   m_Name: Hand_flashLight
   m_TagString: Untagged
@@ -164,7 +165,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -172,6 +173,20 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &5951696327296524468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002705123656268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48782cc7597dab44f815a5ac040602d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotLight: {fileID: 5049401610126319927}
+  pointLight: {fileID: 6257300763616965922}
 --- !u!1 &1175331865632600
 GameObject:
   m_ObjectHideFlags: 0

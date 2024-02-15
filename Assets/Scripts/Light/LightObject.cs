@@ -9,9 +9,11 @@ public class LightObject : MonoBehaviour
 {
     private Light _light;
     public GameObject _glove;
+    public Light _reflexlight;
     private Renderer _glovematerial;
     private bool isTurnOnLight;
     private bool isBlackOut;
+    private float targetIntensity;
     WaitForSeconds sensorTime;
     WaitForSeconds flickerTime;
 
@@ -21,7 +23,8 @@ public class LightObject : MonoBehaviour
         _glovematerial = _glove.GetComponent<Renderer>();
         isTurnOnLight = true;
         sensorTime = new WaitForSeconds(3f);
-        flickerTime = new WaitForSeconds(0.2f);
+        targetIntensity = 0.6f;
+        flickerTime = new WaitForSeconds(0.5f);
 
     }
 
@@ -32,12 +35,14 @@ public class LightObject : MonoBehaviour
         {
             if (isTurnOnLight)
             {
+                if(_reflexlight != null) { _reflexlight.enabled = false; }
                 _light.enabled = false;
                 isTurnOnLight = false;
                 _glovematerial.material.DisableKeyword("_EMISSION");
             }
             else
             {
+                if (_reflexlight != null) { _reflexlight.enabled = true; }
                 _light.enabled = true;
                 isTurnOnLight = true;
                 _glovematerial.material.EnableKeyword("_EMISSION");
@@ -61,14 +66,26 @@ public class LightObject : MonoBehaviour
 
     public void OffLight()
     {
-        StartCoroutine(OffTimer());
-        
+        if (_light != null)
+        {
+            if (isTurnOnLight)
+            {
+                if (_reflexlight != null) { _reflexlight.enabled = false; }
+                _light.enabled = false;
+                isTurnOnLight = false;
+                _glovematerial.material.DisableKeyword("_EMISSION");
+            }
+        }
+
     }
     public void BlackOutCorridor()
     {
         isBlackOut = LightManager.instance.isBlackOutEvent;
         StartCoroutine(BlackOut());
-
+    }
+    public void OffCorridor()
+    {
+        StartCoroutine(OffTimer());
     }
 
     IEnumerator OffTimer()
@@ -89,10 +106,20 @@ public class LightObject : MonoBehaviour
     {
         while (true)
         {
-            if (isBlackOut) 
+            if (isBlackOut && _light != null) 
             {
-                _light.intensity = UnityEngine.Random.Range(0f,0.5f);
-                yield return flickerTime;
+                if (_light.intensity > 0)
+                {
+                    _light.intensity = UnityEngine.Random.Range(0f, targetIntensity);
+                    targetIntensity -= UnityEngine.Random.Range(-0.007f, 0.01f);
+                    yield return flickerTime;
+                }
+                else
+                {
+                    LightManager.instance.CallCorridorOffTimer();
+                    yield return flickerTime;
+                }
+                
             }
             else
             {

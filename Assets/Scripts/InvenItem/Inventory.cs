@@ -137,7 +137,7 @@ public class Inventory : MonoBehaviour
             handItemImage.sprite = items[index].icon;
         }
     }
-    public bool CheckInven(string name)
+    public int CheckInven(string name)
     {
         for (int i = 0; i < InventorySize; i++)
         {
@@ -147,10 +147,10 @@ public class Inventory : MonoBehaviour
             }
             if (items[i].disPlayName == name)
             {
-                return true;
+                return i;
             }
         }
-        return false;
+        return -1;
     }
     public void DestroyItem(string name)
     {

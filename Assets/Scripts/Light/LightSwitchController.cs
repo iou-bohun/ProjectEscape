@@ -16,6 +16,7 @@ public class LightSwitchController : MonoBehaviour
                 {
                     if (Input.GetMouseButtonDown(0))
                     {
+                        AudioManager.instance.PlayOneShot(FMODEvents.instance.lightSwitchOnOff, this.transform.position);
                         switch (gameObject.name)
                         {
                             case "LivingRoomSwitch1":

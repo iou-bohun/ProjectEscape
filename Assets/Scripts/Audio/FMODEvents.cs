@@ -22,6 +22,15 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference windowClosed { get; private set; }
     [field: SerializeField] public EventReference windowRattle { get; private set; }
 
+
+    [field: Header("TV SFX")]
+    [field: SerializeField] public EventReference TVStatic { get; private set; }
+
+
+    [field: Header("Light Switch SFX")]
+    [field: SerializeField] public EventReference lightSwitchOnOff { get; private set; }
+
+
     public static FMODEvents instance {  get; private set; }
 
     private void Awake()

@@ -330,7 +330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c623d31042cfc49bacd2535222075e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 68cc78c7f0a0c664ab9daf0ff348c6f7, type: 2}
+  item: {fileID: 11400000, guid: 58866aa2543cdab4da4156cb460e4687, type: 2}
+  isOriginalPosition: 0
 --- !u!54 &2670024510537821784
 Rigidbody:
   m_ObjectHideFlags: 0

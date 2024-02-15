@@ -926,6 +926,41 @@ MonoBehaviour:
       Data3: 656644483
       Data4: 1272603255
     Path: event:/SFX/Door/DoorClosed
+  <windowOpened>k__BackingField:
+    Guid:
+      Data1: -1069943217
+      Data2: 1257827903
+      Data3: 759331217
+      Data4: -471396049
+    Path: event:/SFX/Window/WindowOpened
+  <windowClosed>k__BackingField:
+    Guid:
+      Data1: 2031097893
+      Data2: 1212374316
+      Data3: -1555917424
+      Data4: -23273637
+    Path: event:/SFX/Window/WindowClosed
+  <windowRattle>k__BackingField:
+    Guid:
+      Data1: -1691413341
+      Data2: 1321290722
+      Data3: -1762725441
+      Data4: 624825283
+    Path: event:/SFX/Window/WindowRattle
+  <TVStatic>k__BackingField:
+    Guid:
+      Data1: -941775497
+      Data2: 1331626688
+      Data3: -308610649
+      Data4: 1378225092
+    Path: event:/SFX/TV/TVStatic
+  <lightSwitchOnOff>k__BackingField:
+    Guid:
+      Data1: -1296891384
+      Data2: 1110903650
+      Data3: 287555466
+      Data4: -20867054
+    Path: event:/SFX/Switch/SwitchOnOff
 --- !u!1 &163842534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,7 +3026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2999,14 +3034,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -3074,6 +3101,19 @@ Transform:
   m_Father: {fileID: 1352105776}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 84078207}
 --- !u!1 &972719349
 GameObject:
   m_ObjectHideFlags: 0
