@@ -77566,6 +77566,7 @@ GameObject:
   - component: {fileID: 1983682084333956759}
   - component: {fileID: 1230308043787174159}
   - component: {fileID: 8934138612753352067}
+  - component: {fileID: 8985312919942584782}
   m_Layer: 0
   m_Name: ElevatorSwitch
   m_TagString: Untagged
@@ -94152,6 +94153,19 @@ Transform:
   m_Father: {fileID: 2989872432209752263}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8985312919942584782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066146972876954319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df99c7d724600646a7fe71240287322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1603649093}
 --- !u!33 &8989266402827307763
 MeshFilter:
   m_ObjectHideFlags: 0
