@@ -145,11 +145,28 @@ public class Inventory : MonoBehaviour
             {
                 continue;
             }
-            if (items[i].name == name)
+            if (items[i].disPlayName == name)
             {
                 return true;
             }
         }
         return false;
+    }
+    public void DestroyItem(string name)
+    {
+        for (int i = 0; i < InventorySize; i++)
+        {
+            if (items[i] == null)
+            {
+                continue;
+            }
+            if (items[i].disPlayName == name)
+            {
+                items[i] = null;
+                CatchItem(i);
+                UpdateInvenUi(i);
+                return;
+            }
+        }
     }
 }

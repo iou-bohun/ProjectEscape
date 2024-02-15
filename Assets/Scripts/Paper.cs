@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Paper : MonoBehaviour
 {
+    bool a = true;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (a)
         {
-            if (Inventory.i.CheckInven("º¼Ææ"))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                PlayerController.instance.enabled = false;
-                Instantiate(Resources.Load("paper"),FindObjectOfType<Canvas>().transform);
-                Cursor.lockState = CursorLockMode.None;
+                if (Inventory.i.CheckInven("º¼Ææ"))
+                {
+                    PlayerController.instance.enabled = false;
+                    Cursor.lockState = CursorLockMode.None;
+                    Instantiate(Resources.Load("paper"), FindObjectOfType<Canvas>().transform);
+                    a = false;
+                }
             }
         }
     }
