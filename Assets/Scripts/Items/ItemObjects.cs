@@ -27,10 +27,7 @@ public class ItemObjects : MonoBehaviour, IInteractable
             }
         }
     }
-    private void OnDisable()
-    {
-        GameManager.Instance.OnLoopEvent -= LoopItem;
-    }
+
     public string GetInteractPrompot()
     {
         return string.Format("Pickup {0}", item.disPlayName);
