@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 84078216}
   - component: {fileID: 84078218}
   - component: {fileID: 84078217}
+  - component: {fileID: 84078219}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -478,7 +479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6c2f90194deef43af18f785045ce36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: -1
 --- !u!114 &84078218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,6 +500,18 @@ MonoBehaviour:
   desctiptionUI: {fileID: 0}
   desctiptionText: {fileID: 0}
   handItemImage: {fileID: 0}
+--- !u!114 &84078219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84078207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee88a60f2dd1e947b4967aaf6fae1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &128316112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBlackOutEvent: 0
+  isBlackOutClear: 0
+  isPlayerDie: 0
 --- !u!1 &821582060
 GameObject:
   m_ObjectHideFlags: 0
@@ -4155,6 +4169,20 @@ MonoBehaviour:
       Data3: -1762725441
       Data4: 624825283
     Path: event:/SFX/Window/WindowRattle
+  <TVStatic>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <lightSwitchOnOff>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0
