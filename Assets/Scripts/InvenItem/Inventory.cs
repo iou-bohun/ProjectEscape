@@ -123,6 +123,15 @@ public class Inventory : MonoBehaviour
             HandItem = Instantiate(items[index].handPrefab, handParent);
             HandItem.name = items[index].handPrefab.name;
         }
+        //정전이벤트에서 들고 있는 아이템이 플레쉬인지 확인
+        if (HandItem == null) EventManager.I.handFlash = false;
+        else if (HandItem.name == "Hand_flashLight")
+        { 
+            EventManager.I.handFlash = true;
+            Debug.Log("플레쉬장착");
+        }
+        else EventManager.I.handFlash = false;
+
     }
 
     public void ShowExmineUI()
