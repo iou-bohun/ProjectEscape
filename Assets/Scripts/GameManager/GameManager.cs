@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject DiePanel;
     WaitForSeconds waitSceneTime;
     public GameObject completePaper;
-    int stage = 1;
+    public int stage = 1;
 
     [Header("boolCheck")]
     public bool isCanGoRoofTop = false;
