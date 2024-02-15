@@ -45,7 +45,6 @@ public class WindowEvent : MonoBehaviour
 
     IEnumerator CloseSequence()
     {
-        yield return new WaitForSeconds(5f);
         emitter.SetParameter("WindowRattleEnd", 1.0f);
         yield return new WaitForSeconds(3f);
         animator.SetBool("Shake", false);

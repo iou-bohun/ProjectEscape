@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{bc143a84-bbc9-4778-a378-324bdb461946}">
+		<property name="name">
+			<value>FootstepsReverb</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3f42f3d1-c0f2-4621-9313-fbbe206e8c64}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e109cbf8-1a4f-4b91-8277-62d0ff7c9be3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e109cbf8-1a4f-4b91-8277-62d0ff7c9be3}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
