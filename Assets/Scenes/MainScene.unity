@@ -3456,6 +3456,27 @@ MonoBehaviour:
       Data3: 656644483
       Data4: 1272603255
     Path: event:/SFX/Door/DoorClosed
+  <windowOpened>k__BackingField:
+    Guid:
+      Data1: -1069943217
+      Data2: 1257827903
+      Data3: 759331217
+      Data4: -471396049
+    Path: event:/SFX/Window/WindowOpened
+  <windowClosed>k__BackingField:
+    Guid:
+      Data1: 2031097893
+      Data2: 1212374316
+      Data3: -1555917424
+      Data4: -23273637
+    Path: event:/SFX/Window/WindowClosed
+  <windowRattle>k__BackingField:
+    Guid:
+      Data1: -1691413341
+      Data2: 1321290722
+      Data3: -1762725441
+      Data4: 624825283
+    Path: event:/SFX/Window/WindowRattle
 --- !u!1001 &2065661361
 PrefabInstance:
   m_ObjectHideFlags: 0

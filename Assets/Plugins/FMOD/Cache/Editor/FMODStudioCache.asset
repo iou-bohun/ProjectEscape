@@ -69,11 +69,38 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638435887612698864
+  lastModified: 638435945915373579
   FileSizes:
   - Name: Desktop
-    Value: 189664
+    Value: 508320
   Exists: 1
+--- !u!114 &-6866801841116095148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Window/WindowClosed
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Window/WindowClosed
+  Guid:
+    Data1: 2031097893
+    Data2: 1212374316
+    Data3: -1555917424
+    Data4: -23273637
+  Banks:
+  - {fileID: -6943949023977780420}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5841911134182231082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,10 +217,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638435887612678916
+  lastModified: 638435939940944664
   FileSizes:
   - Name: Desktop
-    Value: 1058
+    Value: 1252
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -218,12 +245,15 @@ MonoBehaviour:
   - {fileID: 5573649689792162089}
   - {fileID: -7846559995077578702}
   - {fileID: -5748891380886805099}
+  - {fileID: -6866801841116095148}
+  - {fileID: 5380529802374096541}
+  - {fileID: 7163532631792519942}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4371676816917725817}
   StringsBanks:
   - {fileID: -145696796068133940}
-  cacheTime: 638435887612698864
+  cacheTime: 638435945915373579
   cacheVersion: 131616
 --- !u!114 &503612952181918487
 MonoBehaviour:
@@ -252,6 +282,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1152412663888068967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WindowRattle/WindowRattleEnd
+  m_EditorClassIdentifier: 
+  Name: WindowRattleEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1466708481
+    data2: 4271065638
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3233777207860034143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +368,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638435887612668953
+  lastModified: 638435939940914741
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -341,6 +395,33 @@ MonoBehaviour:
   - {fileID: 5413620510179083598}
   IsStream: 0
   Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5380529802374096541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Window/WindowOpened
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Window/WindowOpened
+  Guid:
+    Data1: -1069943217
+    Data2: 1257827903
+    Data3: 759331217
+    Data4: -471396049
+  Banks:
+  - {fileID: -6943949023977780420}
+  IsStream: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -447,6 +528,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &7163532631792519942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Window/WindowRattle
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Window/WindowRattle
+  Guid:
+    Data1: -1691413341
+    Data2: 1321290722
+    Data3: -1762725441
+    Data4: 624825283
+  Banks:
+  - {fileID: -6943949023977780420}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1152412663888068967}
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 20000
 --- !u!114 &8917928750814824219
 MonoBehaviour:
   m_ObjectHideFlags: 0
