@@ -64,7 +64,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{2f3a0aaf-c4e6-415a-be11-f0ca9d80e7a9}">
 		<property name="maximumDistance">
-			<value>10</value>
+			<value>30</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{42eb97c4-ec29-41a4-a950-56071e9b7723}" />
@@ -72,7 +72,6 @@
 	<object class="MarkerTrack" id="{55475d1c-6fb1-45ad-bec1-bcbc451e92f6}" />
 	<object class="GroupTrack" id="{87ea1e50-2e92-482f-91cd-0de7e7b763e2}">
 		<relationship name="modules">
-			<destination>{22511bd2-5178-4dd9-b9fc-068c04697294}</destination>
 			<destination>{0a16282f-e0ba-4e5c-b828-4c24bbeb930b}</destination>
 			<destination>{099d7755-0152-43d9-8577-deb051d280e7}</destination>
 			<destination>{f1583956-31e6-4c4b-99c0-ca1c9f38c972}</destination>
@@ -85,7 +84,6 @@
 	</object>
 	<object class="Timeline" id="{20c90800-4962-4eb3-bfbd-7a92b7b34473}">
 		<relationship name="modules">
-			<destination>{22511bd2-5178-4dd9-b9fc-068c04697294}</destination>
 			<destination>{0a16282f-e0ba-4e5c-b828-4c24bbeb930b}</destination>
 			<destination>{099d7755-0152-43d9-8577-deb051d280e7}</destination>
 			<destination>{f1583956-31e6-4c4b-99c0-ca1c9f38c972}</destination>
@@ -127,18 +125,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{afca82c7-34e2-4483-8120-a453f342bf18}" />
-	<object class="SingleSound" id="{22511bd2-5178-4dd9-b9fc-068c04697294}">
-		<property name="length">
-			<value>1.6000000000000001</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{db7428b4-cee3-4ad7-b576-c06591104352}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{0a16282f-e0ba-4e5c-b828-4c24bbeb930b}">
-		<property name="start">
-			<value>1.6000000000000001</value>
-		</property>
 		<property name="length">
 			<value>3.6000000000000001</value>
 		</property>
@@ -151,7 +138,7 @@
 	</object>
 	<object class="SingleSound" id="{099d7755-0152-43d9-8577-deb051d280e7}">
 		<property name="start">
-			<value>5.2000000000000002</value>
+			<value>3.6000000000000001</value>
 		</property>
 		<property name="length">
 			<value>11.400000000000002</value>
@@ -165,7 +152,7 @@
 	</object>
 	<object class="SingleSound" id="{f1583956-31e6-4c4b-99c0-ca1c9f38c972}">
 		<property name="start">
-			<value>16.600000000000001</value>
+			<value>15.000000000000002</value>
 		</property>
 		<property name="length">
 			<value>3.3999999999999968</value>
@@ -206,7 +193,7 @@
 	</object>
 	<object class="NamedMarker" id="{16c8ee9f-4669-40d3-a93b-078a0b3f3548}">
 		<property name="position">
-			<value>5.2000000000000002</value>
+			<value>3.6000000000000001</value>
 		</property>
 		<property name="name">
 			<value>Loop</value>
@@ -220,7 +207,7 @@
 	</object>
 	<object class="NamedMarker" id="{cf694ea2-dddd-49f0-9b36-274a960013d5}">
 		<property name="position">
-			<value>16.600000000000001</value>
+			<value>15.000000000000002</value>
 		</property>
 		<property name="name">
 			<value>End</value>
@@ -234,7 +221,7 @@
 	</object>
 	<object class="LoopRegion" id="{37bf1ca6-725f-4199-99e2-e83279fc6a06}">
 		<property name="position">
-			<value>5.2000000000000002</value>
+			<value>3.6000000000000001</value>
 		</property>
 		<property name="length">
 			<value>11.400000000000002</value>
@@ -251,7 +238,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>16.600000000000001</value>
+			<value>15</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{20c90800-4962-4eb3-bfbd-7a92b7b34473}</destination>
@@ -311,7 +298,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{81d1d906-7a75-41f4-9533-a09546a81ea9}" />
-	<object class="SpatialiserEffect" id="{2b13b4fc-62fe-448a-8573-4d0e51302914}" />
+	<object class="SpatialiserEffect" id="{2b13b4fc-62fe-448a-8573-4d0e51302914}">
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{4d766f40-1a59-4575-b492-b7810318b943}">
 		<property name="position">
 			<value>0</value>
