@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     WaitForSeconds waitSceneTime;
     public GameObject completePaper;
 
+    [Header("boolCheck")]
+    public bool isCanGoRoofTop = false;
+    public bool isClearStage = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -37,8 +41,10 @@ public class GameManager : MonoBehaviour
         {
             if (player.transform.position.x >= 15.5f && player.transform.position.y >= 4.2f)
             {
-                if (completePaper.activeInHierarchy)
+                if(isCanGoRoofTop)
+                {
                     return;
+                }
                 player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
                 CallLoopEvent();
 

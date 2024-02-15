@@ -171,10 +171,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638436161578401272
+  lastModified: 638436178249480764
   FileSizes:
   - Name: Desktop
-    Value: 1552
+    Value: 1662
   Exists: 1
 --- !u!114 &-5303836331860409585
 MonoBehaviour:
@@ -283,6 +283,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4421332613348405762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cabinet/SmallCabinetClosed
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cabinet/SmallCabinetClosed
+  Guid:
+    Data1: -110191173
+    Data2: 1149749072
+    Data3: -986328147
+    Data4: 20924053
+  Banks:
+  - {fileID: -1204029034388466547}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3466240660216946842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,10 +461,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638436161578532742
+  lastModified: 638436178249560772
   FileSizes:
   - Name: Desktop
-    Value: 1290848
+    Value: 1302720
   Exists: 1
 --- !u!114 &-830501762605805754
 MonoBehaviour:
@@ -524,12 +551,14 @@ MonoBehaviour:
   - {fileID: 4589219419515279185}
   - {fileID: -6037305077732684558}
   - {fileID: -8939145383262313587}
+  - {fileID: 8572213953123268954}
+  - {fileID: -4421332613348405762}
   EditorParameters: []
   MasterBanks:
   - {fileID: 877050059685147307}
   StringsBanks:
   - {fileID: -5857408061237621849}
-  cacheTime: 638436161578532742
+  cacheTime: 638436178249560772
   cacheVersion: 131616
 --- !u!114 &345616902716099709
 MonoBehaviour:
@@ -624,7 +653,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638436049117754152
+  lastModified: 638436081168916461
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -1009,6 +1038,33 @@ MonoBehaviour:
   - {fileID: 2218800950879310369}
   IsStream: 0
   Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8572213953123268954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cabinet/SmallCabinetOpened
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cabinet/SmallCabinetOpened
+  Guid:
+    Data1: -655459235
+    Data2: 1241159790
+    Data3: 958960780
+    Data4: 324059348
+  Banks:
+  - {fileID: -1204029034388466547}
+  IsStream: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
