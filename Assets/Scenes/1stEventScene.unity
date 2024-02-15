@@ -6253,6 +6253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YouDied
       objectReference: {fileID: 0}
+    - target: {fileID: 1814398323025270177, guid: 13f8933044bb28a468d057ca4626708c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

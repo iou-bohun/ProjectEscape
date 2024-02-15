@@ -10,7 +10,6 @@ public class Boxfive : MonoBehaviour
     private bool idCardCheck;
     private bool driveIdCheck;
     private bool amuletCheck;
-    [SerializeField]private bool allItemChecked;
     [SerializeField] private GameObject[] collectableItem;
     public GameObject player;
     public InventoryInput invenInput;
@@ -28,7 +27,6 @@ public class Boxfive : MonoBehaviour
         idCardCheck = false;
         driveIdCheck = false;
         amuletCheck = false;
-        allItemChecked = false;
     }
     private void OnMouseOver()
     {
@@ -85,7 +83,7 @@ public class Boxfive : MonoBehaviour
     {
         if(walletCheck && idCardCheck && driveIdCheck && amuletCheck)
         {
-            allItemChecked = true;
+            GameManager.Instance.Clear();
         }
     }
 }
