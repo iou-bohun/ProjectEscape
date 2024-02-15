@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -56,6 +57,8 @@ public class BlackOutEvent : MonoBehaviour
                             case "BlackOut":
                                 LightManager.instance.CallBlackOutEvent();
                                 LightManager.instance.isBlackOutEvent = true;
+                                RuntimeManager.StudioSystem.setParameterByName("WindEnd", 0.1f);
+                                AudioManager.instance.PlayOneShot(FMODEvents.instance.whenLightsOut, player.transform.position);
 
                                 break;
                             case "SloveBlackOut":
@@ -91,6 +94,7 @@ public class BlackOutEvent : MonoBehaviour
         print("you slove BlackOut Quiz");
         blackOut.Play("BlackOutAnimation");
         yield return new WaitForSeconds(.5f);
+        RuntimeManager.StudioSystem.setParameterByName("WindEnd", 1.0f);
     }
 
 }

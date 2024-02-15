@@ -60,6 +60,7 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Ambients")]
     [field: SerializeField] public EventReference firstLooped { get; private set; }
+    [field: SerializeField] public EventReference whenLightsOut { get; private set; }
 
 
     public static FMODEvents instance {  get; private set; }

@@ -305,7 +305,7 @@ Transform:
   - {fileID: 1946383013}
   - {fileID: 163842535}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 221.316, z: 0}
 --- !u!114 &84078212
 MonoBehaviour:
@@ -2782,7 +2782,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740257296
 GameObject:
@@ -5917,6 +5917,13 @@ MonoBehaviour:
       Data3: 439246490
       Data4: -1490828510
     Path: event:/Ambient/Mysterious/FirstLooped
+  <whenLightsOut>k__BackingField:
+    Guid:
+      Data1: 1422757983
+      Data2: 1094661694
+      Data3: -155826261
+      Data4: -1973485313
+    Path: event:/Ambient/Wind/WhenLightsOut
 --- !u!1001 &2032514532
 PrefabInstance:
   m_ObjectHideFlags: 0
