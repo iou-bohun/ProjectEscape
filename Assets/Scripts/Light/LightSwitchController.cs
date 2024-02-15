@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class LightSwitchController : MonoBehaviour
 {
-    private Transform player;
-
-    private void Start()
-    {
-        player = GameManager.Instance.player.GetComponent<Transform>();
-    }
+    public Transform player;
 
     void OnMouseOver()
     {

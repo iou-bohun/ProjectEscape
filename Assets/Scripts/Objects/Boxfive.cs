@@ -18,6 +18,7 @@ public class Boxfive : MonoBehaviour
 
     private void Awake()
     {
+        player = GameManager.Instance.player;
         invenInput = player.GetComponent<InventoryInput>();
     }
 

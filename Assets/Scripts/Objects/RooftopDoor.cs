@@ -13,6 +13,10 @@ public class RooftopDoor : MonoBehaviour
     public GameObject Password;
     public InputField passwordInput;
 
+    private void Awake()
+    {
+        Player = GameManager.Instance.player.transform;
+    }
     void Start()
     {
         open = false;

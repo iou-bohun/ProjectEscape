@@ -13,13 +13,14 @@ public class GameManager : MonoBehaviour
     public GameObject DiePanel;
     WaitForSeconds waitSceneTime;
     public GameObject completePaper;
+    public int stage;
 
     [Header("boolCheck")]
     public bool isCanGoRoofTop = false;
     public bool isClearStage = false;
 
     private bool isOnce;
-    [SerializeField] int stage = 1;
+
     private void Awake()
     {
         if (Instance == null)
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
         {
             if (player.transform.position.x >= 15.5f && player.transform.position.y >= 4.2f)
             {
-                if (isCanGoRoofTop)
+                if(isCanGoRoofTop)
                 {
                     return;
                 }
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
                 }
                 else if(stage + "stEventScene" != SceneManager.GetActiveScene().name)
                 {
+                    Inventory.i.Clear();
                     SceneManager.LoadScene(stage + "stEventScene");
                 }
 
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
                 }
                 else if (stage + "stEventScene" != SceneManager.GetActiveScene().name)
                 {
+                    Inventory.i.Clear();
                     SceneManager.LoadScene(stage + "stEventScene");
                 }
             }
@@ -101,13 +104,5 @@ public class GameManager : MonoBehaviour
         DiePanel.SetActive(true);
         yield return waitSceneTime;
         SceneManager.LoadScene(SceneManager.loadedSceneCount);
-    }
-    public void Clear()
-    {
-        stage++;
-    }
-    public void UnClear()
-    {
-        stage--;
     }
 }
