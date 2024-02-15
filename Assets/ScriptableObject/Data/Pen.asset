@@ -17,5 +17,5 @@ MonoBehaviour:
     \uAC00\uC838\uB2E4\uB1A8\uC744\uAE4C?"
   type: 0
   icon: {fileID: 21300000, guid: 6a9bccad4996e0644a440eb4ad2d44f4, type: 3}
-  dropPrefab: {fileID: 8758348418127908040, guid: 83042a5eb5c40da4197716921b77d573, type: 3}
-  handPrefab: {fileID: 8758348418127908040, guid: bb55218d9ca8d4c43801d47c6a96cf02, type: 3}
+  dropPrefab: {fileID: 3019204093293564581, guid: 303c793160c045d4ea67186df1c311f5, type: 3}
+  handPrefab: {fileID: 183294508282664967, guid: d28ef569cf2cc954a94cdaa6868ea161, type: 3}

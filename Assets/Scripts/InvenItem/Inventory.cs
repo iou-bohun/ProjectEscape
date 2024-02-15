@@ -137,4 +137,19 @@ public class Inventory : MonoBehaviour
             handItemImage.sprite = items[index].icon;
         }
     }
+    public bool CheckInven(string name)
+    {
+        for (int i = 0; i < InventorySize; i++)
+        {
+            if (items[i] == null)
+            {
+                continue;
+            }
+            if (items[i].name == name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

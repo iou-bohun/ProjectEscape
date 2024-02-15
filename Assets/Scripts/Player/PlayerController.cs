@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMOD.Studio;
+using System.Runtime.CompilerServices;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,25 +29,36 @@ public class PlayerController : MonoBehaviour
     public bool canLook = true;
 
     private Rigidbody _rigidbody;
-    private PlayerSound _playerSound; // �÷��̾� ���� ���� ������Ʈ�Դϴ�.
 
     public static PlayerController instance;
+
+
+    // Audio
+    private EventInstance footstepsWalkRock;
+    private EventInstance footstepsRunRock;
+    private bool isRunning = false;
+    private bool isGroundedOnce = false;
+
+
+
     private void Awake()
     {
         instance = this;
         _rigidbody = GetComponent<Rigidbody>();
-        _playerSound = GetComponent<PlayerSound>();
     }
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
 
+        // Audio
+        footstepsWalkRock = AudioManager.instance.CreateInstace(FMODEvents.instance.footstepsWalkRock);
+        footstepsRunRock = AudioManager.instance.CreateInstace(FMODEvents.instance.footstepsRunRock);
     }
     private void FixedUpdate()
     {
         Move();
-        IsGrounded();
+        UpdateSound();
     }
 
     private void LateUpdate()
@@ -84,12 +97,10 @@ public class PlayerController : MonoBehaviour
         if (context.phase == InputActionPhase.Performed)
         {
             curMovementInput = context.ReadValue<Vector2>();
-            _playerSound.OnWalk();
         }
         else if (context.phase == InputActionPhase.Canceled)
         {
             curMovementInput = Vector2.zero;
-            _playerSound.OffWalk();
         }
     }
 
@@ -100,7 +111,7 @@ public class PlayerController : MonoBehaviour
             if (IsGrounded())
             {
                 _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
-                _playerSound.OnJump();
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.footstepsJumpRock, this.transform.position);
             }
         }
     }
@@ -117,11 +128,9 @@ public class PlayerController : MonoBehaviour
         {
             if (Physics.Raycast(rays[i],0.1f, groundLayerMask))
             {
-                _playerSound.isGrounded = true;
                 return true; 
             }
         }
-        _playerSound.isGrounded = false;
         return false;
     }
 
@@ -139,12 +148,12 @@ public class PlayerController : MonoBehaviour
         if(context.phase == InputActionPhase.Performed)
         {
             moveSpeed = 8;
-            _playerSound.isRun = true;
+            isRunning = true;
         }
         else if (context.phase == InputActionPhase.Canceled)
         {
             moveSpeed = 4;
-            _playerSound.isRun = false;
+            isRunning = false;
         }
     }
 
@@ -159,6 +168,63 @@ public class PlayerController : MonoBehaviour
             cameraContainer.position = originCameraPosition.position;
         }
     }
+
+    private void UpdateSound()
+    {
+        PlayerLandingSound();
+        PlayerMovingSound();
+    }
+
+    private void PlayerMovingSound()
+    {
+        float x = _rigidbody.velocity.x;
+        float z = _rigidbody.velocity.z;
+        bool isStopped = (x == 0 || z == 0) ? true : false;
+
+        if (!isStopped && IsGrounded())
+        {
+            if (!isRunning)
+            {
+                footstepsRunRock.stop(STOP_MODE.ALLOWFADEOUT);
+                PLAYBACK_STATE playbackState;
+                footstepsWalkRock.getPlaybackState(out playbackState);
+                if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                {
+                    footstepsWalkRock.start();
+                }
+            }
+            else
+            {
+                footstepsWalkRock.stop(STOP_MODE.ALLOWFADEOUT);
+                PLAYBACK_STATE playbackState;
+                footstepsRunRock.getPlaybackState(out playbackState);
+                if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                {
+                    footstepsRunRock.start();
+                }
+            }
+        }
+        else
+        {
+            footstepsWalkRock.stop(STOP_MODE.ALLOWFADEOUT);
+            footstepsRunRock.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+    }
+
+    private void PlayerLandingSound()
+    {
+        if (IsGrounded() && !isGroundedOnce)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.footstepsLandRock, this.transform.position);
+            isGroundedOnce = true;
+        }
+        else if (!IsGrounded() && isGroundedOnce)
+        {
+            isGroundedOnce = false;
+        }
+    }
 }
+
+
 
 
