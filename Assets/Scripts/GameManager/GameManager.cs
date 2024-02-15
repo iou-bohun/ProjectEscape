@@ -1,23 +1,27 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public event Action OnLoopEvent;
     public GameObject player;
+    public GameObject DiePanel;
+    WaitForSeconds waitSceneTime;
 
     private void Awake()
     {
         if (Instance == null)
         Instance = this;
     }
-
-    void Start()
+    private void Start()
     {
-        
+        waitSceneTime = new WaitForSeconds(3);
+        EventManager.I.playerDieEvent += GameOver;
     }
 
 
@@ -46,5 +50,17 @@ public class GameManager : MonoBehaviour
     private void CallLoopEvent()
     {
         OnLoopEvent?.Invoke();
+    }
+
+    public void GameOver()
+    {
+        StartCoroutine(PlayerDie());       
+    }
+
+    IEnumerator PlayerDie()
+    {
+        DiePanel.SetActive(true);
+        yield return waitSceneTime;
+        SceneManager.LoadScene(SceneManager.loadedSceneCount);
     }
 }

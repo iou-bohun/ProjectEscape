@@ -22,6 +22,8 @@ public class EventManager : MonoBehaviour
     public Action livingRoomEvent;
     public Action bathRoomEvent;
     public Action corridorEvent;
+    public Action playerDieEvent;
+    public bool handFlash;
 
     public void CallIBedRoomEvent()
     {
@@ -41,5 +43,9 @@ public class EventManager : MonoBehaviour
     public void CallBathRoomEvent()
     {
         bathRoomEvent?.Invoke();
+    }
+    public void CallplayerDieEvent()
+    {
+        playerDieEvent?.Invoke();
     }
 }
