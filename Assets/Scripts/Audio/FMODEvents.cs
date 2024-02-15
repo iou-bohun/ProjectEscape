@@ -31,10 +31,8 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference lightSwitchOnOff { get; private set; }
 
 
-    [field: Header("Items SFX")]
-    [field: SerializeField] public EventReference otherMovement { get; private set; }
+    [field: Header("Paper Movement SFX")]
     [field: SerializeField] public EventReference paperMovement { get; private set; }
-    [field: SerializeField] public EventReference metalMovement { get; private set; }
 
 
     [field: Header("Cabinet SFX")]
@@ -61,7 +59,7 @@ public class FMODEvents : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("Scene¿¡ Àû¾îµµ ÇÏ³ªÀÇ FMODEvents°¡ Á¸ÀçÇÏ´Â Áö È®ÀÎÇÏ¼¼¿ä.");
+            Debug.LogError("Sceneï¿½ï¿½ ï¿½ï¿½ï¿½îµµ ï¿½Ï³ï¿½ï¿½ï¿½ FMODEventsï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
         }
         instance = this;
     }

@@ -69,6 +69,7 @@ public class NoticeBoard : MonoBehaviour
         {
             _fourPaper.SetActive(false);
             _completePaper.SetActive(true);
+            GameManager.Instance.isCanGoRoofTop = true;
         }
     }
 

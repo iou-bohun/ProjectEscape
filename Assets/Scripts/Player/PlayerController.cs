@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Runtime.CompilerServices;
 using FMOD.Studio;
-using FMODUnity;
+using System.Runtime.CompilerServices;
 
 public class PlayerController : MonoBehaviour
 {
@@ -55,10 +54,6 @@ public class PlayerController : MonoBehaviour
         // Audio
         footstepsWalkRock = AudioManager.instance.CreateInstace(FMODEvents.instance.footstepsWalkRock);
         footstepsRunRock = AudioManager.instance.CreateInstace(FMODEvents.instance.footstepsRunRock);
-        EventManager.I.livingRoomEvent += SetFootstepsReverbZero;
-        EventManager.I.bathRoomEvent += SetFootstepsReverbHalf;
-        EventManager.I.corridorEvent += SetFootstepsReverbFull;
-
     }
     private void FixedUpdate()
     {
@@ -190,7 +185,7 @@ public class PlayerController : MonoBehaviour
         {
             if (!isRunning)
             {
-                footstepsRunRock.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                footstepsRunRock.stop(STOP_MODE.ALLOWFADEOUT);
                 PLAYBACK_STATE playbackState;
                 footstepsWalkRock.getPlaybackState(out playbackState);
                 if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
@@ -200,7 +195,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                footstepsWalkRock.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                footstepsWalkRock.stop(STOP_MODE.ALLOWFADEOUT);
                 PLAYBACK_STATE playbackState;
                 footstepsRunRock.getPlaybackState(out playbackState);
                 if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
@@ -211,8 +206,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            footstepsWalkRock.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            footstepsRunRock.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            footstepsWalkRock.stop(STOP_MODE.ALLOWFADEOUT);
+            footstepsRunRock.stop(STOP_MODE.ALLOWFADEOUT);
         }
     }
 
@@ -227,24 +222,6 @@ public class PlayerController : MonoBehaviour
         {
             isGroundedOnce = false;
         }
-    }
-
-    private void SetFootstepsReverbZero()
-    {
-        float amount = 0.0f;
-        RuntimeManager.StudioSystem.setParameterByName("FootstepsReverb", amount);
-    }
-
-    private void SetFootstepsReverbHalf()
-    {
-        float amount = 0.7f;
-        RuntimeManager.StudioSystem.setParameterByName("FootstepsReverb", amount);
-    }
-
-    private void SetFootstepsReverbFull()
-    {
-        float amount = 1.0f;
-        RuntimeManager.StudioSystem.setParameterByName("FootstepsReverb", amount);
     }
 }
 

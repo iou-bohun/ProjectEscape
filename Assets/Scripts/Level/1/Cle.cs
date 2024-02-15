@@ -8,14 +8,14 @@ public class Cle : MonoBehaviour
     {
         if (other.gameObject.GetComponent<ItemObjects>()?.item.disPlayName == "주민 설문조사[작성]")
         {
-            Debug.Log("clear");
+            GameManager.Instance.Clear();
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.GetComponent<ItemObjects>()?.item.disPlayName == "주민 설문조사[작성]")
         {
-            Debug.Log("Unclear");
+            GameManager.Instance.UnClear();
         }
     }
 }

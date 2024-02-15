@@ -9096,46 +9096,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window_Frame_Apt_01
       objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: Params.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: EventReference.Path
-      value: event:/SFX/Window/WindowRattle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: OverrideAttenuation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: OverrideMaxDistance
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: OverrideMinDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: EventReference.Guid.Data1
-      value: -1691413341
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: EventReference.Guid.Data2
-      value: 1321290722
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: EventReference.Guid.Data3
-      value: -1762725441
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: EventReference.Guid.Data4
-      value: 624825283
-      objectReference: {fileID: 0}
-    - target: {fileID: 7528861128924537076, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
-      propertyPath: Params.Array.data[0].Name
-      value: WindowRattleEnd
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7236775155078081135, guid: ff74a2d207593764ea3699571e28d00a, type: 3}
     m_RemovedGameObjects: []
@@ -15013,50 +14973,6 @@ PrefabInstance:
     - target: {fileID: 3048724140209844518, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
       propertyPath: m_Name
       value: fireplug Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: EventReference.Path
-      value: event:/SFX/Electric Buzz/Buzz1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: OverrideAttenuation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: OverrideMaxDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: OverrideMinDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: EventReference.Guid.Data1
-      value: -1744982108
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: EventReference.Guid.Data2
-      value: 1121968356
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: EventReference.Guid.Data3
-      value: 1688027295
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257496094981717257, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: EventReference.Guid.Data4
-      value: 1559954256
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638639033310553507, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: m_Size.x
-      value: 1.8000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638639033310553507, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: m_Size.y
-      value: 5.350191
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638639033310553507, guid: 53e33d82194cc6049b7eb8634433abe0, type: 3}
-      propertyPath: m_Center.y
-      value: -0.72490513
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

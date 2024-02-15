@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 67f9071fc02054e469fc789d70f46714
+<<<<<<<< Updated upstream:Assets/FMOD/projectescape-audio-fmod/Assets/Ambient/Mysterious.meta
+guid: f658e6be5cfc7ba4f9fedecc99edda5a
+========
+guid: 189b1c2e52bf37f4c8e26de19076219e
+>>>>>>>> Stashed changes:Assets/FMOD/projectescape-audio-fmod/Assets/Ambient.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
