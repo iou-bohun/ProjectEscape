@@ -5676,11 +5676,11 @@ MonoBehaviour:
     Path: event:/SFX/Elevator/ElevatorVoice
   <corruptedVoice>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1012508311
+      Data2: 1270099535
+      Data3: 1686602128
+      Data4: 764870325
+    Path: event:/SFX/Elevator/CorruptedVoice
   <buzz1>k__BackingField:
     Guid:
       Data1: -1744982108
