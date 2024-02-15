@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 7260646739991049680}
   - component: {fileID: 2386556041235470268}
   m_Layer: 8
-  m_Name: Hand-envelopeWhiteII
+  m_Name: Hand-envelopeComplete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

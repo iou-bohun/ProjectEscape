@@ -88,7 +88,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e18d50cb779bc9e41b632b4c4cec33ea, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e18d50cb779bc9e41b632b4c4cec33ea, type: 3}
       propertyPath: m_LocalScale.x
@@ -159,9 +159,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e18d50cb779bc9e41b632b4c4cec33ea, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2648917291564731685}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e18d50cb779bc9e41b632b4c4cec33ea, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5193298089111075742}
   m_SourcePrefab: {fileID: 100100000, guid: e18d50cb779bc9e41b632b4c4cec33ea, type: 3}
 --- !u!4 &4978715458747017546 stripped
@@ -174,34 +171,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e18d50cb779bc9e41b632b4c4cec33ea, type: 3}
   m_PrefabInstance: {fileID: 4800074320667856545}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2648917291564731685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5646427582198772720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b00debfcba077847865bcb6d402abb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _paper:
-  - {fileID: 2747622012712724791, guid: e84aee59448124641b83641674c9549c, type: 3}
-  - {fileID: 989528233247844555, guid: 037032b1aa9055d40a08335b5923981c, type: 3}
-  - {fileID: 4234158365051897843, guid: a200cee58409a0e49a2508ebf7441df3, type: 3}
-  - {fileID: 866637296899382829, guid: c70cc0d9f6635e942a6e93a7e6b6a3d6, type: 3}
-  _paperData:
-  - {fileID: 11400000, guid: 79057824a513514439374fa0abe5f510, type: 2}
-  - {fileID: 11400000, guid: 3cc6815598d910f4ba2f061ed80f9224, type: 2}
-  - {fileID: 11400000, guid: d43b9ba5e36297547aa32b3ac84acb4d, type: 2}
-  - {fileID: 11400000, guid: 2dba4ace069163f40853678b611d90d4, type: 2}
-  onBoardPaper:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  player: {fileID: 0}
 --- !u!65 &5193298089111075742
 BoxCollider:
   m_ObjectHideFlags: 0
