@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject DiePanel;
     WaitForSeconds waitSceneTime;
     public GameObject completePaper;
+    public int stage;
 
     [Header("boolCheck")]
     public bool isCanGoRoofTop = false;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null)
         Instance = this;
+        player = GameObject.Find("Player");
     }
     private void Start()
     {
@@ -48,16 +50,32 @@ public class GameManager : MonoBehaviour
                 {
                     return;
                 }
-                player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
-                IsFirstLoop();
-                CallLoopEvent();
+                if (stage + "stEventScene" == SceneManager.GetActiveScene().name)
+                {
+                    player.transform.position = new Vector3(player.transform.position.x, -3.65f, player.transform.position.z);
+                    IsFirstLoop();
+                    CallLoopEvent();
+                }
+                else if(stage + "stEventScene" != SceneManager.GetActiveScene().name)
+                {
+                    player.GetComponent<Inventory>().Clear();
+                    SceneManager.LoadScene(stage + "stEventScene");
+                }
 
             }
             else if (player.transform.position.x <= 15.4f && player.transform.position.y <= -3.65f) 
             {
-                player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z);
-                IsFirstLoop();
-                CallLoopEvent();
+                if (stage + "stEventScene" == SceneManager.GetActiveScene().name)
+                {
+                    player.transform.position = new Vector3(player.transform.position.x, 4.3f, player.transform.position.z);
+                    IsFirstLoop();
+                    CallLoopEvent();
+                }
+                else if (stage + "stEventScene" != SceneManager.GetActiveScene().name)
+                {
+                    player.GetComponent<Inventory>().Clear();
+                    SceneManager.LoadScene(stage + "stEventScene");
+                }
             }
         }
 
