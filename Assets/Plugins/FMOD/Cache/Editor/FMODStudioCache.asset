@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9086003223416577184
+--- !u!114 &-8646537518038168613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,211 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsLandRock
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambient.bank
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsLandRock
-  Guid:
-    Data1: 1798862298
-    Data2: 1091701523
-    Data3: -1029444931
-    Data4: 604995403
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-8970718322178821349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorOpened
-  Guid:
-    Data1: 907089142
-    Data2: 1322598421
-    Data3: -893673595
-    Data4: -1801295552
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &-8939145383262313587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorOpened
-  Guid:
-    Data1: 907089142
-    Data2: 1322598421
-    Data3: -893673595
-    Data4: -1801295552
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &-8443400484028467342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ItemSounds/Others/OtherMovement
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ItemSounds/Others/OtherMovement
-  Guid:
-    Data1: 1303967079
-    Data2: 1200237891
-    Data3: -304820336
-    Data4: -2105757976
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-8418671351472010671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowOpened
-  Guid:
-    Data1: -1069943217
-    Data2: 1257827903
-    Data3: 759331217
-    Data4: -471396049
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-8375762827208031478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowOpened
-  Guid:
-    Data1: -1069943217
-    Data2: 1257827903
-    Data3: 759331217
-    Data4: -471396049
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-8312459263714420491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Paper/PaperMovement
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Paper/PaperMovement
-  Guid:
-    Data1: 1541296129
-    Data2: 1261386035
-    Data3: -332541807
-    Data4: 407936896
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-8243625819475322705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/WindowRattle/WindowRattleEnd
-  m_EditorClassIdentifier: 
-  Name: WindowRattleEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1466708481
-    data2: 4271065638
-  Type: 0
-  IsGlobal: 0
-  Labels: []
+  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Ambient.bank
+  Name: Ambient
+  StudioPath: bank:/Ambient
+  lastModified: 638436286803055304
+  FileSizes:
+  - Name: Desktop
+    Value: 408096
   Exists: 1
---- !u!114 &-8086790325336242801
+--- !u!114 &-7388798316196357621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,235 +30,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Switch/SwitchOnOff
+  m_Name: event:/SFX/Player/FootstepsWalkRock
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch/SwitchOnOff
+  Path: event:/SFX/Player/FootstepsWalkRock
   Guid:
-    Data1: -1296891384
-    Data2: 1110903650
-    Data3: 287555466
-    Data4: -20867054
+    Data1: 2022746443
+    Data2: 1108251380
+    Data3: 1053576109
+    Data4: -1603398404
   Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
---- !u!114 &-7749154068872742366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsJumpRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsJumpRock
-  Guid:
-    Data1: -1896545362
-    Data2: 1087456708
-    Data3: -817744741
-    Data4: -744113056
-  Banks:
-  - {fileID: 7766052005764249306}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7728918353327230796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorOpened
-  Guid:
-    Data1: 907089142
-    Data2: 1322598421
-    Data3: -893673595
-    Data4: -1801295552
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &-7475945286786652675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowRattle
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowRattle
-  Guid:
-    Data1: -1691413341
-    Data2: 1321290722
-    Data3: -1762725441
-    Data4: 624825283
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 1
-  Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7446358085959903346}
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 18400
---- !u!114 &-7446358085959903346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/WindowRattle/WindowRattleEnd
-  m_EditorClassIdentifier: 
-  Name: WindowRattleEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1466708481
-    data2: 4271065638
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7283573493792024691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/CabinetOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/CabinetOpened
-  Guid:
-    Data1: -576751600
-    Data2: 1088279059
-    Data3: 613232259
-    Data4: -498183711
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
+  - {fileID: 7479050311368889700}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &-7081456994399219264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorOpened
-  Guid:
-    Data1: 907089142
-    Data2: 1322598421
-    Data3: -893673595
-    Data4: -1801295552
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &-6624738898264030016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FootstepsLandRock/FootstepsReverb
-  m_EditorClassIdentifier: 
-  Name: FootstepsReverb
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 294995436
-    data2: 2738159936
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-6611868009898597923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetClosed
-  Guid:
-    Data1: -110191173
-    Data2: 1149749072
-    Data3: -986328147
-    Data4: 20924053
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-6306324380779649452
+  Length: 600
+--- !u!114 &-6881710350945675933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,7 +67,7 @@ MonoBehaviour:
     Data3: 759331217
     Data4: -471396049
   Banks:
-  - {fileID: 6375046907457213665}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -478,7 +75,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6295290457912247643
+--- !u!114 &-6225217909062960399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cabinet/CabinetClosed
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cabinet/CabinetClosed
+  Guid:
+    Data1: 717246302
+    Data2: 1317761094
+    Data3: -1877945436
+    Data4: 886741274
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5817104673055921942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -502,1061 +126,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-6258447078791055937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetOpened
-  Guid:
-    Data1: -655459235
-    Data2: 1241159790
-    Data3: 958960780
-    Data4: 324059348
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-6037305077732684558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsLandRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsLandRock
-  Guid:
-    Data1: 1798862298
-    Data2: 1091701523
-    Data3: -1029444931
-    Data4: 604995403
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5969266180098555737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Electric Buzz/Buzz1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Electric Buzz/Buzz1
-  Guid:
-    Data1: -1744982108
-    Data2: 1121968356
-    Data3: 1688027295
-    Data4: 1559954256
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15872
---- !u!114 &-5905866364079369607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorClosed
-  Guid:
-    Data1: 1340258714
-    Data2: 1308035453
-    Data3: 656644483
-    Data4: 1272603255
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &-5857408061237621849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638436209311687026
-  FileSizes:
-  - Name: Desktop
-    Value: 1712
-  Exists: 1
---- !u!114 &-5855657553458528880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsRunRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsRunRock
-  Guid:
-    Data1: -366019374
-    Data2: 1157201400
-    Data3: 2126933423
-    Data4: -242417489
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6295290457912247643}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 350
---- !u!114 &-5510324529498679254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638436209311845761
-  FileSizes:
-  - Name: Desktop
-    Value: 1523072
-  Exists: 1
---- !u!114 &-5455507650177682753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetOpened
-  Guid:
-    Data1: -655459235
-    Data2: 1241159790
-    Data3: 958960780
-    Data4: 324059348
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4966232567600700006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/CabinetClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/CabinetClosed
-  Guid:
-    Data1: 717246302
-    Data2: 1317761094
-    Data3: -1877945436
-    Data4: 886741274
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4881595425323774007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Electric Buzz/Buzz1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Electric Buzz/Buzz1
-  Guid:
-    Data1: -1744982108
-    Data2: 1121968356
-    Data3: 1688027295
-    Data4: 1559954256
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15872
---- !u!114 &-4731632140579147341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/TV/TVStatic
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/TV/TVStatic
-  Guid:
-    Data1: -941775497
-    Data2: 1331626688
-    Data3: -308610649
-    Data4: 1378225092
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 2927611190008856489}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11846
---- !u!114 &-4476236434999263097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsLandRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsLandRock
-  Guid:
-    Data1: 1798862298
-    Data2: 1091701523
-    Data3: -1029444931
-    Data4: 604995403
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -6624738898264030016}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4451159422346226424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/WindowRattle/WindowRattleEnd
-  m_EditorClassIdentifier: 
-  Name: WindowRattleEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1466708481
-    data2: 4271065638
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-4189789961118765680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowClosed
-  Guid:
-    Data1: 2031097893
-    Data2: 1212374316
-    Data3: -1555917424
-    Data4: -23273637
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3878541144990092914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowRattle
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowRattle
-  Guid:
-    Data1: -1691413341
-    Data2: 1321290722
-    Data3: -1762725441
-    Data4: 624825283
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -8243625819475322705}
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 18400
---- !u!114 &-3863623570114658283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Electric Buzz/Buzz1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Electric Buzz/Buzz1
-  Guid:
-    Data1: -1744982108
-    Data2: 1121968356
-    Data3: 1688027295
-    Data4: 1559954256
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15872
---- !u!114 &-3817821193507621640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambient/Mysterious/FirstLooped
-  m_EditorClassIdentifier: 
-  Path: event:/Ambient/Mysterious/FirstLooped
-  Guid:
-    Data1: 864546987
-    Data2: 1319031821
-    Data3: 439246490
-    Data4: -1490828510
-  Banks:
-  - {fileID: 4295647046669356106}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9500
---- !u!114 &-3727852560866603028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638436180746316525
-  FileSizes:
-  - Name: Desktop
-    Value: 1712
-  Exists: 1
---- !u!114 &-3294594831843936781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638436180746276620
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
---- !u!114 &-3216062782391044747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowRattle
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowRattle
-  Guid:
-    Data1: -1691413341
-    Data2: 1321290722
-    Data3: -1762725441
-    Data4: 624825283
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -4451159422346226424}
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 18400
---- !u!114 &-2751650534346411479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetOpened
-  Guid:
-    Data1: -655459235
-    Data2: 1241159790
-    Data3: 958960780
-    Data4: 324059348
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2676974902976834560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsJumpRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsJumpRock
-  Guid:
-    Data1: -1896545362
-    Data2: 1087456708
-    Data3: -817744741
-    Data4: -744113056
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2555777558448967255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorClosed
-  Guid:
-    Data1: 1340258714
-    Data2: 1308035453
-    Data3: 656644483
-    Data4: 1272603255
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &-2539007454536892536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Electric Buzz/Buzz1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Electric Buzz/Buzz1
-  Guid:
-    Data1: -1744982108
-    Data2: 1121968356
-    Data3: 1688027295
-    Data4: 1559954256
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15872
---- !u!114 &-2308269427287936929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Switch/SwitchOnOff
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch/SwitchOnOff
-  Guid:
-    Data1: -1296891384
-    Data2: 1110903650
-    Data3: 287555466
-    Data4: -20867054
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
---- !u!114 &-2263738772176207590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowClosed
-  Guid:
-    Data1: 2031097893
-    Data2: 1212374316
-    Data3: -1555917424
-    Data4: -23273637
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2242699756367329006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsRunRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsRunRock
-  Guid:
-    Data1: -366019374
-    Data2: 1157201400
-    Data3: 2126933423
-    Data4: -242417489
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 350
---- !u!114 &-2124553077496260958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TVStatic/TVEnd
-  m_EditorClassIdentifier: 
-  Name: TVEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2661268993
-    data2: 91035772
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-1924870880501550321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetClosed
-  Guid:
-    Data1: -110191173
-    Data2: 1149749072
-    Data3: -986328147
-    Data4: 20924053
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1851704637713097677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638436285190788944
-  FileSizes:
-  - Name: Desktop
-    Value: 1228
-  Exists: 1
---- !u!114 &-1470938815382496562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsWalkRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsWalkRock
-  Guid:
-    Data1: 2022746443
-    Data2: 1108251380
-    Data3: 1053576109
-    Data4: -1603398404
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 5041642724573879582}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &-1204029034388466547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638436209311845761
-  FileSizes:
-  - Name: Desktop
-    Value: 1523072
-  Exists: 1
---- !u!114 &-1064264033621475267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/TV/TVStatic
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/TV/TVStatic
-  Guid:
-    Data1: -941775497
-    Data2: 1331626688
-    Data3: -308610649
-    Data4: 1378225092
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7088218843453434190}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11846
---- !u!114 &-585613573892358549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetClosed
-  Guid:
-    Data1: -110191173
-    Data2: 1149749072
-    Data3: -986328147
-    Data4: 20924053
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-404724827536466883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/TV/TVStatic
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/TV/TVStatic
-  Guid:
-    Data1: -941775497
-    Data2: 1331626688
-    Data3: -308610649
-    Data4: 1378225092
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -2124553077496260958}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11846
---- !u!114 &-358678359056643978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Switch/PenClick
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch/PenClick
-  Guid:
-    Data1: -1759083956
-    Data2: 1206259492
-    Data3: -1013025882
-    Data4: 1873788377
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-150929366869324076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsWalkRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsWalkRock
-  Guid:
-    Data1: 2022746443
-    Data2: 1108251380
-    Data3: 1053576109
-    Data4: -1603398404
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &-19714442260180938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Switch/SwitchOnOff
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch/SwitchOnOff
-  Guid:
-    Data1: -1296891384
-    Data2: 1110903650
-    Data3: 287555466
-    Data4: -20867054
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 2005188779379392979}
-  - {fileID: -1851704637713097677}
-  - {fileID: 6375046907457213665}
-  - {fileID: 4295647046669356106}
-  EditorEvents:
-  - {fileID: 2893639170742994686}
-  - {fileID: -19714442260180938}
-  - {fileID: 322554322467369506}
-  - {fileID: -4189789961118765680}
-  - {fileID: -1470938815382496562}
-  - {fileID: -6306324380779649452}
-  - {fileID: -6258447078791055937}
-  - {fileID: 3867949347569856344}
-  - {fileID: -8443400484028467342}
-  - {fileID: 4311084023691585818}
-  - {fileID: 3865663938717563139}
-  - {fileID: -3878541144990092914}
-  - {fileID: -3863623570114658283}
-  - {fileID: 1064450761192638810}
-  - {fileID: 5326682808187917843}
-  - {fileID: -585613573892358549}
-  - {fileID: -5855657553458528880}
-  - {fileID: -4476236434999263097}
-  - {fileID: -7081456994399219264}
-  - {fileID: 7577178308989800977}
-  - {fileID: -358678359056643978}
-  - {fileID: -3817821193507621640}
-  EditorParameters:
-  - {fileID: 3722718171313960750}
-  MasterBanks:
-  - {fileID: -1851704637713097677}
-  StringsBanks:
-  - {fileID: 2005188779379392979}
-  cacheTime: 638436286803055304
-  cacheVersion: 131616
---- !u!114 &22343254510854376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638435967701751202
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
---- !u!114 &322554322467369506
+--- !u!114 &-5741516614841372200
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1575,7 +145,7 @@ MonoBehaviour:
     Data3: 613232259
     Data4: -498183711
   Banks:
-  - {fileID: 6375046907457213665}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1583,7 +153,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &532218864208434214
+--- !u!114 &-5503591795083629750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1593,298 +163,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Switch/SwitchOnOff
+  m_Name: event:/SFX/ItemSounds/Others/OtherMovement
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch/SwitchOnOff
+  Path: event:/SFX/ItemSounds/Others/OtherMovement
   Guid:
-    Data1: -1296891384
-    Data2: 1110903650
-    Data3: 287555466
-    Data4: -20867054
+    Data1: 1303967079
+    Data2: 1200237891
+    Data3: -304820336
+    Data4: -2105757976
   Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
---- !u!114 &793465796729508480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetOpened
-  Guid:
-    Data1: -655459235
-    Data2: 1241159790
-    Data3: 958960780
-    Data4: 324059348
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &877050059685147307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638435967701751202
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
---- !u!114 &1064450761192638810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsJumpRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsJumpRock
-  Guid:
-    Data1: -1896545362
-    Data2: 1087456708
-    Data3: -817744741
-    Data4: -744113056
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 1723602772678159986}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1078230337491474378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/CabinetClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/CabinetClosed
-  Guid:
-    Data1: 717246302
-    Data2: 1317761094
-    Data3: -1877945436
-    Data4: 886741274
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1438999776898954664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/SmallCabinetClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/SmallCabinetClosed
-  Guid:
-    Data1: -110191173
-    Data2: 1149749072
-    Data3: -986328147
-    Data4: 20924053
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1723602772678159986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FootstepsJumpRock/FootstepsReverb
-  m_EditorClassIdentifier: 
-  Name: FootstepsReverb
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 294995436
-    data2: 2738159936
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &2005188779379392979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638436285190828829
-  FileSizes:
-  - Name: Desktop
-    Value: 2084
-  Exists: 1
---- !u!114 &2026271955483287403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorClosed
-  Guid:
-    Data1: 1340258714
-    Data2: 1308035453
-    Data3: 656644483
-    Data4: 1272603255
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &2311637583328770956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowClosed
-  Guid:
-    Data1: 2031097893
-    Data2: 1212374316
-    Data3: -1555917424
-    Data4: -23273637
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &2685630788333407111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowRattle
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowRattle
-  Guid:
-    Data1: -1691413341
-    Data2: 1321290722
-    Data3: -1762725441
-    Data4: 624825283
-  Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7231462970485872844}
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 18400
---- !u!114 &2770902086567971708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsLandRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsLandRock
-  Guid:
-    Data1: 1798862298
-    Data2: 1091701523
-    Data3: -1029444931
-    Data4: 604995403
-  Banks:
-  - {fileID: -5510324529498679254}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1892,7 +180,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &2893639170742994686
+--- !u!114 &-4043248497899106876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1911,7 +199,7 @@ MonoBehaviour:
     Data3: -332541807
     Data4: 407936896
   Banks:
-  - {fileID: 6375046907457213665}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1919,7 +207,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &2927611190008856489
+--- !u!114 &-3691605872133636379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1929,48 +217,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TVStatic/TVEnd
+  m_Name: parameter:/FootstepsLandRock/FootstepsReverb
   m_EditorClassIdentifier: 
-  Name: TVEnd
+  Name: FootstepsReverb
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 2661268993
-    data2: 91035772
+    data1: 294995436
+    data2: 2738159936
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &3679956068139654510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Paper/PaperMovement
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Paper/PaperMovement
-  Guid:
-    Data1: 1541296129
-    Data2: 1261386035
-    Data3: -332541807
-    Data4: 407936896
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &3722718171313960750
+--- !u!114 &-2973033098608680471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1994,7 +255,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &3865663938717563139
+--- !u!114 &-2876487405383597618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2004,51 +265,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/DoorClosed
+  m_Name: event:/SFX/Switch/SwitchOnOff
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/DoorClosed
+  Path: event:/SFX/Switch/SwitchOnOff
   Guid:
-    Data1: 1340258714
-    Data2: 1308035453
-    Data3: 656644483
-    Data4: 1272603255
+    Data1: -1296891384
+    Data2: 1110903650
+    Data3: 287555466
+    Data4: -20867054
   Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 10000
-  Length: 0
---- !u!114 &3867949347569856344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/CabinetClosed
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/CabinetClosed
-  Guid:
-    Data1: 717246302
-    Data2: 1317761094
-    Data3: -1877945436
-    Data4: 886741274
-  Banks:
-  - {fileID: 6375046907457213665}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &4295647046669356106
+  Length: 500
+--- !u!114 &-1798608609283897230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2058,17 +292,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambient.bank
+  m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Ambient.bank
-  Name: Ambient
-  StudioPath: bank:/Ambient
-  lastModified: 638436286803055304
+  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638436289367605692
   FileSizes:
   - Name: Desktop
-    Value: 408096
+    Value: 1588928
   Exists: 1
---- !u!114 &4311084023691585818
+--- !u!114 &-1490226351626116728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Electric Buzz/Buzz1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Electric Buzz/Buzz1
+  Guid:
+    Data1: -1744982108
+    Data2: 1121968356
+    Data3: 1688027295
+    Data4: 1559954256
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15872
+--- !u!114 &-1399481686890520507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2087,16 +348,16 @@ MonoBehaviour:
     Data3: -308610649
     Data4: 1378225092
   Banks:
-  - {fileID: 6375046907457213665}
+  - {fileID: -1798608609283897230}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 5248650860974371017}
+  - {fileID: -55802863825820522}
   MinDistance: 1
   MaxDistance: 20
   Length: 11846
---- !u!114 &4346453066543636637
+--- !u!114 &-865503953604618146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2106,16 +367,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/CabinetClosed
+  m_Name: event:/SFX/Glass/GlassBreaking
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/CabinetClosed
+  Path: event:/SFX/Glass/GlassBreaking
   Guid:
-    Data1: 717246302
-    Data2: 1317761094
-    Data3: -1877945436
-    Data4: 886741274
+    Data1: 725047383
+    Data2: 1122156522
+    Data3: 1938496444
+    Data4: 1815705964
   Banks:
-  - {fileID: -5510324529498679254}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2123,7 +384,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &4458908399400145217
+--- !u!114 &-431247918526789288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2133,16 +394,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Window/WindowOpened
+  m_Name: event:/SFX/Cabinet/SmallCabinetOpened
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Window/WindowOpened
+  Path: event:/SFX/Cabinet/SmallCabinetOpened
   Guid:
-    Data1: -1069943217
-    Data2: 1257827903
-    Data3: 759331217
-    Data4: -471396049
+    Data1: -655459235
+    Data2: 1241159790
+    Data3: 958960780
+    Data4: 324059348
   Banks:
-  - {fileID: 7766052005764249306}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2150,288 +411,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &4589219419515279185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsRunRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsRunRock
-  Guid:
-    Data1: -366019374
-    Data2: 1157201400
-    Data3: 2126933423
-    Data4: -242417489
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 350
---- !u!114 &5041642724573879582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FootstepsWalkRock/FootstepsReverb
-  m_EditorClassIdentifier: 
-  Name: FootstepsReverb
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 294995436
-    data2: 2738159936
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &5248650860974371017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TVStatic/TVEnd
-  m_EditorClassIdentifier: 
-  Name: TVEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2661268993
-    data2: 91035772
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &5284877208148657193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsWalkRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsWalkRock
-  Guid:
-    Data1: 2022746443
-    Data2: 1108251380
-    Data3: 1053576109
-    Data4: -1603398404
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &5326682808187917843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ItemSounds/Metal/MetalMovement
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ItemSounds/Metal/MetalMovement
-  Guid:
-    Data1: 1942608822
-    Data2: 1180375951
-    Data3: -438674267
-    Data4: 1568527986
-  Banks:
-  - {fileID: 6375046907457213665}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &6375046907457213665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638436286620877956
-  FileSizes:
-  - Name: Desktop
-    Value: 1592544
-  Exists: 1
---- !u!114 &6409172662569899977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsJumpRock
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsJumpRock
-  Guid:
-    Data1: -1896545362
-    Data2: 1087456708
-    Data3: -817744741
-    Data4: -744113056
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &6890466659602152766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/CabinetOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/CabinetOpened
-  Guid:
-    Data1: -576751600
-    Data2: 1088279059
-    Data3: 613232259
-    Data4: -498183711
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7088218843453434190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TVStatic/TVEnd
-  m_EditorClassIdentifier: 
-  Name: TVEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2661268993
-    data2: 91035772
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &7169842137704702438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cabinet/CabinetOpened
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cabinet/CabinetOpened
-  Guid:
-    Data1: -576751600
-    Data2: 1088279059
-    Data3: 613232259
-    Data4: -498183711
-  Banks:
-  - {fileID: -1204029034388466547}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7229688842565045400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Paper/PaperMovement
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Paper/PaperMovement
-  Guid:
-    Data1: 1541296129
-    Data2: 1261386035
-    Data3: -332541807
-    Data4: 407936896
-  Banks:
-  - {fileID: -5510324529498679254}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7231462970485872844
+--- !u!114 &-371123590546677024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2455,7 +435,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &7420464308020197319
+--- !u!114 &-220656578991761869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2465,51 +445,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsRunRock
+  m_Name: event:/SFX/Door/DoorOpened
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsRunRock
+  Path: event:/SFX/Door/DoorOpened
   Guid:
-    Data1: -366019374
-    Data2: 1157201400
-    Data3: 2126933423
-    Data4: -242417489
+    Data1: 907089142
+    Data2: 1322598421
+    Data3: -893673595
+    Data4: -1801295552
   Banks:
-  - {fileID: 7766052005764249306}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 350
---- !u!114 &7577178308989800977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Glass/GlassBreaking
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Glass/GlassBreaking
-  Guid:
-    Data1: 725047383
-    Data2: 1122156522
-    Data3: 1938496444
-    Data4: 1815705964
-  Banks:
-  - {fileID: 6375046907457213665}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10000
   Length: 0
---- !u!114 &7579785046107149510
+--- !u!114 &-55802863825820522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TVStatic/TVEnd
+  m_EditorClassIdentifier: 
+  Name: TVEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2661268993
+    data2: 91035772
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3941273342086270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2519,17 +496,91 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638436209311687026
+  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638436285190788944
   FileSizes:
   - Name: Desktop
-    Value: 1712
+    Value: 1228
   Exists: 1
---- !u!114 &7590693652665881185
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 9019460960232151387}
+  - {fileID: -8646537518038168613}
+  - {fileID: -3941273342086270}
+  - {fileID: -1798608609283897230}
+  EditorEvents:
+  - {fileID: 2395435099871337669}
+  - {fileID: -4043248497899106876}
+  - {fileID: -2876487405383597618}
+  - {fileID: -5741516614841372200}
+  - {fileID: 1741099888863159699}
+  - {fileID: -7388798316196357621}
+  - {fileID: -6881710350945675933}
+  - {fileID: -865503953604618146}
+  - {fileID: -431247918526789288}
+  - {fileID: -6225217909062960399}
+  - {fileID: -5503591795083629750}
+  - {fileID: -1399481686890520507}
+  - {fileID: 670802204821243703}
+  - {fileID: 6121668979338050627}
+  - {fileID: -1490226351626116728}
+  - {fileID: 6694460606411139353}
+  - {fileID: 5500177208226715621}
+  - {fileID: 1926192465192627459}
+  - {fileID: 7078998375958790047}
+  - {fileID: 6018555945887731370}
+  - {fileID: -220656578991761869}
+  EditorParameters:
+  - {fileID: -2973033098608680471}
+  MasterBanks:
+  - {fileID: -3941273342086270}
+  StringsBanks:
+  - {fileID: 9019460960232151387}
+  cacheTime: 638436289367605692
+  cacheVersion: 131616
+--- !u!114 &670802204821243703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door/DoorClosed
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Door/DoorClosed
+  Guid:
+    Data1: 1340258714
+    Data2: 1308035453
+    Data3: 656644483
+    Data4: 1272603255
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 10000
+  Length: 0
+--- !u!114 &1741099888863159699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2548,7 +599,7 @@ MonoBehaviour:
     Data3: -1555917424
     Data4: -23273637
   Banks:
-  - {fileID: 7766052005764249306}
+  - {fileID: -1798608609283897230}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2556,27 +607,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7766052005764249306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638436183361790372
-  FileSizes:
-  - Name: Desktop
-    Value: 1523072
-  Exists: 1
---- !u!114 &8508116025281967201
+--- !u!114 &1926192465192627459
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2586,20 +617,254 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/FootstepsWalkRock
+  m_Name: event:/SFX/Cabinet/SmallCabinetClosed
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/FootstepsWalkRock
+  Path: event:/SFX/Cabinet/SmallCabinetClosed
   Guid:
-    Data1: 2022746443
-    Data2: 1108251380
-    Data3: 1053576109
-    Data4: -1603398404
+    Data1: -110191173
+    Data2: 1149749072
+    Data3: -986328147
+    Data4: 20924053
   Banks:
-  - {fileID: 7766052005764249306}
+  - {fileID: -1798608609283897230}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
+  Is3D: 1
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 600
+  Length: 0
+--- !u!114 &2395435099871337669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Mysterious/FirstLooped
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/Mysterious/FirstLooped
+  Guid:
+    Data1: 864546987
+    Data2: 1319031821
+    Data3: 439246490
+    Data4: -1490828510
+  Banks:
+  - {fileID: -8646537518038168613}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9500
+--- !u!114 &5500177208226715621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ItemSounds/Metal/MetalMovement
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ItemSounds/Metal/MetalMovement
+  Guid:
+    Data1: 1942608822
+    Data2: 1180375951
+    Data3: -438674267
+    Data4: 1568527986
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6018555945887731370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/FootstepsLandRock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/FootstepsLandRock
+  Guid:
+    Data1: 1798862298
+    Data2: 1091701523
+    Data3: -1029444931
+    Data4: 604995403
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3691605872133636379}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6093663605196557291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsJumpRock/FootstepsReverb
+  m_EditorClassIdentifier: 
+  Name: FootstepsReverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 294995436
+    data2: 2738159936
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6121668979338050627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Window/WindowRattle
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Window/WindowRattle
+  Guid:
+    Data1: -1691413341
+    Data2: 1321290722
+    Data3: -1762725441
+    Data4: 624825283
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -371123590546677024}
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 18400
+--- !u!114 &6694460606411139353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/FootstepsJumpRock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/FootstepsJumpRock
+  Guid:
+    Data1: -1896545362
+    Data2: 1087456708
+    Data3: -817744741
+    Data4: -744113056
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6093663605196557291}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7078998375958790047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/FootstepsRunRock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/FootstepsRunRock
+  Guid:
+    Data1: -366019374
+    Data2: 1157201400
+    Data3: 2126933423
+    Data4: -242417489
+  Banks:
+  - {fileID: -1798608609283897230}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5817104673055921942}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 350
+--- !u!114 &7479050311368889700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsWalkRock/FootstepsReverb
+  m_EditorClassIdentifier: 
+  Name: FootstepsReverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 294995436
+    data2: 2738159936
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &9019460960232151387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638436289367494155
+  FileSizes:
+  - Name: Desktop
+    Value: 2032
+  Exists: 1

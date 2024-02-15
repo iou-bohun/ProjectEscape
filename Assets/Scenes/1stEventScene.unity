@@ -4316,13 +4316,6 @@ MonoBehaviour:
       Data3: 1938496444
       Data4: 1815705964
     Path: event:/SFX/Glass/GlassBreaking
-  <switchClick>k__BackingField:
-    Guid:
-      Data1: -1759083956
-      Data2: 1206259492
-      Data3: -1013025882
-      Data4: 1873788377
-    Path: event:/SFX/Switch/PenClick
   <firstLooped>k__BackingField:
     Guid:
       Data1: 864546987

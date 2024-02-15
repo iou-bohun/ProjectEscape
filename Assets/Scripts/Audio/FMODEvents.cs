@@ -46,7 +46,6 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Other SFXs")]
     [field: SerializeField] public EventReference glassBreaking { get; private set; }
-    [field: SerializeField] public EventReference switchClick { get; private set; }
 
 
     [field: Header("Ambients")]
