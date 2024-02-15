@@ -7,7 +7,8 @@ using UnityEngine.Video;
 [RequireComponent(typeof(StudioEventEmitter))]
 public class TvEvent : MonoBehaviour
 {
-    [SerializeField] private VideoPlayer _videoPlayer;
+    private VideoPlayer _videoPlayer;
+    private Renderer _renderer;
 
     // Audio
     private StudioEventEmitter emitter;
@@ -15,6 +16,7 @@ public class TvEvent : MonoBehaviour
     private void Start()
     {
         _videoPlayer = GetComponent<VideoPlayer>();
+        _renderer = GetComponent<Renderer>();
         EventManager.I.livingRoomEvent += PlayVideo;
         emitter = AudioManager.instance.InitializeEventEmitter(FMODEvents.instance.TVStatic, this.gameObject);
     }
@@ -22,6 +24,7 @@ public class TvEvent : MonoBehaviour
     private void PlayVideo()
     {
         _videoPlayer.enabled = true;
+        _renderer.material.color = Color.white;
         _videoPlayer.Play();
         emitter.SetParameter("TVEnd", 0.1f);
         emitter.Play();
@@ -32,6 +35,7 @@ public class TvEvent : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         _videoPlayer.enabled = false;
+        _renderer.material.color = Color.black;
         emitter.SetParameter("TVEnd", 1.0f);
         yield return new WaitForSeconds(3f);
         emitter.Stop();
