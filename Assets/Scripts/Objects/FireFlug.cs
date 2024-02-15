@@ -12,13 +12,9 @@ namespace SojaExiles
 		public bool open;
 		public Transform Player;
 
-        private void Awake()
-        {
-			
-        }
         void Start()
 		{
-            Player = GameManager.Instance.player.GetComponent<Transform>();
+            Player = GameManager.Instance.transform;
             open = false;
 		}
 
@@ -34,7 +30,6 @@ namespace SojaExiles
 						{
 							if (Input.GetMouseButtonDown(0))
 							{
-								Debug.Log("Click");
 								AudioManager.instance.PlayOneShot(FMODEvents.instance.cabinetOpened, this.transform.position);
 								StartCoroutine(opening());
 							}
