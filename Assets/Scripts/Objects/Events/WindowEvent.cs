@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 using FMOD.Studio;
 
+
+[RequireComponent(typeof(StudioEventEmitter))]
 public class WindowEvent : MonoBehaviour
 {
     private Animator animator;
 
     // Audio
-    private EventInstance windowRattle;
+    private StudioEventEmitter emitter;
     private bool isRattle;
     private bool isRattleOnce;
 
@@ -20,7 +23,7 @@ public class WindowEvent : MonoBehaviour
     private void Start()
     {
         EventManager.I.bedRoomEvent += ShakeWindow;
-        windowRattle = AudioManager.instance.CreateInstace(FMODEvents.instance.windowRattle);
+        emitter = AudioManager.instance.InitializeEventEmitter(FMODEvents.instance.windowRattle, this.gameObject);
         isRattle = false;
         isRattleOnce = false;
     }
@@ -32,30 +35,39 @@ public class WindowEvent : MonoBehaviour
 
     public void ShakeWindow()
     {
-        animator.SetBool("Shake", true);
         isRattle = true;
-        StartCoroutine(EndEvent());
     }
 
     private void UpdateSound()
     {
         if (isRattle && !isRattleOnce)
         {
-            windowRattle.setParameterByName("WindowRattleEnd", 0f);
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.windowRattle, this.transform.position);
+            animator.SetBool("Shake", true);
+            emitter.SetParameter("WindowRattleEnd", 0.1f);
+            emitter.Play();
+            StartCoroutine(StartTimer());
             isRattleOnce = true;
         }
         else if (!isRattle && isRattleOnce)
         {
-            windowRattle.setParameterByName("WindowRattleEnd", 1.0f);
+            StartCoroutine(StopShakingEvent());
+            isRattleOnce = false;
         }
     }
 
-    //End Shaking
-    IEnumerator EndEvent()
+    IEnumerator StartTimer()
     {
-        yield return new WaitForSeconds(10f);
-        animator.SetBool("Shake", false);
+        yield return new WaitForSeconds(5f);
+        isRattle = false;
     }
 
+    IEnumerator StopShakingEvent()
+    {
+        emitter.SetParameter("WindowRattleEnd", 1.0f);
+        yield return new WaitForSeconds(4f);
+        animator.SetBool("Shake", false);
+        emitter.Stop();
+    }
+
+    
 }
