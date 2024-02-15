@@ -34,6 +34,7 @@ public class WindowEvent : MonoBehaviour
     {
         animator.SetBool("Shake", true);
         isRattle = true;
+        StartCoroutine(EndEvent());
     }
 
     private void UpdateSound()
@@ -48,6 +49,13 @@ public class WindowEvent : MonoBehaviour
         {
             windowRattle.setParameterByName("WindowRattleEnd", 1.0f);
         }
+    }
+
+    //End Shaking
+    IEnumerator EndEvent()
+    {
+        yield return new WaitForSeconds(10f);
+        animator.SetBool("Shake", false);
     }
 
 }
