@@ -19,6 +19,8 @@ public class EventManager : MonoBehaviour
         }
     }
     public Action bedRoomEvent;
+    public Action livingRoomEvent;
+    public Action bathRoomEvent;
     public Action corridorEvent;
 
     public void CallIBedRoomEvent()
@@ -29,5 +31,15 @@ public class EventManager : MonoBehaviour
     public void CallCorridorEvent()
     {
         corridorEvent?.Invoke();
+    }
+
+    public void CallLivingRoomEvent()
+    {
+        livingRoomEvent?.Invoke();
+    }
+
+    public void CallBathRoomEvent()
+    {
+        bathRoomEvent?.Invoke();
     }
 }
