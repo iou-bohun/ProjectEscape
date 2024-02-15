@@ -23,13 +23,13 @@ public class TitleMunu : MonoBehaviour
                 SceneManager.LoadScene("3rdEventScene");
                 break;
             case 3:
-                SceneManager.LoadScene("5thEventScene");
+                SceneManager.LoadScene("4thEventScene");
                 break;
             case 4:
-                SceneManager.LoadScene("6thEvnetScene");
+                SceneManager.LoadScene("5thEventScene");
                 break;
             case 5:
-                SceneManager.LoadScene("EndingScene");
+                SceneManager.LoadScene("6thEventScene");
                 break;
             default:
                 haveNoSaveData.SetActive(true);
