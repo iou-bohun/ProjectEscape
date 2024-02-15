@@ -253,7 +253,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638436425523435823
+  lastModified: 638436442576312886
   FileSizes:
   - Name: Desktop
     Value: 1678
@@ -431,10 +431,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638436425539428683
+  lastModified: 638436442578183828
   FileSizes:
   - Name: Desktop
-    Value: 1709440
+    Value: 1727904
   Exists: 1
 --- !u!114 &-3797892765116598341
 MonoBehaviour:
@@ -635,10 +635,10 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638436425523485676
+  lastModified: 638436442576362719
   FileSizes:
   - Name: Desktop
-    Value: 2290
+    Value: 2398
   Exists: 1
 --- !u!114 &-750520100089121279
 MonoBehaviour:
@@ -780,13 +780,15 @@ MonoBehaviour:
   - {fileID: -6926397173185296517}
   - {fileID: -1437821183648352295}
   - {fileID: 8514405683083834303}
+  - {fileID: 1350860879614534569}
+  - {fileID: 6071561130675489578}
   EditorParameters:
   - {fileID: -3200740619875462514}
   MasterBanks:
   - {fileID: -6397529200976280163}
   StringsBanks:
   - {fileID: -1219786190706538524}
-  cacheTime: 638436425539428683
+  cacheTime: 638436442578183828
   cacheVersion: 131616
 --- !u!114 &469317839647511414
 MonoBehaviour:
@@ -863,6 +865,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1350860879614534569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Elevator/ElevatorPush
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Elevator/ElevatorPush
+  Guid:
+    Data1: 931603309
+    Data2: 1293660312
+    Data3: 993737620
+    Data4: 123210912
+  Banks:
+  - {fileID: -4140596208315444572}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 341
 --- !u!114 &1520457183797725663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1336,6 +1365,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 350
+--- !u!114 &6071561130675489578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Elevator/ElevatorVoice
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Elevator/ElevatorVoice
+  Guid:
+    Data1: 814823548
+    Data2: 1167369233
+    Data3: -837162872
+    Data4: 1104621758
+  Banks:
+  - {fileID: -4140596208315444572}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6250849216798347134
 MonoBehaviour:
   m_ObjectHideFlags: 0

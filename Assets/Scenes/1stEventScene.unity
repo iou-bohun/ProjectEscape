@@ -2316,6 +2316,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7328899504965315946, guid: 483fc8b8b823f704e815511f92874264, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7066146973492285642, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1030114125}
   m_SourcePrefab: {fileID: 100100000, guid: 483fc8b8b823f704e815511f92874264, type: 3}
 --- !u!1 &650458512
 GameObject:
@@ -3541,6 +3544,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020164754}
   m_CullTransparentMesh: 1
+--- !u!1 &1030114120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7066146973492285642, guid: 483fc8b8b823f704e815511f92874264, type: 3}
+  m_PrefabInstance: {fileID: 616417797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1030114125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030114120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df99c7d724600646a7fe71240287322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 84078211}
 --- !u!1001 &1038907752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5303,6 +5324,20 @@ MonoBehaviour:
       Data3: -986328147
       Data4: 20924053
     Path: event:/SFX/Cabinet/SmallCabinetClosed
+  <elevatorButton>k__BackingField:
+    Guid:
+      Data1: 931603309
+      Data2: 1293660312
+      Data3: 993737620
+      Data4: 123210912
+    Path: event:/SFX/Elevator/ElevatorPush
+  <elevatorVoice>k__BackingField:
+    Guid:
+      Data1: 814823548
+      Data2: 1167369233
+      Data3: -837162872
+      Data4: 1104621758
+    Path: event:/SFX/Elevator/ElevatorVoice
   <buzz1>k__BackingField:
     Guid:
       Data1: -1744982108
