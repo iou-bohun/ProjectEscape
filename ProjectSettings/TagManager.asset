@@ -21,6 +21,8 @@ TagManager:
   - idCard
   - driveId
   - amulet
+  - Clear
+  - Item
   layers:
   - Default
   - TransparentFX
