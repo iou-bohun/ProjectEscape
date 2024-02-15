@@ -12,10 +12,10 @@ public class Inventory : MonoBehaviour
     public static Inventory i;
     [SerializeField] Transform dropPos;
     [SerializeField] GameObject inventoryUi;
-    ItemData[] items;
+    public ItemData[] items;
     int InventorySize = 4;
     [SerializeField] Transform handParent;
-    [SerializeField] GameObject HandItem;
+    public GameObject HandItem;
     [SerializeField] Transform DropPos;
 
     [Header("Examine")]
@@ -65,7 +65,7 @@ public class Inventory : MonoBehaviour
         }
         items[index] = null;
     }
-    void UpdateInvenUi(int index, ItemData AnItem)
+    public void UpdateInvenUi(int index, ItemData AnItem)
     {
         if (AnItem != null)
         {
@@ -76,7 +76,7 @@ public class Inventory : MonoBehaviour
             slotImage.GetComponent<RectTransform>().localScale = Vector3.one;
         }
     }
-    void UpdateInvenUi(int index)
+    public void UpdateInvenUi(int index)
     {
         if (inventoryUi.transform.GetChild(index).transform.childCount == 1)
         {
