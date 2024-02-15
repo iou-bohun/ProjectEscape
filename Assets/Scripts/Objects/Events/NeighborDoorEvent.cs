@@ -5,6 +5,7 @@ using UnityEngine;
 public class NeighborDoorEvent : MonoBehaviour
 {
     Animator _animator;
+    private bool _isClosed;
 
     private void Awake()
     {
@@ -14,9 +15,13 @@ public class NeighborDoorEvent : MonoBehaviour
     private void Start()
     {
         EventManager.I.corridorEvent += CloseDoor;
+        _isClosed = false;
     }
     public void CloseDoor()
     {
+        if(_isClosed) return;
         _animator.SetTrigger("Close");
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.doorClosed, this.transform.position);
+        _isClosed = true;
     }
 }
