@@ -29,6 +29,7 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Light Switch SFX")]
     [field: SerializeField] public EventReference lightSwitchOnOff { get; private set; }
+    [field: SerializeField] public EventReference lampOnOff { get; private set; }
 
 
     [field: Header("Items SFX")]
@@ -49,6 +50,7 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Other SFXs")]
     [field: SerializeField] public EventReference glassBreaking { get; private set; }
     [field: SerializeField] public EventReference switchClick { get; private set; }
+    [field: SerializeField] public EventReference stageClearAlarm { get; private set; }
 
 
     [field: Header("Ambients")]
