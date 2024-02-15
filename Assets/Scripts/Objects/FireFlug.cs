@@ -12,7 +12,11 @@ namespace SojaExiles
 		public bool open;
 		public Transform Player;
 
-		void Start()
+        private void Awake()
+        {
+			Player = GameManager.Instance.transform;
+        }
+        void Start()
 		{
 			open = false;
 		}

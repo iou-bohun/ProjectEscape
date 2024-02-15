@@ -11,10 +11,12 @@ public class NoticeBoard : MonoBehaviour
 
     public GameObject[] onBoardPaper;
     public GameObject player;
+
     private InventoryInput invenInput;
 
     private void Awake()
     {
+        player = GameManager.Instance.player;
         invenInput = player.GetComponent<InventoryInput>();
     }
     private void Start()
