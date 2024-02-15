@@ -16,7 +16,6 @@ public class Inventory : MonoBehaviour
     int InventorySize = 4;
     [SerializeField] Transform handParent;
     public GameObject HandItem;
-    [SerializeField] Transform DropPos;
 
     [Header("Examine")]
     [SerializeField] GameObject desctiptionUI;
