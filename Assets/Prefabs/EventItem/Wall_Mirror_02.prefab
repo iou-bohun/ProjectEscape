@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 1050032160271745289}
   - component: {fileID: 830252683998856018}
   - component: {fileID: 7297886370383664387}
+  - component: {fileID: 7411839882102090071}
   m_Layer: 0
   m_Name: Wall_Mirror_02
   m_TagString: Untagged
@@ -116,7 +117,7 @@ Transform:
   - {fileID: 7783391597183117126}
   - {fileID: 764481290961063470}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &830252683998856018
 MeshFilter:
@@ -168,6 +169,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7411839882102090071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4898012921678761536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b462b9053484b4ebe48d52c2d0d3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _originMirror: {fileID: 8554352923314201559}
+  _brokenMirror: {fileID: 4040947076689865581}
 --- !u!1 &8554352923314201559
 GameObject:
   m_ObjectHideFlags: 0

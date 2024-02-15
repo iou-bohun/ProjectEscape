@@ -20,7 +20,7 @@ public class MirrorEvent : MonoBehaviour
     IEnumerator StartBreak()
     {
         yield return new WaitForSeconds(1f);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.metalMovement, this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.glassBreaking , this.transform.position);
         _originMirror.gameObject.SetActive(false);
         _brokenMirror.gameObject.SetActive(true);
     }
