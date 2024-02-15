@@ -40,8 +40,13 @@ public class NoticeBoard : MonoBehaviour
         Inventory.i.HandItem = null;
         for (int i = 0; i< _paperData.Length; i++)
         {
-            Inventory.i.UpdateInvenUi(index , _paperData[i]);
+            if (Inventory.i.items[i] != null)
+            {
+                Inventory.i.items[i] = null;
+            }
+            Inventory.i.UpdateInvenUi(i);
         }
+
   
 
     }
