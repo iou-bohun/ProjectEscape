@@ -11,11 +11,27 @@ public class Monologue : MonoBehaviour
     {
         i = this;
     }
-    public IEnumerator PopUpMonologue(string Monologue,float time)
+    public void ET(Talk[] talk)
+    {
+        if (i == null)
+        {
+            return;
+        }
+        StartCoroutine(CallMonologue(talk));
+    }
+    IEnumerator CallMonologue(Talk[] talk)
+    {
+        for (int i = 0; i < talk.Length; i++)
+        {
+            StartCoroutine(PopUpMonologue(talk[i].mono, new WaitForSeconds(talk[i].stayTime)));
+            yield return new WaitForSeconds(talk[i].waitTime);
+        }
+    }
+    IEnumerator PopUpMonologue(string monologue,WaitForSeconds time)
     {
         GameObject box = Instantiate(monologuePanel,this.transform);
-        box.GetComponentInChildren<TMP_Text>().text = Monologue;
-        yield return new WaitForSeconds(time);
+        box.GetComponentInChildren<TMP_Text>().text = monologue;
+        yield return time;
         Destroy(box);
     }
 }
