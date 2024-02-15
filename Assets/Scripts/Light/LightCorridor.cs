@@ -17,4 +17,10 @@ public class LightCorridor : LightObject
         LightManager.instance.OnBlackOutEvent += BlackOutCorridor;
         OffCorridor();
     }
+    private void OnDisable()
+    {
+        LightManager.instance.OnCorridorLight -= OnLight;
+        LightManager.instance.OnCorridorOffTimer -= OffCorridor;
+        LightManager.instance.OnBlackOutEvent -= BlackOutCorridor;
+    }
 }
