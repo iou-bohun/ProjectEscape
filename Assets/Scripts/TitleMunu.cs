@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TitleMunu : MonoBehaviour
 {
-    public GameObject startBtn;
-    public GameObject loadBtn;
+    public GameObject haveNoSaveData;
 
     public void OnStartBtn()
     {
@@ -18,25 +17,28 @@ public class TitleMunu : MonoBehaviour
         switch (PlayerPrefs.GetInt("ClearData"))
         {
             case 1:
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("2ndEventScene");
                 break;
             case 2:
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("3rdEventScene");
                 break;
             case 3:
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("5thEventScene");
                 break;
             case 4:
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("6thEvnetScene");
                 break;
             case 5:
-                SceneManager.LoadScene("");
-                break;
-            case 6:
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("EndingScene");
                 break;
             default:
+                haveNoSaveData.SetActive(true);
                 break;
         }
+    }
+
+    public void OnConfirmBtn()
+    {
+        haveNoSaveData.SetActive(false);
     }
 }
