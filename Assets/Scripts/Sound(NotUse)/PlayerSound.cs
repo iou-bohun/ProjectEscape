@@ -6,8 +6,14 @@ public class PlayerSound : MonoBehaviour
 {
     public AudioClip[] walkMetalV1;
     public AudioClip[] runMetalV1;
+    public AudioClip[] walkRock;
+    public AudioClip[] runRock;
+
+
     public AudioClip[] jumpStartMetalV1;
     public AudioClip[] jumpLandMetalV1;
+    public AudioClip[] jumpStartRock;
+    public AudioClip[] jumpLandRock;
 
     public bool isRun = false; // 플레이어가 뛰고 있는가?
     public bool isGrounded = false; // 플레이어가 바닥에 붙어 있는가?
@@ -26,12 +32,12 @@ public class PlayerSound : MonoBehaviour
             {
                 if (isRun == false) // 걷고 있다면
                 {
-                    float wait = PickRandomSFX("WalkSFX", walkMetalV1);
+                    float wait = PickRandomSFX("WalkSFX", walkRock);
                     yield return new WaitForSeconds(wait);
                 }
                 else // 뛰고 있다면
                 {
-                    float wait = PickRandomSFX("RunSFX", runMetalV1);
+                    float wait = PickRandomSFX("RunSFX", runRock);
                     yield return new WaitForSeconds(wait);
                 }
             }
@@ -69,12 +75,12 @@ public class PlayerSound : MonoBehaviour
 
     public void OnJump()
     {
-        PickRandomSFX("JumpStartSFX", jumpStartMetalV1);
+        PickRandomSFX("JumpStartSFX", jumpStartRock);
     }
 
     public void OnLand()
     {
-        PickRandomSFX("JumpLandSFX", jumpLandMetalV1);
+        PickRandomSFX("JumpLandSFX", jumpLandRock);
     }
 
     public void OffWalk()
