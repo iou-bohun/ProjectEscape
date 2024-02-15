@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3beada3a21ec82479ba979fa4b78c29, type: 3}
   m_Name: paper2
   m_EditorClassIdentifier: 
-  disPlayName: "\uCC22\uC5B4\uC9C4 \uBB38\uC11C1"
+  disPlayName: "\uCC22\uC5B4\uC9C4 \uBB38\uC11C2"
   description: "\uACF5\uC9C0\uBB38\uC758 \uC870\uAC01\uC774\uB2E4."
   type: 0
-  icon: {fileID: 21300000, guid: a3b1292cd72d3fe4dac6c1ff235f6255, type: 3}
-  dropPrefab: {fileID: 2747622012712724791, guid: 9063506db226ba747bd7734300faaeb3, type: 3}
-  handPrefab: {fileID: 2747622012712724791, guid: e84aee59448124641b83641674c9549c, type: 3}
+  icon: {fileID: 21300000, guid: f5a83f2018daf074baf57e2662b79cd4, type: 3}
+  dropPrefab: {fileID: 989528233247844555, guid: d1b0310a79c716346a644c3a1b4611bf, type: 3}
+  handPrefab: {fileID: 989528233247844555, guid: 037032b1aa9055d40a08335b5923981c, type: 3}
