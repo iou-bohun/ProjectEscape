@@ -13,7 +13,8 @@ public class LightLivingRoom1 : LightObject
     }
     void Start()
     {
-       LightManager.instance.OnLivingRoom += OnOffLight;
+        LightManager.instance.OnBlackOutEvent += OffLight;
+        LightManager.instance.OnLivingRoom += OnOffLight;
     }
 
 

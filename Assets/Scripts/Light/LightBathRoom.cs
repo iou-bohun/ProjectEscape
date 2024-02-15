@@ -12,6 +12,7 @@ public class LightBathRoom : LightObject
     }
     void Start()
     {
+        LightManager.instance.OnBlackOutEvent += OffLight;
         LightManager.instance.OnBathRoom += OnOffLight;
     }
 }
