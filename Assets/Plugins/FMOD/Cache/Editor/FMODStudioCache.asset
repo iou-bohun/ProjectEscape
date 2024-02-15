@@ -171,7 +171,7 @@ MonoBehaviour:
   Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638436273502789144
+  lastModified: 638436280759202123
   FileSizes:
   - Name: Desktop
     Value: 1662
@@ -446,6 +446,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &-1499197407109496554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambient.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/projectescape-audio-fmod/Build/Desktop/Ambient.bank
+  Name: Ambient
+  StudioPath: 
+  lastModified: 638436328558452067
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1204029034388466547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +483,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1302720
-  Exists: 1
+  Exists: 0
 --- !u!114 &-830501762605805754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +554,7 @@ MonoBehaviour:
   - {fileID: -5857408061237621849}
   - {fileID: 877050059685147307}
   - {fileID: -1204029034388466547}
+  - {fileID: -1499197407109496554}
   EditorEvents:
   - {fileID: 3679956068139654510}
   - {fileID: 532218864208434214}
@@ -558,7 +577,7 @@ MonoBehaviour:
   - {fileID: 877050059685147307}
   StringsBanks:
   - {fileID: -5857408061237621849}
-  cacheTime: 638436273502869219
+  cacheTime: 638436328558467134
   cacheVersion: 131616
 --- !u!114 &345616902716099709
 MonoBehaviour:
@@ -657,7 +676,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1036
-  Exists: 1
+  Exists: 0
 --- !u!114 &1861011981255406257
 MonoBehaviour:
   m_ObjectHideFlags: 0

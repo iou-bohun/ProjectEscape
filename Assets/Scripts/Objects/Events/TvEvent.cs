@@ -1,6 +1,7 @@
 using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -8,12 +9,13 @@ using UnityEngine.Video;
 public class TvEvent : MonoBehaviour
 {
     [SerializeField] private VideoPlayer _videoPlayer;
-
+    private Renderer _renderer;
     // Audio
     private StudioEventEmitter emitter;
 
     private void Start()
     {
+        _renderer = GetComponent<Renderer>();
         _videoPlayer = GetComponent<VideoPlayer>();
         EventManager.I.livingRoomEvent += PlayVideo;
         emitter = AudioManager.instance.InitializeEventEmitter(FMODEvents.instance.TVStatic, this.gameObject);
@@ -25,6 +27,7 @@ public class TvEvent : MonoBehaviour
         _videoPlayer.Play();
         emitter.SetParameter("TVEnd", 0.1f);
         emitter.Play();
+        _renderer.material.color = Color.white;
         StartCoroutine(OffVideo()); 
     }
 
@@ -32,6 +35,7 @@ public class TvEvent : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         _videoPlayer.enabled = false;
+        _renderer.material.color = Color.black;
         emitter.SetParameter("TVEnd", 1.0f);
         yield return new WaitForSeconds(3f);
         emitter.Stop();
