@@ -79,6 +79,7 @@ public class RooftopDoor : MonoBehaviour
         print("you are opening the door");
         openandclose.Play("Opening");
         AudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpened, this.transform.position);
+        EventManager.I.flashCount = 0;
         open = true;
         yield return new WaitForSeconds(.5f);
     }

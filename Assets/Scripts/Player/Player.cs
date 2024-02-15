@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
             case "BathRoom":
                 EventManager.I.CallBathRoomEvent();
                 break;
+               
         }
         
      }

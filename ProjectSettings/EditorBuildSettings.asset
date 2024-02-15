@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/6stEventScene.unity
     guid: f309c0452a4660047a118369f7b2a73b
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 6e7c5d39fd122be4f8eaccacb71ff7ff
   m_configObjects: {}

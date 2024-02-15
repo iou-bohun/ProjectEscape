@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class EventManager : MonoBehaviour
     public Action corridorEvent;
     public Action playerDieEvent;
     public bool handFlash;
+    public int flashCount = 0;
     private bool isOnce;
 
     private void Update()
@@ -55,6 +57,8 @@ public class EventManager : MonoBehaviour
         playerDieEvent?.Invoke();
     }
 
+
+
     private void FlashLightSFX()
     {
         if (handFlash && !isOnce)
@@ -68,4 +72,5 @@ public class EventManager : MonoBehaviour
             isOnce = false;
         }
     }
+
 }

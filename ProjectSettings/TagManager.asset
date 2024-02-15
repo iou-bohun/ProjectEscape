@@ -23,6 +23,7 @@ TagManager:
   - amulet
   - Clear
   - Item
+  - RoofTop
   layers:
   - Default
   - TransparentFX

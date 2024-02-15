@@ -129,6 +129,7 @@ public class Inventory : MonoBehaviour
         else if (HandItem.name == "Hand_flashLight")
         { 
             EventManager.I.handFlash = true;
+            EventManager.I.flashCount++;
             Debug.Log("플레쉬장착");
         }
         else EventManager.I.handFlash = false;
