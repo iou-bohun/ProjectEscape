@@ -46,6 +46,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Electric Buzz")]
     [field: SerializeField] public EventReference buzz1 { get; private set; }
 
+    [field: Header("Other SFXs")]
+    [field: SerializeField] public EventReference glassBreaking { get; private set; }
+
 
     [field: Header("Ambients")]
     [field: SerializeField] public EventReference firstLooped { get; private set; }
