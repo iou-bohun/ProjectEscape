@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -1474950581585466313}
   m_Layer: 9
   m_Name: Towel_b_01
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 6a722f856c66bae4abbf57b0345f8232, type: 2}
+  isOriginalPosition: 0

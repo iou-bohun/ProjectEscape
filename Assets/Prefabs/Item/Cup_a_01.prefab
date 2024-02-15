@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9179080816540541050}
   m_Layer: 9
   m_Name: Cup_a_01
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 709c700b0e7cbe745a8fa24f97070509, type: 2}
+  isOriginalPosition: 0
