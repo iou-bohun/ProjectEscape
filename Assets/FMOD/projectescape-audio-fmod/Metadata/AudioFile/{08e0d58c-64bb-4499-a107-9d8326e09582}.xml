@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{08e0d58c-64bb-4499-a107-9d8326e09582}">
+		<property name="assetPath">
+			<value>SFX/MetalBox/ESM_War_UI_Source_Small_Metal_Box2_Filled_Open_and_Close_Hinge_5_Texture_Organic_Elemental_Resonancewav.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.45000000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a5f1e11-1b03-46a8-bd4f-f03aaf22be76}</destination>
+		</relationship>
+	</object>
+</objects>
