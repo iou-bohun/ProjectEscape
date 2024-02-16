@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{717171ad-fb7c-40e1-b88e-dc9f4313b12c}">
+		<property name="assetPath">
+			<value>SFX/Lamp/DeskLampSwitch_S08OF.151.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.17066666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a5f1e11-1b03-46a8-bd4f-f03aaf22be76}</destination>
+		</relationship>
+	</object>
+</objects>

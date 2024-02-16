@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SojaExiles
 
@@ -10,12 +11,13 @@ namespace SojaExiles
 
 		public Animator openandclose;
 		public bool open;
-		public Transform Player;
+		private Transform Player;
 
-		void Start()
+        void Start()
 		{
 			open = false;
-		}
+            Player = GameManager.Instance.player.GetComponent<Transform>();
+        }
 
 		void OnMouseOver()
 		{
@@ -23,12 +25,13 @@ namespace SojaExiles
 				if (Player)
 				{
 					float dist = Vector3.Distance(Player.position, transform.position);
-					if (dist < 15)
+					if (dist < 5)
 					{
 						if (open == false)
 						{
 							if (Input.GetMouseButtonDown(0))
 							{
+								if(SceneManager.GetActiveScene().name == "6stEventScene") GameManager.Instance.cancelLoof=true;
 								StartCoroutine(opening());
 							}
 						}
@@ -55,6 +58,7 @@ namespace SojaExiles
 		{
 			print("you are opening the door");
 			openandclose.Play("Opening");
+			AudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpened, this.transform.position);
 			open = true;
 			yield return new WaitForSeconds(.5f);
 		}
@@ -63,6 +67,7 @@ namespace SojaExiles
 		{
 			print("you are closing the door");
 			openandclose.Play("Closing");
+			AudioManager.instance.PlayOneShot(FMODEvents.instance.doorClosed, this.transform.position);
 			open = false;
 			yield return new WaitForSeconds(.5f);
 		}

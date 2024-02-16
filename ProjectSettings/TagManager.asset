@@ -3,7 +3,27 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BedRoom
+  - LivingRoom
+  - BathRoom
+  - Corridor
+  - WalkSFX
+  - RunSFX
+  - JumpStartSFX
+  - JumpLandSFX
+  - OriginPosition
+  - paper1
+  - paper2
+  - paper3
+  - paper4
+  - wallet
+  - idCard
+  - driveId
+  - amulet
+  - Clear
+  - Item
+  - RoofTop
   layers:
   - Default
   - TransparentFX
@@ -12,9 +32,9 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
+  - Interactable
+  - Hand
+  - Item
   - 
   - 
   - 

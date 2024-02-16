@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{5ed729e9-addd-4e50-9723-0472f0168925}">
+		<property name="name">
+			<value>WindowRattleEnd</value>
+		</property>
+		<relationship name="folder">
+			<destination>{3f42f3d1-c0f2-4621-9313-fbbe206e8c64}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5a18b195-ce0c-44d0-b1ee-3a97ca81dfa0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5a18b195-ce0c-44d0-b1ee-3a97ca81dfa0}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
