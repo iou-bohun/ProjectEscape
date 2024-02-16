@@ -7,10 +7,12 @@ public class Ending : MonoBehaviour
 {
     public GameObject endPanel;
     WaitForSeconds ending;
+    private Transform player;
 
     private void Awake()
     {
         ending = new WaitForSeconds(3);
+        player = GameManager.Instance.player.GetComponent<Transform>();
     }
 
     private void OnTriggerStay(Collider other)
