@@ -2,7 +2,7 @@
 
 
 # 🎮Escape From the Apartment
-#### <span style="color:blue"> 🧑‍🤝‍🧑참여인원 밑 역할 </span>
+### <span style="color:blue"> 🧑‍🤝‍🧑참여인원 밑 역할 </span>
 |팀원|직책|깃헙 링크|
 |------|---|---|
 |추민규|팀원|[najdorf](https://github.com/cn7249)|
@@ -17,7 +17,7 @@
 * 박재영 - 인벤토리
 * 이혜미 - 플레이어
 * 최보훈 - 맵,상호작
-#### <span style="color:orange"> 📝컨밴션 규칙 </span>
+### <span style="color:orange"> 📝컨밴션 규칙 </span>
 
 [Feat] : 새로운 기능 추가
 [Fix] : 버그 픽스
@@ -36,6 +36,17 @@ Git Branch는 ‘Main -> Dev -> 개인 Branch’ 의 구조로 진행
 
 각자 테스트 Scene을 하나씩 만들어서 주기적으로 병합하는 방식으로 협업 진행.
 
+### 🤝 팀 규칙 
+0. 서로 배려하고 존중하기!
+
+1. 스크럼 시간 : 오전 스크럼 10:00, 오후 스크럼 19:00
+
+2. 잠시 화장실이나 물 떠오기는 채팅으로 알리고 가기!
+
+3. 집중이 안되거나 리프레시가 필요하면 10분 간 개인적으로 채팅 남기고 쉬러 가기!
+
+4. 당일 특강 세션 일정이 있다면 반드시 스크럼 때 알리기!
+
 ### 초기 게임 진행 아이디
 1. 방을 뒤지면 여러 단서가 나오는데 그런 단서들을 찾아야 진행되는 선형적인 방식
 2. 특정 요구 조건을 만족시켜야 루프가 되지 않고 다음 방으로 넘어가는 방식
@@ -49,3 +60,4 @@ Git Branch는 ‘Main -> Dev -> 개인 Branch’ 의 구조로 진행
 8. 멀티엔딩은 어떨까? *(관련 게임: [Please, don’t touch anything](https://store.steampowered.com/app/354240/Please_Dont_Touch_Anything/))*
 
 -------------------
+
