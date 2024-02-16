@@ -1,4 +1,5 @@
-![image](https://github.com/sda0503/ElonMusk/assets/56661597/def1fb70-b621-40b1-ba2f-0177c1f23237)
+![image](https://github.com/iou-bohun/ProjectEscape/assets/56661597/e82391e7-a419-4289-86a2-c23d15206353)
+
 
 # 🎮Escape From the Apartment
 #### <span style="color:blue"> 🧑‍🤝‍🧑참여인원 밑 역할 </span>
